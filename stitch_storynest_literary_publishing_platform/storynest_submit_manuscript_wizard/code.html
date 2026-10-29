@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#b1f0d6", "on-secondary-container": "#336f5b", "surface-container-high": "#ddeaf2", "on-tertiary": "#ffffff", "on-surface-variant": "#44474d", "inverse-on-surface": "#e6f3fb", "on-secondary-fixed-variant": "#0e503e", "surface-container": "#e3f0f8", "tertiary": "#261800", "on-primary-fixed": "#0b1c32", "surface-dim": "#cfdce4", "tertiary-container": "#402c00", "outline-variant": "#c5c6cd", "background": "#f4faff", "surface-tint": "#4f5f78", "inverse-surface": "#263238", "on-secondary": "#ffffff", "on-error-container": "#93000a", "primary-fixed-dim": "#b7c7e5", "surface-container-highest": "#d7e4ec", "on-tertiary-fixed": "#271900", "on-tertiary-fixed-variant": "#5e4200", "surface-variant": "#d7e4ec", "primary": "#091b31", "error-container": "#ffdad6", "on-primary-container": "#8898b3", "surface-bright": "#f4faff", "outline": "#75777e", "secondary-fixed": "#b1f0d6", "primary-fixed": "#d4e3ff", "primary-container": "#203047", "on-background": "#111d23", "tertiary-fixed-dim": "#f4be55", "on-secondary-fixed": "#002117", "tertiary-fixed": "#ffdea7", "secondary": "#2d6955", "inverse-primary": "#b7c7e5", "on-surface": "#111d23", "on-primary": "#ffffff", "error": "#ba1a1a", "surface-container-low": "#e9f6fd", "secondary-fixed-dim": "#96d3bb", "surface-container-lowest": "#ffffff", "surface": "#f4faff", "on-error": "#ffffff", "on-tertiary-container": "#c08f2a", "on-primary-fixed-variant": "#384760" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin": "2.5rem", "space-sm": "0.5rem", "gutter-sm": "1rem", "space-md": "1rem", "gutter": "1.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem" }, "fontFamily": { "label-md": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "headline-lg": [ "Merriweather" ], "body-reading-lg": [ "Merriweather" ], "title-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "body-ui-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Merriweather" ], "headline-md": [ "Merriweather" ], "display-hero-mobile": [ "Merriweather" ], "headline-lg-mobile": [ "Merriweather" ], "body-ui-sm": [ "Plus Jakarta Sans" ], "display-hero": [ "Merriweather" ] }, "fontSize": { "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "title-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "headline-lg": [ "36px", { "lineHeight": "46px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-reading-lg": [ "18px", { "lineHeight": "32px", "fontWeight": "400" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700" } ], "body-ui-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "700" } ], "headline-md": [ "26px", { "lineHeight": "34px", "fontWeight": "700" } ], "display-hero-mobile": [ "34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "body-ui-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-hero": [ "48px", { "lineHeight": "58px", "letterSpacing": "-0.02em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-ui-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm focus:outline-none" href="#"><span class="material-symbols-outlined text-secondary text-[28px]">menu_book</span><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">StoryNest</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Self-Publishing</span></div></a><div class="hidden xl:flex items-center bg-surface-container-low px-space-sm py-space-xs rounded-xl"><span class="font-label-sm text-label-sm text-secondary flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary inline-block"></span>Author Studio</span><span class="material-symbols-outlined text-on-surface-variant text-[16px] ml-space-xs">unfold_more</span></div></div><nav class="hidden lg:flex items-center gap-gutter" data-active-classes="text-primary font-title-md underline decoration-secondary decoration-2 underline-offset-8"><a class="font-body-ui-md text-body-ui-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="publishing-services" href="#">Publishing Services</a><a class="font-body-ui-md text-body-ui-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="author-dashboard" href="#">Author Dashboard</a><a class="font-body-ui-md text-body-ui-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="my-books" href="#">My Books</a><a aria-current="page" class="transition-colors py-2 text-primary font-title-md underline decoration-secondary decoration-2 underline-offset-8" data-path="submit-manuscript" href="#">Submit Manuscript</a><a class="font-body-ui-md text-body-ui-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="promotion" href="#">Promotion</a></nav><div class="flex items-center gap-space-md"><button aria-label="Notifications" class="relative p-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-sm border-l border-outline-variant/30"><div class="relative"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface" title="Published Author"></span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">E. B. Vance</span><span class="font-label-sm text-label-sm text-secondary font-medium">Pro Imprint</span></div></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Subtle Ambient Flow & Contextual Bar -->
+<div class="w-full bg-surface-container-low/70 py-space-sm px-margin">
+<div class="max-w-[1320px] mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<a class="group inline-flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-0.5 transition-transform">arrow_back</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Exit to Dashboard</span>
+</a>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold">Manuscript Submission Vault</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">cloud_done</span>
+<span class="font-body-ui-sm text-body-ui-sm">Draft autosaved 1 min ago</span>
+</div>
+<button class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+          Save Draft
+        </button>
+</div>
+</div>
+</div>
+<!-- Wizard Horizontal Progress Stepper -->
+<section class="w-full bg-surface-container-lowest shadow-sm">
+<div class="max-w-[1320px] mx-auto px-margin py-space-md">
+<nav aria-label="Submission Progress" class="w-full overflow-x-auto scrollbar-none py-1">
+<ol class="flex items-center justify-between min-w-[860px] gap-2">
+<!-- Step 1: Completed -->
+<li class="flex items-center gap-space-xs group">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 1</span>
+<span class="font-title-md text-body-ui-sm font-semibold text-primary">Book Details</span>
+</div>
+</li>
+<li class="flex-1 h-0.5 bg-secondary-container mx-1"></li>
+<!-- Step 2: Completed -->
+<li class="flex items-center gap-space-xs group">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 2</span>
+<span class="font-title-md text-body-ui-sm font-semibold text-primary">Audience &amp; Language</span>
+</div>
+</li>
+<li class="flex-1 h-0.5 bg-secondary-container mx-1"></li>
+<!-- Step 3: Active -->
+<li class="flex items-center gap-space-xs group">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-md ring-4 ring-primary-fixed/40">
+              3
+            </span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Active Step</span>
+<span class="font-title-md text-body-ui-sm font-bold text-primary">Manuscript Upload</span>
+</div>
+</li>
+<li class="flex-1 h-0.5 bg-surface-container-high mx-1"></li>
+<!-- Step 4 -->
+<li class="flex items-center gap-space-xs opacity-75">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              4
+            </span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 4</span>
+<span class="font-title-md text-body-ui-sm text-on-surface">Cover &amp; Artwork</span>
+</div>
+</li>
+<li class="flex-1 h-0.5 bg-surface-container-high mx-1"></li>
+<!-- Step 5 -->
+<li class="flex items-center gap-space-xs opacity-50">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              5
+            </span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 5</span>
+<span class="font-title-md text-body-ui-sm text-on-surface">Publishing Services</span>
+</div>
+</li>
+<li class="flex-1 h-0.5 bg-surface-container-high mx-1"></li>
+<!-- Step 6 -->
+<li class="flex items-center gap-space-xs opacity-50">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              6
+            </span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 6</span>
+<span class="font-title-md text-body-ui-sm text-on-surface">Rights &amp; Ethics</span>
+</div>
+</li>
+<li class="flex-1 h-0.5 bg-surface-container-high mx-1"></li>
+<!-- Step 7 -->
+<li class="flex items-center gap-space-xs opacity-50">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              7
+            </span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 7</span>
+<span class="font-title-md text-body-ui-sm text-on-surface">Review &amp; Submit</span>
+</div>
+</li>
+</ol>
+</nav>
+</div>
+</section>
+<!-- Workspace Container: Two Column Editorial Desk -->
+<main class="w-full max-w-[1320px] mx-auto px-margin py-space-xl">
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter items-start">
+<!-- Primary Form / Left & Center Column (8 Cols) -->
+<section class="xl:col-span-8 flex flex-col gap-space-xl">
+<!-- Section Header & Active Book Context -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="px-space-md py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[15px]">auto_stories</span>
+              Bilingual Children's Fiction
+            </span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              Draft ID: SN-2024-8841-IN
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            Step 3 of 7: Upload Manuscript &amp; Illustrated Materials
+          </h1>
+<!-- Active Manuscript Context Banner -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="p-2.5 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">book_2</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Workspace Target</p>
+<h2 class="font-title-md text-title-md text-primary font-bold">
+                  The Banyan's Secret Whisper <span class="font-normal text-on-surface-variant">(बरगद का रहस्य)</span>
+</h2>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 mt-1 text-on-surface-variant font-body-ui-sm text-body-ui-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">child_care</span> Ages 7–10</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">translate</span> Dual-Language (Hindi &amp; English)</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">palette</span> Illustrated Picture Book</span>
+</div>
+</div>
+</div>
+<a class="self-start sm:self-center font-label-sm text-label-sm text-secondary hover:text-on-secondary-container underline underline-offset-4 flex items-center gap-1" href="#">
+              Edit Metadata
+              <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- 2. Step 3: Manuscript Upload Dropzone & Processed File Card -->
+<div class="p-space-xl bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">upload_file</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Core Manuscript Document</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-space-sm py-1 rounded-full">
+              Accepted: .DOCX, .PDF, .EPUB (Max 50MB)
+            </span>
+</div>
+<!-- Upload Dropzone Canvas -->
+<div class="relative group cursor-pointer p-space-xl rounded-xl bg-surface-container-low hover:bg-surface-container transition-all text-center flex flex-col items-center justify-center gap-space-sm">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">cloud_upload</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<p class="font-title-md text-title-md text-primary font-semibold">
+                Drag &amp; drop your formatted manuscript here, or <span class="text-secondary underline decoration-2 underline-offset-4">browse desktop</span>
+</p>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant max-w-md">
+                Our engine automatically detects bilingual English/Devanagari scripts, glyph structures, and validates printable font packages.
+              </p>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm mt-space-xs">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">lock</span> Encrypted Vault Upload</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">history</span> Revision Auto-Versioned</span>
+</div>
+</div>
+<!-- Currently Uploaded Active Manuscript Card -->
+<div class="p-space-lg bg-surface-container-low rounded-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">description</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<p class="font-title-md text-title-md text-primary font-bold truncate">The_Banyans_Secret_Whisper_v3_Final.docx</p>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Primary</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">
+                    4.2 MB • Updated 18 minutes ago by E. B. Vance
+                  </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-primary font-label-md text-label-md shadow-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+                  Preview Manuscript
+                </button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-primary font-label-md text-label-md shadow-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">cached</span>
+                  Replace File
+                </button>
+</div>
+</div>
+<!-- Upload Verification Progress State: 100% Complete -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+                  Automated Integrity Verification: Complete (100%)
+                </span>
+<span class="text-on-surface-variant">Validated in 1.4s</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-full transition-all duration-500"></div>
+</div>
+</div>
+<!-- Diagnostics Metrics Chips Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="p-space-sm bg-surface-container-lowest rounded-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">format_image_left</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Security Status</span>
+<span class="font-title-md text-body-ui-sm font-semibold text-primary truncate">Virus Scan Passed</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">analytics</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Word Count</span>
+<span class="font-title-md text-body-ui-sm font-semibold text-primary truncate">4,280 Words Detected</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">language_korean_latin</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Script Engine</span>
+<span class="font-title-md text-body-ui-sm font-semibold text-primary truncate">Devanagari Unicode Validated</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<button class="text-secondary hover:text-on-secondary-container font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+                Download Extracted Word Count Summary (.CSV)
+              </button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hash SHA-256: 9e0b...3d2a</span>
+</div>
+</div>
+<!-- Editorial Layout Requirements Checklist -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl">
+<h4 class="font-title-md text-title-md text-primary font-semibold mb-space-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">fact_check</span>
+              StoryNest Layout Standards Pre-Check
+            </h4>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Typography Consistency</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Uniform 14/18pt body scales detected.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Chapter Markers Found</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">8 defined chapter headings mapped.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Font Embedding</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Hind &amp; Merriweather glyph sets locked.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Step 4: Cover Art & Illustration Preference Section -->
+<div class="p-space-xl bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">photo_library</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Cover Artwork &amp; Illustrations</h3>
+</div>
+<span class="px-space-md py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">
+                Step 4 Configuration
+              </span>
+</div>
+<p class="font-body-ui-md text-body-ui-md text-on-surface-variant">
+              Specify your visual publishing pipeline. Children's picture books demand 300 DPI high-density CMYK plates for rich offset printing.
+            </p>
+</div>
+<!-- Radio Selection Workflow -->
+<div aria-label="Cover Artwork Option" class="flex flex-col gap-space-md" role="radiogroup">
+<!-- Option A (Active State) -->
+<label class="cursor-pointer p-space-lg rounded-xl bg-surface-container-low transition-all block">
+<div class="flex items-start gap-space-md">
+<input checked="" class="mt-1 w-5 h-5 text-primary accent-primary cursor-pointer" name="cover_option" type="radio"/>
+<div class="flex-1 flex flex-col gap-space-md">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">
+                        Option A: I have my own print-ready cover artwork
+                      </span>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+                        File Active
+                      </span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">
+                      Includes full wrap-around file (Front cover, spine calculations based on 48 pages, and back cover blurb).
+                    </p>
+</div>
+<!-- Uploaded Cover Card with Live Visual Preview & Metadata -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<!-- Cover Visual Preview Image (Fixed 3:4 Aspect) -->
+<div class="md:col-span-4 relative group rounded-lg overflow-hidden shadow-md aspect-[3/4] bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Richly painted children's storybook cover showing an ancient majestic banyan tree with glowing lanterns hanging from mossy branches under a starry Indian twilight sky, deep navy ink tones and warm golden amber hues, editorial tactile watercolor painting style, pristine book cover layout." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPqahUN3JccyGurC0wRH_en2zIjowpmghbVn3pjmteLEzRX7WxRONDPEVJzRDc-E6vAcPcs5BEMy7Qt1pDR4SSlBUPWM9qDpoI0xkCsgBpxu8V3EwV3xIWeD_XFqlOus6v2SQIuBSN0Ss2dQU1h5dxn3WS6wYDVcr9awDtnYhi4Wywg9uDYGa9B1zOdsDZn4Pe6BK4QlgqGJlt-NxYAiOWDoNHr9VEki1iimbDDvU"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-md flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span> Full Spine Preview
+                        </button>
+</div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-primary/90 text-on-primary font-label-sm text-label-sm">
+                        Front &amp; Back Spread
+                      </span>
+</div>
+<!-- Technical Inspection Data Sheet -->
+<div class="md:col-span-8 flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-title-md text-title-md text-primary font-bold">Banyan_Cover_Front_Back.pdf</p>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">18.4 MB • Complete PDF/X-1a:2001 Standard</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm py-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Resolution</span>
+<span class="font-title-md text-body-ui-sm font-semibold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check</span> 300 DPI Verified
+                          </span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Color Space</span>
+<span class="font-title-md text-body-ui-sm font-semibold text-primary">CMYK (FOGRA39)</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Trim Dimensions</span>
+<span class="font-title-md text-body-ui-sm font-semibold text-primary">8.5" × 11.0" with 0.125" Bleed</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Barcode Safety Zone</span>
+<span class="font-title-md text-body-ui-sm font-semibold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check</span> Cleared (EAN-13 Ready)
+                          </span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span> Replace Cover
+                        </button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span> Export Soft Proof
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</label>
+<!-- Option B -->
+<label class="cursor-pointer p-space-lg rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-all block">
+<div class="flex items-start gap-space-md">
+<input class="mt-1 w-5 h-5 text-primary accent-primary cursor-pointer" name="cover_option" type="radio"/>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">
+                      Option B: I need Cover Design &amp; Illustration Assistance
+                    </span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                      Creative Studio Concierge
+                    </span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">
+                    Pair with pre-vetted children's book illustrators and typography designers experienced in South Asian folklore and bilingual layouts.
+                  </p>
+</div>
+</div>
+</label>
+<!-- Option C -->
+<label class="cursor-pointer p-space-lg rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-all block">
+<div class="flex items-start gap-space-md">
+<input class="mt-1 w-5 h-5 text-primary accent-primary cursor-pointer" name="cover_option" type="radio"/>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">
+                      Option C: Submit without cover (Text-only review for now)
+                    </span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                      Editorial Review Only
+                    </span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">
+                    Receive story assessment and structural manuscript feedback before commissioning final visual assets.
+                  </p>
+</div>
+</div>
+</label>
+</div>
+</div>
+<!-- 4. Rights Declaration & Author Code of Ethics Preview Card -->
+<div class="p-space-xl bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">gavel</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Ethical Declarations &amp; IP Protection</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container px-space-sm py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+              100% Author IP Guarantee
+            </span>
+</div>
+<p class="font-body-ui-md text-body-ui-md text-on-surface-variant">
+            StoryNest operates under a cooperative author-first charter. Please review and execute your preliminary ethical affirmations below.
+          </p>
+<div class="flex flex-col gap-space-md">
+<!-- Checkbox 1 -->
+<label class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-md cursor-pointer">
+<input checked="" class="mt-1 w-5 h-5 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">
+                  Originality &amp; Non-Plagiarism Pledge
+                </span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">
+                  I declare that this work is my original creation and does not infringe on existing copyrights, trademarks, or proprietary rights of any third party.
+                </span>
+</div>
+</label>
+<!-- Checkbox 2 -->
+<label class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-md cursor-pointer">
+<input checked="" class="mt-1 w-5 h-5 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">
+                  Child Safety &amp; Content Standards
+                </span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">
+                  I certify that this content is free of hate speech, inappropriate violence, exploitation, or non-educational harm, and complies fully with StoryNest child-safe literary guidelines.
+                </span>
+</div>
+</label>
+<!-- Checkbox 3 -->
+<label class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-md cursor-pointer">
+<input checked="" class="mt-1 w-5 h-5 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">
+                  Non-Exclusive License Agreement
+                </span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">
+                  I understand StoryNest provides non-exclusive distribution across participating libraries and school networks; I retain 100% intellectual property rights, adaptation rights, and publishing ownership.
+                </span>
+</div>
+</label>
+</div>
+</div>
+</section>
+<!-- 6. Side Helper Drawer ("Editorial Guidelines & Tips") / Right Column (4 Cols) -->
+<aside class="xl:col-span-4 flex flex-col gap-space-lg sticky top-24">
+<!-- Quick Guidance Card -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-secondary text-[24px]">lightbulb</span>
+<h4 class="font-title-lg text-title-lg text-primary font-bold">Editorial Desk Guidelines</h4>
+</div>
+<!-- Tip 1: Word Count -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-body-ui-sm font-bold text-primary">Target Word Count (Ages 7–10)</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Within Range</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant leading-relaxed">
+              Standard children's early chapter books sit between <strong class="text-primary">2,000 to 6,000 words</strong>. Your manuscript at <strong class="text-secondary font-semibold">4,280 words</strong> is ideally weighted for dual-language pacing.
+            </p>
+<!-- Inline Mini Sparkline Chart for Readability Density -->
+<div class="pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Chapter Distribution:</span>
+<span class="font-semibold text-primary">8 Chapters (~535 wpc)</span>
+</div>
+<div class="w-full flex items-end gap-1 h-8 pt-1">
+<div class="flex-1 bg-secondary rounded-t h-6" title="Ch 1: 520 words"></div>
+<div class="flex-1 bg-secondary rounded-t h-8" title="Ch 2: 610 words"></div>
+<div class="flex-1 bg-secondary rounded-t h-5" title="Ch 3: 480 words"></div>
+<div class="flex-1 bg-secondary rounded-t h-7" title="Ch 4: 550 words"></div>
+<div class="flex-1 bg-secondary rounded-t h-6" title="Ch 5: 530 words"></div>
+<div class="flex-1 bg-secondary rounded-t h-7" title="Ch 6: 580 words"></div>
+<div class="flex-1 bg-secondary rounded-t h-5" title="Ch 7: 490 words"></div>
+<div class="flex-1 bg-secondary rounded-t h-6" title="Ch 8: 520 words"></div>
+</div>
+</div>
+<!-- Tip 2: Devanagari Typesetting -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[18px] text-secondary">spellcheck</span>
+<span class="font-title-md text-body-ui-sm font-bold">Dual-Language Typesetting</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant leading-relaxed">
+              When pairing English alongside Devanagari (Hindi), maintain proportional baseline alignment. Devanagari shirorekha (top hanging line) requires a 12% vertical line-height buffer.
+            </p>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-headline-sm text-[15px] leading-relaxed text-primary">
+              "The old banyan breathed with the evening wind."<br/>
+<span class="font-headline-sm text-on-surface-variant">"पुराना बरगद शाम की हवा के साथ साँस ले रहा था।"</span>
+</div>
+</div>
+<!-- Tip 3: Turnaround Window -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0">timer</span>
+<div class="flex flex-col">
+<span class="font-title-md text-body-ui-sm font-bold text-primary">5-Day Turnaround Pledge</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">
+                Once submitted, StoryNest's editorial review council delivers comprehensive typographic and thematic feedback within <strong class="text-primary">5 business days</strong>.
+              </span>
+</div>
+</div>
+<!-- Author Concierge Assistance Box -->
+<div class="p-space-md rounded-xl bg-secondary-container/40 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+<span class="font-label-md text-label-md font-bold">Need Editorial Assistance?</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">
+              Live chat with a certified children's literature format technician is currently available.
+            </p>
+<button class="mt-1 self-start font-label-sm text-label-sm text-secondary hover:text-on-secondary-container font-bold underline flex items-center gap-1" type="button">
+              Start Author Desk Chat
+              <span class="material-symbols-outlined text-[14px]">chat</span>
+</button>
+</div>
+</div>
+<!-- Submission Summary Snapshot Card -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col gap-space-md">
+<h4 class="font-title-md text-title-md text-primary font-bold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">assignment_turned_in</span>
+            Step 3 Submission Ledger
+          </h4>
+<ul class="space-y-space-sm font-body-ui-sm text-body-ui-sm text-on-surface-variant">
+<li class="flex items-center justify-between">
+<span>Manuscript:</span>
+<span class="font-semibold text-primary">DOCX (Validated)</span>
+</li>
+<li class="flex items-center justify-between">
+<span>Spine &amp; Cover:</span>
+<span class="font-semibold text-primary">PDF/X 300 DPI</span>
+</li>
+<li class="flex items-center justify-between">
+<span>Target Age Band:</span>
+<span class="font-semibold text-primary">7–10 Years</span>
+</li>
+<li class="flex items-center justify-between">
+<span>Language Pack:</span>
+<span class="font-semibold text-primary">EN + HI Dual</span>
+</li>
+<li class="flex items-center justify-between">
+<span>Rights Declarations:</span>
+<span class="font-semibold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span> 3 of 3 Signed
+              </span>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+</main>
+<!-- 5. Bottom Navigation Bar (Sticky Studio Action Bar) -->
+<footer class="sticky bottom-0 z-40 w-full bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-4px_16px_rgba(0,0,0,0.06)] py-space-md px-margin">
+<div class="max-w-[1320px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<!-- Left: Back Navigation -->
+<a class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+        Back to Step 2: Audience
+      </a>
+<!-- Center: Auto-Save State & Preview Modal Trigger -->
+<div class="hidden lg:flex items-center gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-body-ui-sm text-body-ui-sm font-medium">All changes secure in StoryNest Cloud</span>
+</div>
+<span class="text-outline-variant">•</span>
+<button class="font-label-md text-label-md text-secondary hover:text-on-secondary-container underline underline-offset-4 flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+          Preview Submission Summary
+        </button>
+</div>
+<!-- Right: Primary Forward Action & Secondary Save Draft -->
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-end">
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors shadow-sm" type="button">
+          Save as Draft
+        </button>
+<button class="px-space-lg py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md shadow-md transition-all flex items-center gap-space-xs group active:translate-y-[1px]" type="button">
+<span>Continue to Services Selection</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</footer>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_6px_rgba(0,0,0,0.02)] mt-space-xl"><div class="w-full px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="space-y-space-sm md:col-span-1"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[24px]">menu_book</span><span class="font-headline-sm text-headline-sm text-primary">StoryNest</span></div><p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant leading-relaxed">The premier ethical self-publishing ecosystem for independent children's book creators, illustrators, and educational storytellers.</p></div><div><h4 class="font-title-md text-title-md text-primary mb-space-md">Publishing Standards</h4><ul class="space-y-space-xs"><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Print &amp; Binding Guidelines</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Global ISBN Allocation</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Editorial Peer Review</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Illustrated Art Standards</a></li></ul></div><div><h4 class="font-title-md text-title-md text-primary mb-space-md">Author Support &amp; Rights</h4><ul class="space-y-space-xs"><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Copyright Protection</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Royalty &amp; Distribution Terms</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Manuscript Consultation</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Publisher Concierge</a></li></ul></div><div><h4 class="font-title-md text-title-md text-primary mb-space-md">Legal &amp; Compliance</h4><ul class="space-y-space-xs"><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Children's Content Safety Pledge</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Privacy Policy</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Author Service Agreement</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Digital Rights Management</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md border-t border-outline-variant/30"><p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">© 2024 StoryNest Publishing Cooperative Inc. All rights reserved.</p><div class="flex items-center gap-space-lg"><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">verified</span>ISO 2108 Certified Publishing Flow</span><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">lock</span>End-to-End Intellectual Rights Escrow</span></div></div></div></footer></body></html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>StoryNest</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&amp;family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-primary-fixed-variant":"#384760","secondary-container":"#b1f0d6","on-primary":"#ffffff","error":"#ba1a1a","tertiary":"#261800","surface-container-lowest":"#ffffff","surface-container-high":"#ddeaf2","tertiary-fixed":"#ffdea7","surface-container":"#e3f0f8","primary-fixed":"#d4e3ff","secondary":"#2d6955","on-secondary-fixed":"#002117","on-secondary-fixed-variant":"#0e503e","inverse-primary":"#b7c7e5","inverse-on-surface":"#e6f3fb","surface-variant":"#d7e4ec","on-secondary-container":"#336f5b","on-error":"#ffffff","primary":"#091b31","on-surface":"#111d23","secondary-fixed-dim":"#96d3bb","on-surface-variant":"#44474d","error-container":"#ffdad6","surface":"#f4faff","surface-container-low":"#e9f6fd","outline-variant":"#c5c6cd","on-tertiary-container":"#c08f2a","background":"#f4faff","surface-dim":"#cfdce4","tertiary-fixed-dim":"#f4be55","outline":"#75777e","secondary-fixed":"#b1f0d6","on-error-container":"#93000a","on-background":"#111d23","primary-fixed-dim":"#b7c7e5","inverse-surface":"#263238","surface-bright":"#f4faff","tertiary-container":"#402c00","on-tertiary":"#ffffff","on-tertiary-fixed":"#271900","primary-container":"#203047","surface-tint":"#4f5f78","on-primary-fixed":"#0b1c32","surface-container-highest":"#d7e4ec","on-primary-container":"#8898b3","on-secondary":"#ffffff","on-tertiary-fixed-variant":"#5e4200"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","space-md":"1rem","gutter-sm":"1rem","margin-mobile":"1rem","gutter":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","margin":"2.5rem","space-sm":"0.5rem"},"fontFamily":{"headline-lg-mobile":["Merriweather"],"label-sm":["Plus Jakarta Sans"],"body-ui-md":["Plus Jakarta Sans"],"display-hero-mobile":["Merriweather"],"body-ui-sm":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"headline-md":["Merriweather"],"headline-sm":["Merriweather"],"title-md":["Plus Jakarta Sans"],"display-hero":["Merriweather"],"headline-lg":["Merriweather"],"body-reading-lg":["Merriweather"],"label-md":["Plus Jakarta Sans"]},"fontSize":{"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"700"}],"body-ui-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero-mobile":["34px",{"lineHeight":"42px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-ui-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"title-lg":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-md":["26px",{"lineHeight":"34px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"display-hero":["48px",{"lineHeight":"58px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"46px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-reading-lg":["18px",{"lineHeight":"32px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-ui-md text-body-ui-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-sm group text-decoration-none" data-path="home" href="#"><img alt="StoryNest Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASwRVa9YkuFA2_NakiEEtvYpvbLw_8ZQOZjWITwhJqtS3aFmMqBO0UWnBeGgO02L_eIoaicEfQhLgPMWiWrYSOgm107BRHYpK5BoTjS3tigAG3mKRLPYsHm4FvIs8ym2mn2L51EBQBaozpOS5hbq00gTjGz7TGsUA1TBXqd8kAU1jCSI2MX3YEgRdQX0a4GdcMOGhwRo-oQJEaVtO0csBx9akf71WwajHUa-olgh8"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors leading-none">StoryNest</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden lg:inline-block leading-tight mt-0.5">Where Young Minds Read, Create &amp; Grow</span></div></a><div class="hidden xl:flex items-center bg-surface-container-low rounded-xl px-space-sm py-1"><span class="font-label-sm text-label-sm text-on-surface-variant mr-2">Portal:</span><select class="bg-transparent font-label-md text-label-md text-primary font-semibold focus:outline-none cursor-pointer pr-1"><option>Young Reader</option><option>Author Studio</option><option>Educator Desk</option></select></div></div><nav class="hidden 2xl:flex items-center gap-1 shrink-0" data-active-classes="bg-primary-container text-on-primary font-title-md rounded-xl shadow-sm"><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="home" href="#">Home</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="digital-library" href="#">Library</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="workshops-and-sessions" href="#">Workshops</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="literary-activities" href="#">Activities</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="educational-hub" href="#">Education</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="books-and-authors" href="#">Books &amp; Authors</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="publish-your-book" href="#">Publish</a></nav><div class="flex items-center gap-space-sm shrink-0"><button aria-label="Search Catalogue" class="flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><div class="hidden sm:flex items-center bg-surface-container-low rounded-xl p-1"><button class="px-2.5 py-1 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md" type="button">EN</button><button class="px-2.5 py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">हिंदी</button></div><a class="hidden md:inline-flex items-center px-4 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="login" href="#">Sign In</a><a class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-primary-container text-on-primary font-title-md text-title-md hover:bg-primary transition-colors shadow-sm" data-path="digital-library" href="#">Explore</a><a class="flex items-center p-0.5 rounded-full hover:ring-2 hover:ring-primary-container transition-all" data-path="reader-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY1TEqs9gO00PTZzC4y0VohMXU1UDgEbPGeEQQpUG5hcV62pczupHCKCiWq8r3_QWJ7LeyBMHoUy17d6cp0zLzhoK5uei5_4e4naPaN4ReUktkQprbifRu44h1aj4O7DtwE49eZSSObu4vbKBjsxNyjCcwnp0Ln4pF7rzBBMSfuS7jwlT9NyPQN2gxLwuU6KeRh-3K2DdtMNHcqJK40NBWm2rvWS46Fdvj_61wACs"/></a><button aria-label="Open Menu" class="2xl:hidden flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface" type="button"><span class="material-symbols-outlined text-[22px]">menu</span></button></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-320px)]"><div class="flex flex-col w-full px-margin py-space-lg">
+<!-- Top Trust & Compliance Badge Strip -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm mb-space-lg p-space-sm sm:px-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+        COPPA &amp; DPDPA Certified
+      </span>
+<span class="font-label-md text-label-md text-primary font-bold">StoryNest Unified Identity &amp; Child-Safe Gateway</span>
+<span class="hidden md:inline text-on-surface-variant font-label-sm text-label-sm">| 256-bit AES Parent Guarded Sanctuary</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[18px]">lock</span>
+<span class="font-label-sm text-label-sm">Zero Commercial Tracking</span>
+</div>
+</div>
+<!-- Role Selection Segmented Switcher -->
+<div class="mb-space-xl">
+<div class="flex flex-col gap-space-xs mb-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Step 1 • Select Your Portal Identity</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">अपनी भूमिका चुनें</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-primary">Who is stepping into the nest today?</p>
+</div>
+<!-- Segmented Tab Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md" id="role-selector-grid">
+<!-- Role 1: Young Reader (Default Active) -->
+<button class="role-card relative flex flex-col p-space-md rounded-2xl bg-surface-container-lowest shadow-md text-left transition-all duration-200 ring-2 ring-primary" id="role-card-reader" onclick="selectRole('reader')" type="button">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shadow-sm">
+<span aria-label="Little Owl" class="text-2xl" role="img">🦉</span>
+</div>
+<span class="role-badge px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">Active</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary font-bold">Young Reader</h4>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">नन्हा पाठक (Ages 5-14)</span>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-space-xs">Avatars, magical audiobooks, word badges &amp; safe quest logs.</p>
+<div class="mt-space-sm pt-space-xs flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-on-tertiary-container">auto_awesome</span>
+<span>Pen-name safe sandbox</span>
+</div>
+</button>
+<!-- Role 2: Parent / Guardian -->
+<button class="role-card relative flex flex-col p-space-md rounded-2xl bg-surface-container shadow-sm hover:shadow-md text-left transition-all duration-200" id="role-card-parent" onclick="selectRole('parent')" type="button">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-[26px]">shield_person</span>
+</div>
+<span class="role-badge hidden px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">Active</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary font-bold">Parent / Guardian</h4>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">अभिभावक सह-पायलट</span>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-space-xs">Family co-pilot PIN, content filters &amp; explicit COPPA consents.</p>
+<div class="mt-space-sm pt-space-xs flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">family_restroom</span>
+<span>Guardian consent controls</span>
+</div>
+</button>
+<!-- Role 3: Author & Creator -->
+<button class="role-card relative flex flex-col p-space-md rounded-2xl bg-surface-container shadow-sm hover:shadow-md text-left transition-all duration-200" id="role-card-author" onclick="selectRole('author')" type="button">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[26px]">history_edu</span>
+</div>
+<span class="role-badge hidden px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">Active</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary font-bold">Author &amp; Creator</h4>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">लेखक एवं रचनाकार</span>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-space-xs">Editorial workbench, DRM protection &amp; manuscript submission.</p>
+<div class="mt-space-sm pt-space-xs flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">copyright</span>
+<span>Verified author credentials</span>
+</div>
+</button>
+<!-- Role 4: Educator & School -->
+<button class="role-card relative flex flex-col p-space-md rounded-2xl bg-surface-container shadow-sm hover:shadow-md text-left transition-all duration-200" id="role-card-educator" onclick="selectRole('educator')" type="button">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[26px]">local_library</span>
+</div>
+<span class="role-badge hidden px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">Active</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary font-bold">Educator &amp; School</h4>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">शिक्षक एवं विद्यालय</span>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-space-xs">Classroom rosters, reading streaks, printable worksheets &amp; SSO.</p>
+<div class="mt-space-sm pt-space-xs flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">domain_verification</span>
+<span>Google / Clever SSO Ready</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Main Asymmetric Workspace Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Hero & Credibility Anchor Column (5 Columns) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Main Story Sanctuary Welcome Card -->
+<div class="relative overflow-hidden rounded-2xl bg-primary text-on-primary p-space-lg shadow-xl">
+<div class="absolute -right-12 -bottom-12 w-48 h-48 rounded-full bg-secondary/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[24px]">menu_book</span>
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider font-bold">Tactile Paper &amp; Ink Sanctuary</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary leading-tight">Welcome to StoryNest</h2>
+<p class="font-headline-sm text-headline-sm text-secondary-fixed font-normal italic">जहाँ हर कहानी नई दुनिया बनाती है</p>
+<p class="font-body-ui-md text-body-ui-md text-on-primary-container leading-relaxed">
+            A wholesome digital reading habitat built specifically to celebrate boundless imagination, multilingual Indian &amp; global folklore, and respectful creator dignity.
+          </p>
+<!-- Core Feature Bullets -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<div class="flex items-center gap-space-sm p-2 rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">block</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-primary font-bold">Zero Commercial Ad Profiling</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-primary-container">No algorithmic trackers, ad sales, or behavioral cookies.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-2 rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">encrypted</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-primary font-bold">End-to-End Child Privacy Protection</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-primary-container">Pen-names shield identity while saving reading progress safely.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-2 rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">translate</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-primary font-bold">Bilingual Reading Archives</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-primary-container">Seamlessly switch between Hindi (हिंदी) and English titles.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-2 rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">supervisor_account</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-primary font-bold">Verified Guardian Co-Pilot</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-primary-container">Parents hold real-time unlock keys for purchases &amp; community quests.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Badges & Safety Certifications Card -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Audited Compliance Framework</span>
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="flex flex-col items-center text-center p-space-xs rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-1">policy</span>
+<span class="font-label-md text-label-md text-primary font-bold">COPPA</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Safe Harbor Certified</span>
+</div>
+<div class="flex flex-col items-center text-center p-space-xs rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-1">health_and_safety</span>
+<span class="font-label-md text-label-md text-primary font-bold">DPDPA 2023</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Child Charter Verified</span>
+</div>
+<div class="flex flex-col items-center text-center p-space-xs rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-1">approval_delegation</span>
+<span class="font-label-md text-label-md text-primary font-bold">ISO 2108</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ISBN Registered Hub</span>
+</div>
+</div>
+</div>
+<!-- Community Quote Pill -->
+<div class="rounded-xl bg-surface-container p-space-md flex items-center gap-space-sm">
+<img alt="Parent Reviewer" class="w-10 h-10 rounded-full object-cover shrink-0" data-alt="Warm portrait of a smiling Indian mother reading a picture storybook with her daughter in a sunlit warm living room with wooden bookshelves." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOcltGHjg8hBeMGEmo2FIfJr1qyXMcIiUne5pJwPV5GFue7muvj6GhBvdMxxMtK3v3RV8Z9LhLOX8XYc71UI1rwV6vsRIKo6CnT9nlDcDQs68z-ZygrWWKmIokukB-e6vI5id1GZxGDFCDNbIfzXfhFkBVSvgubzM8WwlzWhypburzN1CjhaATfoJSaA8wUI9kDGAKScI5e9ULxmjQvEICkfMWo53hQzYJkmMo0yo"/>
+<div class="flex flex-col">
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface italic">"The pen-name system gives our 8-year-old creative independence while keeping her online identity totally private."</p>
+<span class="font-label-sm text-label-sm text-primary font-bold mt-0.5">— Ananya S., Parent Guardian (Bengaluru)</span>
+</div>
+</div>
+</div>
+<!-- Right Authentication Form Workbench (7 Columns) -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-md flex flex-col gap-space-md">
+<!-- Auth Header with State Toggles -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Step 2 • Identity Clearance</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-0.5" id="form-heading-text">Sign In to Your Story Haven</h3>
+</div>
+<!-- Mode Tabs (Sign In vs Create Account) -->
+<div class="flex p-1 rounded-xl bg-surface-container-low shrink-0">
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary font-title-md text-title-md transition-all shadow-sm" id="tab-btn-signin" onclick="setAuthMode('signin')" type="button">
+              Sign In
+            </button>
+<button class="px-4 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-all" id="tab-btn-signup" onclick="setAuthMode('signup')" type="button">
+              Create Account
+            </button>
+</div>
+</div>
+<!-- Role Context Dynamic Banner -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low" id="role-context-banner">
+<div class="flex items-center gap-space-sm">
+<span class="text-xl" id="role-context-icon">🦉</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold" id="role-context-title">Young Reader Mode</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="role-context-desc">Reading badges, story studio access, and avatar customizer</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold">Safe Sandbox</span>
+</div>
+<!-- Google Single Sign-On Button with Child-Safe Token Tag -->
+<div class="flex flex-col gap-space-xs">
+<button class="w-full flex items-center justify-center gap-space-sm py-3 px-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors text-primary font-title-md text-title-md shadow-sm" type="button">
+<!-- Google Multicolor Inline SVG -->
+<svg class="w-5 h-5 shrink-0" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+<span>Continue with Google</span>
+</button>
+<div class="flex items-center gap-1.5 px-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">family_restroom</span>
+<span>For Young Readers: Automatically pairs with verified guardian consent token.</span>
+</div>
+</div>
+<!-- Divider -->
+<div class="relative flex items-center justify-center my-space-xs">
+<div class="w-full h-px bg-surface-container-high"></div>
+<span class="absolute bg-surface-container-lowest px-3 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+            or continue with pen-name &amp; safety passkey
+          </span>
+</div>
+<!-- Form Element -->
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); handleAuthSubmit();">
+<!-- Registration extra field: Parent Email (Conditional for Signup) -->
+<div class="hidden flex-col gap-1.5" id="signup-extra-field">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-primary font-semibold" for="guardian-email">Guardian / Parent Email Address</label>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Required for Consent Verification</span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">mark_email_read</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-ui-md text-body-ui-md placeholder:text-on-surface-variant/60 focus:bg-surface-container-low focus:outline-none" id="guardian-email" placeholder="guardian.parent@domain.com" type="email"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">We will dispatch an immediate one-click authorization request to verify this account.</span>
+</div>
+<!-- Identifier Field -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-primary font-semibold" for="identity-field">
+<span id="identity-label-text">Child Pen-Name, Email or Family ID</span>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="identity-badge-text">e.g. StarReader42</span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]" id="identity-icon">badge</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-ui-md text-body-ui-md placeholder:text-on-surface-variant/60 focus:bg-surface-container-low focus:outline-none" id="identity-field" placeholder="Choose a fun pseudonym (e.g. BraveBookworm)" required="" type="text"/>
+</div>
+<!-- Helper Text with Shield Prompt -->
+<div class="flex items-start gap-1.5 text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] shrink-0 mt-0.5">privacy_tip</span>
+<span>Child Safety Mandate: Never use your full real name, phone number, or school name in your pen-name.</span>
+</div>
+</div>
+<!-- Password / Passkey Field -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-primary font-semibold" for="passkey-field">Passkey or Secret Password</label>
+<a class="font-label-sm text-label-sm text-secondary hover:underline font-bold" href="#">Forgot Passkey?</a>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">key</span>
+<input class="w-full pl-10 pr-12 py-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-ui-md text-body-ui-md placeholder:text-on-surface-variant/60 focus:bg-surface-container-low focus:outline-none" id="passkey-field" placeholder="Enter your secret StoryNest phrase" required="" type="password"/>
+<button aria-label="Toggle password view" class="absolute right-3 text-on-surface-variant hover:text-on-surface" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="eye-icon">visibility</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recommended: 8+ characters combining friendly book words and numbers (e.g., FlyingPencil#7)</span>
+</div>
+<!-- Checkbox Options -->
+<div class="flex flex-col gap-2 pt-1">
+<label class="flex items-center gap-space-sm cursor-pointer select-none">
+<input checked="" class="w-5 h-5 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface">Remember this device in <strong>Child-Safe Sandbox Mode</strong> (auto-locks payments &amp; external links)</span>
+</label>
+<label class="flex items-center gap-space-sm cursor-pointer select-none">
+<input class="w-5 h-5 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Show story titles in dual bilingual format (English / हिंदी) on launch</span>
+</label>
+</div>
+<!-- Primary Submit Action Button -->
+<button class="w-full flex items-center justify-center gap-space-sm py-3.5 px-space-lg rounded-xl bg-primary hover:bg-primary-container text-on-primary font-title-lg text-title-lg transition-all shadow-md active:translate-y-0.5" id="submit-auth-btn" type="submit">
+<span id="btn-text">Enter StoryNest Sanctuary</span>
+<span class="material-symbols-outlined text-[22px]">arrow_forward</span>
+</button>
+</form>
+<!-- Child Safety Notice Callout Box -->
+<div class="rounded-xl bg-tertiary-fixed/30 p-space-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-container text-[24px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-title-md text-title-md text-tertiary font-bold">Parental Authorization &amp; Under-13 Safety Pledge</span>
+<p class="font-body-ui-sm text-body-ui-sm text-tertiary">
+              In strict accordance with COPPA regulations and the Digital Personal Data Protection Act (DPDPA), readers under 13 require an active guardian verification token before participating in live workshops, author QA lounges, or reader forums.
+            </p>
+</div>
+</div>
+<!-- Fast Links & Auxiliary Portals Strip -->
+<div class="pt-space-sm flex flex-wrap items-center justify-between gap-space-sm font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary flex items-center gap-1 transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">contact_support</span>
+<span>Need Guardian Consent Help?</span>
+</a>
+<a class="hover:text-primary flex items-center gap-1 transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">draw</span>
+<span>Author Studio Direct Portal</span>
+</a>
+<a class="hover:text-primary flex items-center gap-1 transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">school</span>
+<span>School Roster SSO (Clever / ClassLink)</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive State Management Script -->
+<script>
+    let currentRole = 'reader';
+    let currentMode = 'signin';
+
+    const roleData = {
+      reader: {
+        title: 'Young Reader Mode',
+        icon: '🦉',
+        desc: 'Reading quests, audio stories, safe pen-name sandbox',
+        label: 'Child Pen-Name, Email or Family ID',
+        placeholder: 'Choose a fun pseudonym (e.g. BraveBookworm)',
+        badge: 'e.g. StarReader42',
+        identityIcon: 'badge'
+      },
+      parent: {
+        title: 'Parent & Guardian Portal',
+        icon: '🛡️',
+        desc: 'Family co-pilot PIN, consent settings & screen-time controls',
+        label: 'Guardian Email or Family Master ID',
+        placeholder: 'parent@domain.com',
+        badge: 'Verified Adult Token',
+        identityIcon: 'mark_email_read'
+      },
+      author: {
+        title: 'Author & Illustrator Studio',
+        icon: '🖋️',
+        desc: 'Manuscript dashboard, rights management & readership analytics',
+        label: 'Creator Portfolio Email or Literary Agent ID',
+        placeholder: 'author@storynest.publishers',
+        badge: 'IP-Protected Workbench',
+        identityIcon: 'history_edu'
+      },
+      educator: {
+        title: 'Educator & School Desk',
+        icon: '📚',
+        desc: 'School division roster sync, curriculum worksheets & reading logs',
+        label: 'School District Email / Educator ID',
+        placeholder: 'teacher@school.edu.in',
+        badge: 'Academic License',
+        identityIcon: 'school'
+      }
+    };
+
+    function selectRole(roleKey) {
+      currentRole = roleKey;
+      const allRoles = ['reader', 'parent', 'author', 'educator'];
+      
+      allRoles.forEach(r => {
+        const card = document.getElementById('role-card-' + r);
+        const badge = card.querySelector('.role-badge');
+        if (r === roleKey) {
+          card.classList.add('bg-surface-container-lowest', 'shadow-md', 'ring-2', 'ring-primary');
+          card.classList.remove('bg-surface-container', 'shadow-sm');
+          badge.classList.remove('hidden');
+        } else {
+          card.classList.remove('bg-surface-container-lowest', 'shadow-md', 'ring-2', 'ring-primary');
+          card.classList.add('bg-surface-container', 'shadow-sm');
+          badge.classList.add('hidden');
+        }
+      });
+
+      // Update contextual form labels
+      const data = roleData[roleKey];
+      document.getElementById('role-context-icon').textContent = data.icon;
+      document.getElementById('role-context-title').textContent = data.title;
+      document.getElementById('role-context-desc').textContent = data.desc;
+      document.getElementById('identity-label-text').textContent = data.label;
+      document.getElementById('identity-badge-text').textContent = data.badge;
+      document.getElementById('identity-field').setAttribute('placeholder', data.placeholder);
+      document.getElementById('identity-icon').textContent = data.identityIcon;
+    }
+
+    function setAuthMode(mode) {
+      currentMode = mode;
+      const signinBtn = document.getElementById('tab-btn-signin');
+      const signupBtn = document.getElementById('tab-btn-signup');
+      const extraField = document.getElementById('signup-extra-field');
+      const heading = document.getElementById('form-heading-text');
+      const submitText = document.getElementById('btn-text');
+
+      if (mode === 'signin') {
+        signinBtn.className = "px-4 py-2 rounded-lg bg-primary-container text-on-primary font-title-md text-title-md transition-all shadow-sm";
+        signupBtn.className = "px-4 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-all";
+        extraField.classList.add('hidden');
+        extraField.classList.remove('flex');
+        heading.textContent = "Sign In to Your Story Haven";
+        submitText.textContent = "Enter StoryNest Sanctuary";
+      } else {
+        signupBtn.className = "px-4 py-2 rounded-lg bg-primary-container text-on-primary font-title-md text-title-md transition-all shadow-sm";
+        signinBtn.className = "px-4 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-all";
+        extraField.classList.remove('hidden');
+        extraField.classList.add('flex');
+        heading.textContent = "Create Your Safe StoryNest Account";
+        submitText.textContent = "Register & Request Guardian Pass";
+      }
+    }
+
+    function togglePasswordVisibility() {
+      const passField = document.getElementById('passkey-field');
+      const eyeIcon = document.getElementById('eye-icon');
+      if (passField.type === 'password') {
+        passField.type = 'text';
+        eyeIcon.textContent = 'visibility_off';
+      } else {
+        passField.type = 'password';
+        eyeIcon.textContent = 'visibility';
+      }
+    }
+
+    function handleAuthSubmit() {
+      const btn = document.getElementById('submit-auth-btn');
+      const originalText = document.getElementById('btn-text').textContent;
+      document.getElementById('btn-text').textContent = "Securing Identity...";
+      btn.classList.add('opacity-80', 'pointer-events-none');
+
+      setTimeout(() => {
+        document.getElementById('btn-text').textContent = "Passkey Verified! Entering...";
+        btn.classList.remove('bg-primary');
+        btn.classList.add('bg-secondary');
+        setTimeout(() => {
+          document.getElementById('btn-text').textContent = originalText;
+          btn.classList.remove('opacity-80', 'pointer-events-none', 'bg-secondary');
+          btn.classList.add('bg-primary');
+          alert('Welcome to StoryNest! Role: ' + roleData[currentRole].title + ' | Mode: ' + (currentMode === 'signin' ? 'Sign In' : 'Account Created'));
+        }, 800);
+      }, 700);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl mt-space-xl"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg pb-space-xl"><div class="lg:col-span-1 flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary">StoryNest</span></div><p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Fostering a lifelong love for reading in young minds while empowering independent authors with dignified, transparent publishing tools.</p><div class="flex items-center gap-space-xs mt-space-sm"><span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span><span class="font-label-sm text-label-sm text-secondary font-semibold">Child Safe Certified</span></div></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-bold">Young Readers &amp; Parents</h3><ul class="flex flex-col gap-2"><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="digital-library" href="#">Digital Library</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="literary-activities" href="#">Story Challenges</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="reading-tracker" href="#">Reading Tracker</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="child-safety" href="#">Child Safety Pledge</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-bold">Workshops &amp; Education</h3><ul class="flex flex-col gap-2"><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="workshops-and-sessions" href="#">Creative Writing</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="educational-hub" href="#">Interactive Quizzes</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="educational-hub" href="#">Educator Worksheets</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="workshops-and-sessions" href="#">Google Meet Sessions</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-bold">Authors &amp; Creators</h3><ul class="flex flex-col gap-2"><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="publish-your-book" href="#">Publish Your Book</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="publish-your-book" href="#">Manuscript Submission</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="author-workspace" href="#">Author Workspace</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="books-and-authors" href="#">Creator Directory</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-bold">Community &amp; Trust</h3><ul class="flex flex-col gap-2"><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">About StoryNest</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="child-safety" href="#">Child Safety &amp; Privacy</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">WCAG 2.2 Accessibility</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Contact &amp; Support</a></li></ul></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant"><span class="font-body-ui-sm text-body-ui-sm">© 2025 StoryNest Platform Inc. All rights reserved. Compliant with COPPA, GDPR-K and student ethical safety mandates.</span><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm">Bilingual Edition (EN / HI)</span></div></div></div></footer></body></html>

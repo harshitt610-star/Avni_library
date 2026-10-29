@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>StoryNest</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&amp;family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-primary-fixed-variant":"#384760","secondary-container":"#b1f0d6","on-primary":"#ffffff","error":"#ba1a1a","tertiary":"#261800","surface-container-lowest":"#ffffff","surface-container-high":"#ddeaf2","tertiary-fixed":"#ffdea7","surface-container":"#e3f0f8","primary-fixed":"#d4e3ff","secondary":"#2d6955","on-secondary-fixed":"#002117","on-secondary-fixed-variant":"#0e503e","inverse-primary":"#b7c7e5","inverse-on-surface":"#e6f3fb","surface-variant":"#d7e4ec","on-secondary-container":"#336f5b","on-error":"#ffffff","primary":"#091b31","on-surface":"#111d23","secondary-fixed-dim":"#96d3bb","on-surface-variant":"#44474d","error-container":"#ffdad6","surface":"#f4faff","surface-container-low":"#e9f6fd","outline-variant":"#c5c6cd","on-tertiary-container":"#c08f2a","background":"#f4faff","surface-dim":"#cfdce4","tertiary-fixed-dim":"#f4be55","outline":"#75777e","secondary-fixed":"#b1f0d6","on-error-container":"#93000a","on-background":"#111d23","primary-fixed-dim":"#b7c7e5","inverse-surface":"#263238","surface-bright":"#f4faff","tertiary-container":"#402c00","on-tertiary":"#ffffff","on-tertiary-fixed":"#271900","primary-container":"#203047","surface-tint":"#4f5f78","on-primary-fixed":"#0b1c32","surface-container-highest":"#d7e4ec","on-primary-container":"#8898b3","on-secondary":"#ffffff","on-tertiary-fixed-variant":"#5e4200"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","space-md":"1rem","gutter-sm":"1rem","margin-mobile":"1rem","gutter":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","margin":"2.5rem","space-sm":"0.5rem"},"fontFamily":{"headline-lg-mobile":["Merriweather"],"label-sm":["Plus Jakarta Sans"],"body-ui-md":["Plus Jakarta Sans"],"display-hero-mobile":["Merriweather"],"body-ui-sm":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"headline-md":["Merriweather"],"headline-sm":["Merriweather"],"title-md":["Plus Jakarta Sans"],"display-hero":["Merriweather"],"headline-lg":["Merriweather"],"body-reading-lg":["Merriweather"],"label-md":["Plus Jakarta Sans"]},"fontSize":{"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"700"}],"body-ui-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero-mobile":["34px",{"lineHeight":"42px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-ui-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"title-lg":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-md":["26px",{"lineHeight":"34px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"display-hero":["48px",{"lineHeight":"58px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"46px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-reading-lg":["18px",{"lineHeight":"32px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-ui-md text-body-ui-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-sm group text-decoration-none" data-path="home" href="#"><img alt="StoryNest Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASwRVa9YkuFA2_NakiEEtvYpvbLw_8ZQOZjWITwhJqtS3aFmMqBO0UWnBeGgO02L_eIoaicEfQhLgPMWiWrYSOgm107BRHYpK5BoTjS3tigAG3mKRLPYsHm4FvIs8ym2mn2L51EBQBaozpOS5hbq00gTjGz7TGsUA1TBXqd8kAU1jCSI2MX3YEgRdQX0a4GdcMOGhwRo-oQJEaVtO0csBx9akf71WwajHUa-olgh8"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors leading-none">StoryNest</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden lg:inline-block leading-tight mt-0.5">Where Young Minds Read, Create &amp; Grow</span></div></a><div class="hidden xl:flex items-center bg-surface-container-low rounded-xl px-space-sm py-1"><span class="font-label-sm text-label-sm text-on-surface-variant mr-2">Portal:</span><select class="bg-transparent font-label-md text-label-md text-primary font-semibold focus:outline-none cursor-pointer pr-1"><option>Young Reader</option><option>Author Studio</option><option>Educator Desk</option></select></div></div><nav class="hidden 2xl:flex items-center gap-1 shrink-0" data-active-classes="bg-primary-container text-on-primary font-title-md rounded-xl shadow-sm"><a aria-current="page" class="px-3 py-2 transition-colors bg-primary-container text-on-primary font-title-md rounded-xl shadow-sm" data-path="home" href="#">Home</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="digital-library" href="#">Library</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="workshops-and-sessions" href="#">Workshops</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="literary-activities" href="#">Activities</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="educational-hub" href="#">Education</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="books-and-authors" href="#">Books &amp; Authors</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="publish-your-book" href="#">Publish</a></nav><div class="flex items-center gap-space-sm shrink-0"><button aria-label="Search Catalogue" class="flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><div class="hidden sm:flex items-center bg-surface-container-low rounded-xl p-1"><button class="px-2.5 py-1 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md" type="button">EN</button><button class="px-2.5 py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">हिंदी</button></div><a class="hidden md:inline-flex items-center px-4 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="login" href="#">Sign In</a><a class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-primary-container text-on-primary font-title-md text-title-md hover:bg-primary transition-colors shadow-sm" data-path="digital-library" href="#">Explore</a><a class="flex items-center p-0.5 rounded-full hover:ring-2 hover:ring-primary-container transition-all" data-path="reader-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY1TEqs9gO00PTZzC4y0VohMXU1UDgEbPGeEQQpUG5hcV62pczupHCKCiWq8r3_QWJ7LeyBMHoUy17d6cp0zLzhoK5uei5_4e4naPaN4ReUktkQprbifRu44h1aj4O7DtwE49eZSSObu4vbKBjsxNyjCcwnp0Ln4pF7rzBBMSfuS7jwlT9NyPQN2gxLwuU6KeRh-3K2DdtMNHcqJK40NBWm2rvWS46Fdvj_61wACs"/></a><button aria-label="Open Menu" class="2xl:hidden flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface" type="button"><span class="material-symbols-outlined text-[22px]">menu</span></button></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-320px)]"><div class="flex flex-col w-full overflow-hidden">
+<!-- HERO SECTION -->
+<section class="relative w-full bg-surface-container-low px-margin py-space-xl overflow-hidden">
+<!-- Atmospheric Ambient Elements -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-24 w-80 h-80 rounded-full bg-tertiary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1320px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+<!-- Left Content Column -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+<!-- Dual Audience Badges -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-sm">
+<span class="text-tertiary-fixed-dim">★</span> For Young Readers &amp; Families
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">edit_note</span> For Independent Writers &amp; Authors
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+            Bilingual: हिंदी &amp; English Stories
+          </span>
+</div>
+<!-- Headline -->
+<h1 class="font-display-hero text-display-hero text-primary max-w-2xl tracking-tight leading-tight">
+          Every Great Story Begins with a Little <span class="text-secondary italic underline decoration-tertiary-fixed-dim/60 underline-offset-8">Imagination.</span>
+</h1>
+<!-- Subtitle -->
+<p class="font-body-reading-lg text-body-reading-lg text-on-surface-variant max-w-xl">
+          Discover wonderful books, build creative skills, join inspiring workshops, and bring your own stories to life in a safe, nurturing digital haven.
+        </p>
+<!-- CTA Cluster -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary-container text-on-primary font-title-lg text-title-lg shadow-md hover:bg-primary transition-all active:translate-y-px" data-path="digital-library" href="#">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+            Explore the Library
+          </a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-secondary text-on-secondary font-title-lg text-title-lg shadow-sm hover:opacity-95 transition-all active:translate-y-px" data-path="publish-your-book" href="#">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+            Publish with StoryNest
+          </a>
+</div>
+<!-- Trust Mini-Proof -->
+<div class="flex items-center gap-space-md pt-space-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-label-md text-label-md">100% Ad-Free &amp; COPPA Safe</span>
+</div>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">star</span>
+<span class="font-label-md text-label-md">Over 12,000+ Stories Read</span>
+</div>
+</div>
+</div>
+<!-- Right Visual Column: Editorial tactile stack showcase -->
+<div class="lg:col-span-5 relative flex justify-center">
+<div class="relative w-full max-w-[420px] aspect-[4/5] rounded-3xl bg-surface-container-lowest p-6 shadow-xl flex flex-col justify-between overflow-hidden">
+<!-- Background Cover Collage -->
+<div class="absolute inset-0 opacity-15 bg-gradient-to-tr from-secondary-container via-surface-container to-tertiary-fixed pointer-events-none"></div>
+<!-- Top Badge & Bilingual Tag -->
+<div class="relative z-10 flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">
+              Featured Children’s Anthology
+            </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm">
+              हिं • EN
+            </span>
+</div>
+<!-- Featured Illustrated Art Mockup -->
+<div class="relative z-10 my-4 flex-1 flex flex-col items-center justify-center text-center">
+<div class="w-36 h-48 rounded-xl bg-primary-container text-on-primary shadow-lg flex flex-col items-center justify-between p-3 rotate-[-3deg] hover:rotate-0 transition-transform duration-300">
+<span class="material-symbols-outlined text-[32px] text-tertiary-fixed">forest</span>
+<p class="font-headline-sm text-headline-sm text-center leading-tight">The Banyan Forest</p>
+<span class="font-label-sm text-label-sm text-on-primary-container">Illustrated Tale</span>
+</div>
+<!-- Secondary overlapping floating card -->
+<div class="absolute right-2 bottom-6 w-32 h-40 rounded-xl bg-surface-container-high text-primary shadow-md flex flex-col items-center justify-between p-2.5 rotate-[6deg] hover:rotate-0 transition-transform duration-300">
+<span class="material-symbols-outlined text-[24px] text-secondary">rocket_launch</span>
+<p class="font-title-md text-title-md text-center leading-snug">Tara's Journey</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sci-Fi Youth</span>
+</div>
+</div>
+<!-- Bottom Reader Pulse -->
+<div class="relative z-10 p-3 rounded-2xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md leading-none">Weekly Habit Challenge</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Day 4 of 7 completed</span>
+</div>
+</div>
+<span class="font-title-md text-title-md text-secondary">85%</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5 CORE PILLARS: INTERACTIVE GATEWAY (READ • IMAGINE • WRITE • LEARN • PUBLISH) -->
+<section class="w-full bg-surface-container-lowest px-margin py-space-lg shadow-sm">
+<div class="max-w-[1320px] mx-auto">
+<div class="text-center mb-6">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">The StoryNest Ecosystem</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-1">Five Pathways for Inquiring Minds</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-space-sm">
+<!-- Pillar 1: READ -->
+<a class="group p-4 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col items-center text-center" data-path="digital-library" href="#">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary group-hover:scale-110 transition-transform shadow-sm mb-3">
+<span class="material-symbols-outlined text-[24px]">local_library</span>
+</div>
+<span class="font-title-lg text-title-lg text-primary font-bold">READ</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">Curated, child-first digital book collections.</span>
+</a>
+<!-- Pillar 2: IMAGINE -->
+<a class="group p-4 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col items-center text-center" data-path="literary-activities" href="#">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-secondary group-hover:scale-110 transition-transform shadow-sm mb-3">
+<span class="material-symbols-outlined text-[24px]">psychology_alt</span>
+</div>
+<span class="font-title-lg text-title-lg text-primary font-bold">IMAGINE</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">Story prompts, prompt cards &amp; audio journeys.</span>
+</a>
+<!-- Pillar 3: WRITE -->
+<a class="group p-4 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col items-center text-center" data-path="author-workspace" href="#">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-tertiary-fixed-dim group-hover:scale-110 transition-transform shadow-sm mb-3">
+<span class="material-symbols-outlined text-[24px]">draw</span>
+</div>
+<span class="font-title-lg text-title-lg text-primary font-bold">WRITE</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">Guided creator canvases for budding storytellers.</span>
+</a>
+<!-- Pillar 4: LEARN -->
+<a class="group p-4 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col items-center text-center" data-path="workshops-and-sessions" href="#">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-on-primary-container group-hover:scale-110 transition-transform shadow-sm mb-3">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<span class="font-title-lg text-title-lg text-primary font-bold">LEARN</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">Live Google Meet masterclasses &amp; author sessions.</span>
+</a>
+<!-- Pillar 5: PUBLISH -->
+<a class="group p-4 rounded-2xl bg-secondary-fixed/50 hover:bg-secondary-fixed transition-all flex flex-col items-center text-center col-span-2 md:col-span-1" data-path="publish-your-book" href="#">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-secondary group-hover:scale-110 transition-transform shadow-sm mb-3">
+<span class="material-symbols-outlined text-[24px]">publish</span>
+</div>
+<span class="font-title-lg text-title-lg text-on-secondary-fixed font-bold">PUBLISH</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-secondary-fixed-variant mt-1">Self-publishing studio with transparent guidance.</span>
+</a>
+</div>
+</div>
+</section>
+<!-- FEATURED READING CATEGORIES (CHILDREN'S SHOWCASE) -->
+<section class="w-full px-margin py-space-xl">
+<div class="max-w-[1320px] mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Ages &amp; Curations</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Explore by Story World</h2>
+</div>
+<a class="inline-flex items-center gap-1 font-title-md text-title-md text-secondary hover:underline" data-path="digital-library" href="#">
+          View all genres
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Category Card 1 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-56 group cursor-pointer">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">auto_stories</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Ages 4–7</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Picture Books &amp; Fairy Tales</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant line-clamp-2">Lush visuals, gentle bedtimes, and magical moral discovery.</p>
+</div>
+</div>
+<!-- Category Card 2 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-56 group cursor-pointer">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[22px]">pets</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed/50 font-label-sm text-label-sm text-on-secondary-fixed-variant">Ages 7–10</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Adventure &amp; Folk Tales / पंचतंत्र</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant line-clamp-2">Timeless Indian folklore, jungle quests, and moral wisdom.</p>
+</div>
+</div>
+<!-- Category Card 3 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-56 group cursor-pointer">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">biotech</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Ages 9–12</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Mystery &amp; Science Discovery</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant line-clamp-2">Clever young detectives, space mysteries, and STEM thrillers.</p>
+</div>
+</div>
+<!-- Category Card 4 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-56 group cursor-pointer">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[22px]">edit_note</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/40 font-label-sm text-label-sm text-on-tertiary-fixed-variant">Ages 12+</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Poetry &amp; Young Adult Fiction</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant line-clamp-2">Deep prose, lyrical verses, and coming-of-age journeys.</p>
+</div>
+</div>
+<!-- Category Card 5 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-56 group cursor-pointer">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-variant flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">translate</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-variant font-label-sm text-label-sm text-primary">All Ages</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Bilingual &amp; Hindi Literature</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant line-clamp-2">सचित्र कहानियां, रोचक बाल साहित्य, और दोनों भाषाओं में आनंद।</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- POPULAR CHILDREN'S BOOKS CAROUSEL / GRID -->
+<section class="w-full bg-surface-container-low px-margin py-space-xl">
+<div class="max-w-[1320px] mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Editor's Picks</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Beloved Titles on the Shelf</h2>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Previous Books" class="w-10 h-10 rounded-xl bg-surface-container-lowest text-primary shadow-sm hover:bg-surface-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button aria-label="Next Books" class="w-10 h-10 rounded-xl bg-surface-container-lowest text-primary shadow-sm hover:bg-surface-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Book Card 1 -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="relative aspect-[3/4] w-full rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Charming watercolor cover illustration of a young Indian boy leaning against an ancient, sprawling banyan tree under a soft twilight starry sky, storybook art style with warm glowing lanterns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdOtJHSwYoQqDUOA4tAAyicrk-blRuBtNd4EMbFgr1qGt8RrsbqLhL4nl-1yDpjPS61Sd7LoqD-GEqT-aRcIfdJ5o-EhiiFr-MuiApeAY3TzCuie400lTeINqlmbEdJj7GOM9iW3ouMITkcNATAdU4AecP2hUxuNzbcsuDcESQ7mUvRT4DCJy65n-b-PB0Ij6njkpL4LhqD2GYIHkkWXJBTrd-Tx_rS-E7SLnoNZk"/>
+<span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary shadow-sm backdrop-blur-sm">Ages 7–10</span>
+<span class="absolute top-2 right-2 px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">Bilingual</span>
+</div>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim text-sm mb-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-title-md text-title-md text-primary">4.9</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">(412 reads)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-snug group-hover:text-secondary transition-colors">The Boy Who Spoke to Banyan Trees</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">By Aarav Verma</p>
+<div class="mt-4 pt-3 flex items-center justify-between border-none">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">12 Chapters</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-title-md text-title-md hover:bg-primary-container hover:text-on-primary transition-colors" type="button">Read Preview</button>
+</div>
+</div>
+<!-- Book Card 2 -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="relative aspect-[3/4] w-full rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Children book cover showing a curious girl in a cozy handmade spacesuit gazing at cosmic constellations, vibrant soft pastels, whimsical retro children illustration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvnFhwZdpmJm__qGlmK6GOkq2b40J07oNEddFBEJXYVXfxYG4xRVp-vewDN5PvkOe-EH480aEb-kVPK5IzxQLqjmofVYpsDMUK45Gl2XoCoPA2ybgFZgnT-q8YaGPvwb5LUzz9AVhQTq6ZAi-IahnWLt2483IlcTJIDUV5J5u_e7cXhq1iifuGGJdPZyeiEGxecMRlcAGpL8JRzy_VQUxaxJkVgPjSCuuw2Ag8YVk"/>
+<span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary shadow-sm backdrop-blur-sm">Ages 9–12</span>
+<span class="absolute top-2 right-2 px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm">English</span>
+</div>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim text-sm mb-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-title-md text-title-md text-primary">4.8</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">(298 reads)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-snug group-hover:text-secondary transition-colors">Tara's Stellar Journey</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">By Dr. Meera Nambiar</p>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">8 Chapters</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-title-md text-title-md hover:bg-primary-container hover:text-on-primary transition-colors" type="button">Read Preview</button>
+</div>
+</div>
+<!-- Book Card 3 -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="relative aspect-[3/4] w-full rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Folk art illustration of animals around a peaceful forest pond, depicting the Panchatantra fable with modern soothing warm earth tones and textured paper grain." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh41ohNaNOSCzo-jZDOGYZE6sIV0TdIqUmBL4utw0p1WDdkezicjv4NlpYXa90pJWzCv7k_KWDsOHnioz_C_P9gdpryiltD3CPnqi464iwOrasUTWFd4FgMLnI_96f-rXRYznAvfGXUa43wMFJRLhotmuMuMC5bVQmWFZ_6FiEE2EozgzbDSXuLq2ZkoUPllGIITm5dUQK-To5buPHR8Eg2jo-5YCq03YcFUFsi7E"/>
+<span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary shadow-sm backdrop-blur-sm">Ages 6–11</span>
+<span class="absolute top-2 right-2 px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">हिंदी</span>
+</div>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim text-sm mb-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-title-md text-title-md text-primary">5.0</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">(864 reads)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-snug group-hover:text-secondary transition-colors">पंचतंत्र की अमर गाथाएं</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">संपादक: राजेश त्रिपाठी</p>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">18 लघु कथाएं</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-title-md text-title-md hover:bg-primary-container hover:text-on-primary transition-colors" type="button">Read Preview</button>
+</div>
+</div>
+<!-- Book Card 4 -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="relative aspect-[3/4] w-full rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Intricate editorial book cover featuring an antique glowing golden quill flying above an enchanted library of endless bookshelves, atmospheric deep navy and amber lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTOm3jp5VWjfN9eq6UoIJryuustnwX-1aDR1p4P3hZEG8WnTe1DgNH0-mwlDVK4ZyVl78hK0VB7UG7JcA-KZlB0wj9GwTPSj6gvUWDXxN1s3COhs4tJ7DZw1P_EI52P8547L_B7pgb5O8nkd7UpCFthI7JDgonkT6lc7cU_Xy8JUgOSoXz51m_rJ-ol_5UgYnCehWPs6Bdxq96X2OAiUkxjr7XF0uDRFMRvT6SYTQ"/>
+<span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary shadow-sm backdrop-blur-sm">Ages 11–15</span>
+<span class="absolute top-2 right-2 px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm">English</span>
+</div>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim text-sm mb-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-title-md text-title-md text-primary">4.9</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">(519 reads)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-snug group-hover:text-secondary transition-colors">The Whispering Quill</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">By Sunita Sharma</p>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">15 Chapters</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-title-md text-title-md hover:bg-primary-container hover:text-on-primary transition-colors" type="button">Read Preview</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- UPCOMING INTERACTIVE WORKSHOPS (GOOGLE MEET INTEGRATED) -->
+<section class="w-full px-margin py-space-xl">
+<div class="max-w-[1320px] mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-bold">Live Virtual Classrooms</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Upcoming Interactive Workshops</h2>
+<p class="font-body-ui-md text-body-ui-md text-on-surface-variant mt-0.5">Small batches, live mentor feedback, and secure video meetups.</p>
+</div>
+<a class="inline-flex items-center gap-1 font-title-md text-title-md text-secondary hover:underline" data-path="workshops-and-sessions" href="#">
+          View full calendar
+          <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Workshop 1 -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">videocam</span> Google Meet Live
+              </span>
+<span class="font-label-sm text-label-sm text-error font-bold">4 Spots Left</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Little Wordsmiths: Creative Character Building</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mb-4">Learn how to make protagonists with flaws, dreams, and quirky speech habits.</p>
+<div class="space-y-2 mb-6">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+                Saturday, 10:00 AM IST (60 mins)
+              </div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">person</span>
+                Ages 8–12 • Mentored by Rohan Kapoor
+              </div>
+</div>
+</div>
+<button class="w-full py-3 rounded-xl bg-primary-container text-on-primary font-title-md text-title-md hover:bg-primary transition-colors flex items-center justify-center gap-2" type="button">
+            Reserve Spot (Free)
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Workshop 2 -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">videocam</span> Google Meet Live
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim font-bold">Filling Fast</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Rhyme &amp; Rhythm: Poetry for Beginners</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mb-4">Unlocking cadence, imagery, and meter in both English and Hindi couplets.</p>
+<div class="space-y-2 mb-6">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+                Sunday, 4:00 PM IST (75 mins)
+              </div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">person</span>
+                Ages 10–14 • Mentored by Dr. Ananya Sen
+              </div>
+</div>
+</div>
+<button class="w-full py-3 rounded-xl bg-primary-container text-on-primary font-title-md text-title-md hover:bg-primary transition-colors flex items-center justify-center gap-2" type="button">
+            Reserve Spot (Free)
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Workshop 3 -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">videocam</span> Google Meet Live
+              </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Open Batch</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Writing Your First Fantasy Chapter</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mb-4">For young adults and debut authors looking to construct believable mythologies.</p>
+<div class="space-y-2 mb-6">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+                Next Tuesday, 6:30 PM IST (90 mins)
+              </div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">person</span>
+                Young Adults &amp; Debuts • Mentored by Sunita Sharma
+              </div>
+</div>
+</div>
+<button class="w-full py-3 rounded-xl bg-primary-container text-on-primary font-title-md text-title-md hover:bg-primary transition-colors flex items-center justify-center gap-2" type="button">
+            Reserve Spot (Free)
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- LITERARY COMPETITIONS & ONGOING ACTIVITIES -->
+<section class="w-full bg-surface-container-low px-margin py-space-xl">
+<div class="max-w-[1320px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Flagship Contest Banner Card -->
+<div class="lg:col-span-8 rounded-3xl bg-surface-container-lowest p-8 shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="relative z-10">
+<div class="flex flex-wrap items-center gap-2 mb-3">
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold">Annual Flagship Contest</span>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Verified Child-Safe Moderation</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Certificates for All Participants</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary max-w-xl">National Young Storyteller Cup 2025</h3>
+<p class="font-body-reading-lg text-body-reading-lg text-on-surface-variant max-w-lg mt-2">
+            Submit your original short tale (500–1,500 words) in English or Hindi. Top entries will be published in the printed StoryNest Young Anthology 2025!
+          </p>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 my-6">
+<div class="p-3 rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Deadline</span>
+<p class="font-title-lg text-title-lg text-error font-bold">15 Days Left</p>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Eligibility</span>
+<p class="font-title-lg text-title-lg text-primary font-bold">Ages 8–16</p>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Entry Fee</span>
+<p class="font-title-lg text-title-lg text-secondary font-bold">100% Free</p>
+</div>
+</div>
+</div>
+<div class="relative z-10 flex flex-wrap items-center gap-space-sm pt-2">
+<button class="px-6 py-3 rounded-xl bg-secondary text-on-secondary font-title-md text-title-md shadow-sm hover:opacity-95 transition-all" type="button">Submit Short Story</button>
+<a class="font-title-md text-title-md text-primary hover:underline px-3 py-2" data-path="literary-activities" href="#">Competition Guidelines &amp; Rubric</a>
+</div>
+</div>
+<!-- Weekly Flash Fiction Prompt Side Card -->
+<div class="lg:col-span-4 rounded-3xl bg-primary-container text-on-primary p-7 shadow-md flex flex-col justify-between h-full">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">lightbulb</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary-fixed">Weekly Flash Challenge</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-primary mb-2">Prompt: The Secret Attic Door</h4>
+<p class="font-body-ui-sm text-body-ui-sm text-on-primary-container mb-6">
+            "You find a key made of sea glass tucked beneath the loose wooden board. When you turn it in the attic keyhole, the smell of ocean salt rushes into the room..."
+          </p>
+<div class="p-4 rounded-2xl bg-surface-container-highest/20 mb-6">
+<div class="flex items-center justify-between text-on-primary font-label-md text-label-md mb-1.5">
+<span>Community Submissions</span>
+<span class="font-bold">148 Stories</span>
+</div>
+<!-- Progress bar -->
+<div class="w-full h-2 rounded-full bg-primary overflow-hidden">
+<div class="h-full bg-secondary-fixed rounded-full" style="width: 74%"></div>
+</div>
+</div>
+</div>
+<button class="w-full py-3 rounded-xl bg-tertiary-fixed text-tertiary font-title-md text-title-md hover:bg-tertiary-fixed-dim transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+          Write 150 Words
+        </button>
+</div>
+</div>
+</section>
+<!-- AUTHOR SELF-PUBLISHING & PROMOTION SPOTLIGHT (EDITORIAL ARCHETYPE) -->
+<section class="w-full bg-surface-container-lowest px-margin py-space-xl">
+<div class="max-w-[1320px] mx-auto flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Author Studio &amp; Publishing Desk</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Turn Your Manuscript into a Cherished Book</h2>
+<p class="font-body-reading-lg text-body-reading-lg text-on-surface-variant mt-2">
+          Dignified, author-first publishing with editorial transparency. We help children's writers, bilingual creators, and educators reach real readers with complete creative rights retention.
+        </p>
+</div>
+<!-- 4-Step Transparent Roadmap -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<!-- Step 1 -->
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<span class="font-display-hero text-display-hero text-on-surface-variant/20 leading-none">01</span>
+<h3 class="font-title-lg text-title-lg text-primary font-bold mt-2 mb-1">Manuscript Review</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Simple digital submission. Our editorial review team reads with respect and provides constructive guidance within 5 business days.</p>
+</div>
+<span class="mt-4 font-label-sm text-label-sm text-secondary font-semibold">Zero upfront cost</span>
+</div>
+<!-- Step 2 -->
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<span class="font-display-hero text-display-hero text-on-surface-variant/20 leading-none">02</span>
+<h3 class="font-title-lg text-title-lg text-primary font-bold mt-2 mb-1">Editorial &amp; Cover Craft</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Pair with seasoned children's book illustrators, bilingual typographers, and editors to make your book physically and digitally exquisite.</p>
+</div>
+<span class="mt-4 font-label-sm text-label-sm text-secondary font-semibold">Author retains 100% IP</span>
+</div>
+<!-- Step 3 -->
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<span class="font-display-hero text-display-hero text-on-surface-variant/20 leading-none">03</span>
+<h3 class="font-title-lg text-title-lg text-primary font-bold mt-2 mb-1">Global Digital Listing</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Instant distribution to the StoryNest interactive library, web readers, educational dashboards, and e-reader ecosystems.</p>
+</div>
+<span class="mt-4 font-label-sm text-label-sm text-secondary font-semibold">Global reader access</span>
+</div>
+<!-- Step 4 -->
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<span class="font-display-hero text-display-hero text-on-surface-variant/20 leading-none">04</span>
+<h3 class="font-title-lg text-title-lg text-primary font-bold mt-2 mb-1">Author Promotion</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Hosted Google Meet book launches, school reading tours, author spotlight features, and transparent live reader analytics.</p>
+</div>
+<span class="mt-4 font-label-sm text-label-sm text-secondary font-semibold">Dedicated launchpad</span>
+</div>
+</div>
+<!-- Author Callout Banner -->
+<div class="rounded-3xl bg-secondary-container p-8 flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<h4 class="font-headline-md text-headline-md text-on-secondary-fixed">Ready to share your story with the world?</h4>
+<p class="font-body-ui-md text-body-ui-md text-on-secondary-fixed-variant mt-1">Download our free 2025 Self-Publishing Handbook or submit your draft for editorial evaluation.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<a class="px-6 py-3 rounded-xl bg-primary text-on-primary font-title-md text-title-md shadow-sm hover:bg-primary-container transition-colors" data-path="publish-your-book" href="#">Submit Your Manuscript</a>
+<a class="px-5 py-3 rounded-xl bg-surface-container-lowest text-primary font-title-md text-title-md shadow-sm hover:bg-surface-container transition-colors" data-path="publish-your-book" href="#">Author Services Guide</a>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURED AUTHOR SPOTLIGHT -->
+<section class="w-full bg-surface-container-low px-margin py-space-xl">
+<div class="max-w-[1320px] mx-auto">
+<div class="rounded-3xl bg-surface-container-lowest p-8 md:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Author Portrait Column -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="relative w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-lg">
+<img alt="Author Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY1TEqs9gO00PTZzC4y0VohMXU1UDgEbPGeEQQpUG5hcV62pczupHCKCiWq8r3_QWJ7LeyBMHoUy17d6cp0zLzhoK5uei5_4e4naPaN4ReUktkQprbifRu44h1aj4O7DtwE49eZSSObu4vbKBjsxNyjCcwnp0Ln4pF7rzBBMSfuS7jwlT9NyPQN2gxLwuU6KeRh-3K2DdtMNHcqJK40NBWm2rvWS46Fdvj_61wACs"/>
+<div class="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">Sunita Sharma</span>
+<span class="font-label-sm text-label-sm text-secondary">3 Published Works</span>
+</div>
+</div>
+</div>
+<!-- Author Story & Quote Column -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-sm">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Author Spotlight of the Month</span>
+<h3 class="font-headline-lg text-headline-lg text-primary">"StoryNest restored dignity to independent publishing."</h3>
+<blockquote class="font-body-reading-lg text-body-reading-lg text-on-surface-variant italic">
+            “As a bilingual writer writing for Indian children, traditional publishers told me to choose either Hindi or English. StoryNest gave me the freedom to publish dual-language editions with magnificent illustrators. Over 4,000 children read my stories this winter.”
+          </blockquote>
+<div class="flex flex-wrap items-center gap-space-md pt-2">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Latest Title</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">The Whispering Quill</span>
+</div>
+<div class="h-8 w-px bg-outline-variant"></div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Upcoming Live Session</span>
+<span class="font-title-lg text-title-lg text-secondary font-bold">Writing Fantasy (Tuesday)</span>
+</div>
+</div>
+<div class="pt-2">
+<a class="inline-flex items-center gap-1 font-title-md text-title-md text-primary hover:underline" data-path="books-and-authors" href="#">
+              View Sunita’s Author Profile &amp; Books
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PARENT & EDUCATOR PEACE OF MIND (CHILD SAFETY & TRUST) -->
+<section class="w-full px-margin py-space-xl">
+<div class="max-w-[1320px] mx-auto flex flex-col gap-space-lg">
+<div class="text-center max-w-2xl mx-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Trust, Safety &amp; Ethics</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Peace of Mind for Parents and Educators</h2>
+<p class="font-body-ui-md text-body-ui-md text-on-surface-variant mt-1">We treat young minds with the utmost digital gentleness and ethical responsibility.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">block</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Zero Advertisements or Trackers</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">We never monetize through commercial ads or behavioral micro-targeting. Children read without manipulative popups or brand pitches.</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Moderated Peer Interactions</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Every contest entry, challenge submission, and workshop is screened through both algorithmic safety guards and human educators.</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">COPPA &amp; GDPR-K Compliant</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Parental consent is verified and granular. Educators can assign classroom reading lists with one-click compliant student pins.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- COMMUNITY TESTIMONIALS & REVIEWS -->
+<section class="w-full bg-surface-container-low px-margin py-space-xl">
+<div class="max-w-[1320px] mx-auto flex flex-col gap-space-lg">
+<div class="text-center">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Voices of Our Community</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Loved by Readers, Parents &amp; Writers Alike</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Review 1: Parent -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim mb-3">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-ui-md text-body-ui-md text-on-surface italic mb-4">
+              “Finding quality Hindi children's books that my 8-year-old actually wants to read was impossible until StoryNest. The audio assists and beautiful typography make all the difference.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-secondary">
+              PA
+            </div>
+<div>
+<p class="font-title-md text-title-md text-primary leading-tight">Pooja Agarwal</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Parent of a 3rd Grader • New Delhi</p>
+</div>
+</div>
+</div>
+<!-- Review 2: Young Reader -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim mb-3">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-ui-md text-body-ui-md text-on-surface italic mb-4">
+              “I submitted my story for the Flash Prompt and received a badge! The character workshop on Google Meet helped me figure out how to give my dragon character a silly voice.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-primary">
+              KR
+            </div>
+<div>
+<p class="font-title-md text-title-md text-primary leading-tight">Kabir R., Age 11</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Young Storyteller Winner • Bengaluru</p>
+</div>
+</div>
+</div>
+<!-- Review 3: Debut Author -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim mb-3">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-ui-md text-body-ui-md text-on-surface italic mb-4">
+              “Self-publishing usually feels lonely and scam-ridden. StoryNest's editorial desk was clear, honest, and helped my debut picture book find its way into 50+ classrooms.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center font-bold text-tertiary">
+              NM
+            </div>
+<div>
+<p class="font-title-md text-title-md text-primary leading-tight">Nikhil Menon</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Debut Author &amp; Educator • Mumbai</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- NEWSLETTER & 7-DAY READING HABIT CHALLENGE SIGNUP -->
+<section class="w-full px-margin py-space-xl">
+<div class="max-w-[1100px] mx-auto rounded-3xl bg-primary-container text-on-primary p-8 md:p-14 shadow-xl relative overflow-hidden">
+<!-- Background Ambient Decor -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-7 flex flex-col items-start gap-space-xs">
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold">Free Family Resource</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary">Join the 7-Day Reading Habit Spark</h2>
+<p class="font-body-reading-lg text-body-reading-lg text-on-primary-container mt-1">
+            Receive printable story loggers, curated weekend tales, and weekly writing cues directly in your inbox. No spam, ever.
+          </p>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-3">
+<form class="flex flex-col sm:flex-row gap-2" onsubmit="event.preventDefault(); document.getElementById('signup-feedback').classList.remove('hidden');">
+<input class="flex-1 px-4 py-3 rounded-xl bg-surface text-on-surface placeholder:text-on-surface-variant font-body-ui-md text-body-ui-md focus:outline-none focus:ring-2 focus:ring-secondary" placeholder="Enter parent or author email..." required="" type="email"/>
+<button class="px-5 py-3 rounded-xl bg-secondary text-on-secondary font-title-md text-title-md hover:opacity-95 transition-opacity whitespace-nowrap" type="submit">
+              Start Free
+            </button>
+</form>
+<p class="hidden font-label-sm text-label-sm text-secondary-fixed" id="signup-feedback">
+            ✓ Welcome to the nest! Your first reading packet is on its way.
+          </p>
+<span class="font-label-sm text-label-sm text-on-primary-container">
+            Loved by 18,000+ mindful readers &amp; educators across India.
+          </span>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl mt-space-xl"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg pb-space-xl"><div class="lg:col-span-1 flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary">StoryNest</span></div><p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Fostering a lifelong love for reading in young minds while empowering independent authors with dignified, transparent publishing tools.</p><div class="flex items-center gap-space-xs mt-space-sm"><span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span><span class="font-label-sm text-label-sm text-secondary font-semibold">Child Safe Certified</span></div></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-bold">Young Readers &amp; Parents</h3><ul class="flex flex-col gap-2"><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="digital-library" href="#">Digital Library</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="literary-activities" href="#">Story Challenges</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="reading-tracker" href="#">Reading Tracker</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="child-safety" href="#">Child Safety Pledge</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-bold">Workshops &amp; Education</h3><ul class="flex flex-col gap-2"><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="workshops-and-sessions" href="#">Creative Writing</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="educational-hub" href="#">Interactive Quizzes</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="educational-hub" href="#">Educator Worksheets</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="workshops-and-sessions" href="#">Google Meet Sessions</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-bold">Authors &amp; Creators</h3><ul class="flex flex-col gap-2"><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="publish-your-book" href="#">Publish Your Book</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="publish-your-book" href="#">Manuscript Submission</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="author-workspace" href="#">Author Workspace</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="books-and-authors" href="#">Creator Directory</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-bold">Community &amp; Trust</h3><ul class="flex flex-col gap-2"><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">About StoryNest</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="child-safety" href="#">Child Safety &amp; Privacy</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">WCAG 2.2 Accessibility</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Contact &amp; Support</a></li></ul></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant"><span class="font-body-ui-sm text-body-ui-sm">© 2025 StoryNest Platform Inc. All rights reserved. Compliant with COPPA, GDPR-K and student ethical safety mandates.</span><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm">Bilingual Edition (EN / HI)</span></div></div></div></footer></body></html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#b1f0d6", "on-secondary-container": "#336f5b", "surface-container-high": "#ddeaf2", "on-tertiary": "#ffffff", "on-surface-variant": "#44474d", "inverse-on-surface": "#e6f3fb", "on-secondary-fixed-variant": "#0e503e", "surface-container": "#e3f0f8", "tertiary": "#261800", "on-primary-fixed": "#0b1c32", "surface-dim": "#cfdce4", "tertiary-container": "#402c00", "outline-variant": "#c5c6cd", "background": "#f4faff", "surface-tint": "#4f5f78", "inverse-surface": "#263238", "on-secondary": "#ffffff", "on-error-container": "#93000a", "primary-fixed-dim": "#b7c7e5", "surface-container-highest": "#d7e4ec", "on-tertiary-fixed": "#271900", "on-tertiary-fixed-variant": "#5e4200", "surface-variant": "#d7e4ec", "primary": "#091b31", "error-container": "#ffdad6", "on-primary-container": "#8898b3", "surface-bright": "#f4faff", "outline": "#75777e", "secondary-fixed": "#b1f0d6", "primary-fixed": "#d4e3ff", "primary-container": "#203047", "on-background": "#111d23", "tertiary-fixed-dim": "#f4be55", "on-secondary-fixed": "#002117", "tertiary-fixed": "#ffdea7", "secondary": "#2d6955", "inverse-primary": "#b7c7e5", "on-surface": "#111d23", "on-primary": "#ffffff", "error": "#ba1a1a", "surface-container-low": "#e9f6fd", "secondary-fixed-dim": "#96d3bb", "surface-container-lowest": "#ffffff", "surface": "#f4faff", "on-error": "#ffffff", "on-tertiary-container": "#c08f2a", "on-primary-fixed-variant": "#384760" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin": "2.5rem", "space-sm": "0.5rem", "gutter-sm": "1rem", "space-md": "1rem", "gutter": "1.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem" }, "fontFamily": { "label-md": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "headline-lg": [ "Merriweather" ], "body-reading-lg": [ "Merriweather" ], "title-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "body-ui-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Merriweather" ], "headline-md": [ "Merriweather" ], "display-hero-mobile": [ "Merriweather" ], "headline-lg-mobile": [ "Merriweather" ], "body-ui-sm": [ "Plus Jakarta Sans" ], "display-hero": [ "Merriweather" ] }, "fontSize": { "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "title-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "headline-lg": [ "36px", { "lineHeight": "46px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-reading-lg": [ "18px", { "lineHeight": "32px", "fontWeight": "400" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700" } ], "body-ui-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "700" } ], "headline-md": [ "26px", { "lineHeight": "34px", "fontWeight": "700" } ], "display-hero-mobile": [ "34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "body-ui-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-hero": [ "48px", { "lineHeight": "58px", "letterSpacing": "-0.02em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-ui-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(32,48,71,0.06)] border-b border-outline-variant/30"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs focus:outline-none" href="#"><span class="material-symbols-outlined text-secondary text-[26px]">shield</span><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">StoryNest</span><span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Admin Console</span></div></a><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-full border border-outline-variant/40"><span class="w-2 h-2 rounded-full bg-secondary inline-block animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Production v2.4 • ISO 2108 / COPPA Certified</span></div></div><div class="hidden md:flex flex-1 max-w-xl mx-space-md"><div class="relative w-full"><span class="material-symbols-outlined text-on-surface-variant absolute left-3 top-1/2 -translate-y-1/2 text-[18px]">search</span><input class="w-full bg-surface-container-low border border-outline-variant/40 rounded-xl pl-9 pr-space-md py-1.5 font-body-ui-sm text-body-ui-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Search books, authors, submissions, users (Ctrl + K)..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-1 bg-secondary-container/40 rounded-lg"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-secondary-container font-semibold">System Operational (24ms)</span></div><div class="flex items-center bg-surface-container-low rounded-lg p-0.5 border border-outline-variant/30"><button class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary text-on-primary font-semibold" type="button">EN</button><button class="px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface font-semibold" type="button">HI</button></div><button aria-label="Notifications" class="relative p-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 bg-error text-on-error rounded-full font-label-sm text-[10px] flex items-center justify-center font-bold">5</span></button><div class="flex items-center gap-space-sm pl-space-sm border-l border-outline-variant/30"><div class="relative"><div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-title-md font-bold"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest" title="SuperAdmin"></span></div><div class="hidden sm:flex flex-col text-left"><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md text-on-surface leading-tight font-semibold">Dr. Rajesh Varma</span><span class="px-1.5 py-0.2 rounded font-label-sm text-[10px] bg-secondary-container text-on-secondary-container font-bold">SuperAdmin</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Platform Director &amp; Chief Editor</span></div></div></div></div></header><aside class="fixed top-16 left-0 bottom-0 w-72 bg-surface-container-lowest border-r border-outline-variant/30 z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-md space-y-space-md"><nav class="space-y-space-md" data-active-classes="bg-surface-container-high text-primary font-semibold border-l-4 border-secondary"><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Core Operations</div><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-overview" href="#"><span>Overview (Dashboard)</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-audit-security" href="#"><span>Audit Logs &amp; Security</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-content-moderation" href="#"><span>Content Moderation &amp; COPPA</span><span class="px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-error-container text-on-error-container font-bold">3 Urgent</span></a></div></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Editorial &amp; Publishing</div><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-manuscripts" href="#"><span>Manuscript Submissions</span><span class="px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-secondary-container text-on-secondary-container font-bold">7 Pending</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-books-catalog" href="#"><span>Published Books &amp; Catalog</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-authors" href="#"><span>Author Profiles &amp; Applications</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-services-promotion" href="#"><span>Publishing &amp; Promotion Requests</span></a></div></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Learning &amp; Community</div><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-workshops-meet" href="#"><span>Workshops &amp; Google Meet</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-competitions" href="#"><span>Competitions &amp; Submissions</span><span class="px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-tertiary-fixed text-on-tertiary-fixed-variant font-bold">12 New</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-activities-quiz" href="#"><span>Activities &amp; Quiz Bank</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-certificates" href="#"><span>Certificates of Achievement</span></a></div></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Platform Governance</div><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-users-roles" href="#"><span>Users, Roles &amp; Permissions</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-escrow-royalties" href="#"><span>Escrow Payments &amp; Royalties</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-cms" href="#"><span>Website CMS &amp; Home</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-settings" href="#"><span>System Settings &amp; Policies</span></a></div></div></nav></div><div class="p-space-md border-t border-outline-variant/30 bg-surface-container-low space-y-space-sm"><div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary">lock_clock</span>Session Timeout</span><span class="font-semibold text-primary">28m 42s</span></div><div class="flex items-center justify-between gap-space-xs pt-1"><a class="flex-1 text-center py-1.5 px-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-colors border border-outline-variant/30" href="#">Author Portal</a><a class="flex-1 text-center py-1.5 px-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-colors border border-outline-variant/30" href="#">Reader Hub</a></div><button class="w-full flex items-center justify-center gap-1.5 py-1.5 px-space-sm rounded-lg text-error hover:bg-error-container/40 font-label-md text-label-md font-semibold transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">logout</span><span>Sign Out of Console</span></button></div></aside><main class="w-full pt-16 pl-72 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Main Moderation Viewport with Paper-Craft Editorial Tone -->
+<div class="p-margin space-y-space-xl">
+<!-- Top Context & Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs max-w-3xl">
+<!-- Breadcrumbs -->
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Admin Console</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Platform Governance</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Content Moderation &amp; Child Safety</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Content Moderation &amp; COPPA Compliance Queue
+        </h1>
+<p class="font-body-ui-md text-body-ui-md text-on-surface-variant">
+          Supervised algorithmic safety monitors, guardian verification tokens, and human-in-the-loop review for young reader protection.
+        </p>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-1.5 px-space-md py-2.5 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md transition-all shadow-sm active:translate-y-0.5">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Compliance Ruleset v3.1</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-all shadow-md active:translate-y-0.5">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+<span>Sync Neural Filter</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1: Urgent Flags -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-error"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Flagged Items Awaiting Review</span>
+<div class="w-8 h-8 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">emergency</span>
+</div>
+</div>
+<div class="my-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-error">3</span>
+<span class="font-label-md text-label-md text-on-error-container font-bold">Urgent</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">SLA &lt; 4 hrs remaining before auto-pause</p>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-error font-medium">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>Next expiration in 1h 48m</span>
+</div>
+</div>
+<!-- Card 2: Guardian Approvals -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-secondary"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">COPPA Guardian Approvals</span>
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">family_restroom</span>
+</div>
+</div>
+<div class="my-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary">142</span>
+<span class="font-label-md text-label-md text-secondary font-bold">This Week</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">100% authenticated guardian email tokens</p>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Zero spoofing alerts detected</span>
+</div>
+</div>
+<!-- Card 3: PII Redactions -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-tertiary-fixed-dim"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Automated PII Redactions</span>
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">shield_person</span>
+</div>
+</div>
+<div class="my-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary">19</span>
+<span class="font-label-md text-label-md text-tertiary font-bold">Blocked</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">Phone / address leaks quarantined in stories</p>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[14px]">phonelink_lock</span>
+<span>Regex Engine v4 active</span>
+</div>
+</div>
+<!-- Card 4: Precision Metric -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-primary-container"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">False Positive Rate</span>
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</div>
+</div>
+<div class="my-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary">0.4%</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Target &lt; 1%</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">Calibrated to safeguard children without stifling voice</p>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+<span>BERT Indian-Dialect tuning on</span>
+</div>
+</div>
+</div>
+<!-- Safety Warning / COPPA Commitment Banner -->
+<div class="p-space-lg rounded-xl bg-surface-container-high text-primary shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="p-2.5 rounded-xl bg-primary text-on-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-primary">StoryNest Zero-Compromise Child Protection Protocol</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-[10px] bg-secondary-container text-on-secondary-container font-bold">STRICT COPPA / GDPR-K</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant max-w-4xl">
+            Children under 13 are strictly prohibited from sharing phone numbers, real names, GPS locations, home addresses, or photos. Violations result in automated queue quarantining pending human sign-off.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Last Audit: Today, 08:30 IST</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container text-label-sm font-label-sm font-semibold transition-all">
+          Audit Protocol
+        </button>
+</div>
+</div>
+<!-- Multi-Filter Moderation Workbench -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<!-- Row 1: Target Category Tabs -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm border-b border-outline-variant/30">
+<div class="flex flex-wrap items-center gap-1.5">
+<button class="px-3.5 py-1.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm">
+            All Moderation Targets (3)
+          </button>
+<button class="px-3.5 py-1.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5">
+<span>Student Competition Stories</span>
+<span class="px-1.5 py-0.2 rounded-full font-label-sm text-[10px] bg-error-container text-on-error-container font-bold">2</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5">
+<span>Book Reviews &amp; Comments</span>
+<span class="px-1.5 py-0.2 rounded-full font-label-sm text-[10px] bg-tertiary-fixed text-on-tertiary-fixed-variant font-bold">1</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-label-md font-semibold transition-all">
+            Author Bio Updates (0)
+          </button>
+<button class="px-3.5 py-1.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-label-md font-semibold transition-all">
+            Workshop Live Chat Logs (0)
+          </button>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative">
+<span class="material-symbols-outlined text-on-surface-variant absolute left-2.5 top-1/2 -translate-y-1/2 text-[16px]">filter_list</span>
+<input class="pl-8 pr-3 py-1.5 bg-surface-container-low rounded-lg text-body-ui-sm font-body-ui-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary text-xs w-64" placeholder="Filter queue by submission ID or pen name..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Row 2: Secondary Filters & Bulk Actions -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Severity:</span>
+<select class="bg-surface-container-low text-primary text-label-md font-label-md rounded-lg px-2.5 py-1 focus:outline-none">
+<option>All Severities</option>
+<option selected="">Critical / PII Risk</option>
+<option>Sensitive Language</option>
+<option>Copyright &amp; Folk Plagiarism</option>
+<option>Low / Metadata Incomplete</option>
+</select>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Assigned Reviewer:</span>
+<select class="bg-surface-container-low text-primary text-label-md font-label-md rounded-lg px-2.5 py-1 focus:outline-none">
+<option>All Reviewers</option>
+<option>Priya Sen (Child Psychologist &amp; Moderator)</option>
+<option>Dr. Rajesh Varma (Chief Editor)</option>
+<option selected="">Unassigned (Queue First-In)</option>
+</select>
+</div>
+</div>
+<!-- Bulk Controls -->
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">select_all</span>
+<span>Batch Quarantined</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export Moderation Log</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Active Moderation Cases Queue (Case Inspection Cards) -->
+<div class="space-y-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">inbox_customize</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Pending Human-in-the-Loop Cases</h2>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-[11px] bg-surface-container-high text-primary font-bold">3 Cases Active</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auto-refresh active (30s)</span>
+</div>
+<!-- Case 1: Aarav K. PII Flag (CRITICAL) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden relative" id="case-card-412">
+<div class="h-2 w-full bg-error"></div>
+<div class="p-space-lg space-y-space-md">
+<!-- Case Metadata Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm pb-space-sm border-b border-outline-variant/30">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-md bg-error-container text-on-error-container font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">shield_locked</span>
+<span>Case #MOD-2025-412</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-[11px] font-bold">CRITICAL: PII RISK</span>
+<span class="text-on-surface-variant text-label-sm font-label-sm">• Submitted 42m ago</span>
+<span class="text-on-surface-variant text-label-sm font-label-sm">• SLA Remaining: 3h 18m</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Target Type:</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Student Competition Entry #STU-992</span>
+</div>
+</div>
+<!-- Story & Child Profile Brief -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Story Entry</span>
+<p class="font-headline-sm text-headline-sm text-primary">"My Grandfather's Clock"</p>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">National Junior Storyteller Cup 2025 (Fiction • Age 8-10 Category)</p>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Young Creator</span>
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-xs">AK</div>
+<div>
+<p class="font-title-md text-title-md text-primary">Aarav K. <span class="text-body-ui-sm text-on-surface-variant font-normal">(Age 9)</span></p>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Bengaluru, KA • 4th Grade</p>
+</div>
+</div>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">COPPA Guardian Clearance</span>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-md text-label-md font-bold">Verified Guardian</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">priya.sharma@example.com (Token: <code class="font-mono text-xs text-primary">#GT-8841-A</code>)</p>
+</div>
+</div>
+<!-- Incident Diagnostic & Side-by-Side Comparison -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[20px]">warning</span>
+<span class="font-title-md text-title-md text-error font-bold">Trigger Reason: Algorithmic Indian Mobile Number Detection</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Rule ID: PII_TELEPHONE_IN_V2.1</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Raw Text with Flagged Highlight -->
+<div class="p-space-md rounded-xl bg-surface-container-high space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+<span>Raw Submitted Text (Chapter 2, Line 14)</span>
+</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-semibold">Violation Detected</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-primary font-body-reading-lg text-body-reading-lg leading-relaxed shadow-sm">
+                  "...my brother told me to call our house at <mark class="bg-error-container text-on-error-container px-1.5 py-0.5 rounded font-semibold underline decoration-error">+91 98200-84721</mark> if the grandfather clock struck midnight twice..."
+                </div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant italic">
+                  Note: Young author innocently embedded their actual parent contact number inside story dialogue.
+                </p>
+</div>
+<!-- Sanitized Text (Recommended Redaction) -->
+<div class="p-space-md rounded-xl bg-secondary-container/20 space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Recommended Automated Redaction</span>
+</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-[10px] bg-secondary-container text-on-secondary-container font-bold">Safe for Publication</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-primary font-body-reading-lg text-body-reading-lg leading-relaxed shadow-sm">
+                  "...my brother told me to call our house <span class="bg-secondary-container text-on-secondary-container px-1.5 py-0.5 rounded font-semibold">[home telephone]</span> if the grandfather clock struck midnight twice..."
+                </div>
+<p class="font-body-ui-sm text-body-ui-sm text-secondary font-medium">
+                  Maintains story narrative continuity without exposing private guardian telecommunications.
+                </p>
+</div>
+</div>
+</div>
+<!-- Action Resolution Strip -->
+<div class="pt-space-sm border-t border-outline-variant/30 flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2.5 rounded-xl bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-md text-label-md font-bold transition-all shadow-md flex items-center gap-1.5 active:translate-y-0.5" onclick="resolveCase('case-card-412', 'Redacted and Approved for Competition')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Apply Redaction &amp; Approve Entry</span>
+</button>
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">outgoing_mail</span>
+<span>Notify Guardian (Priya S.)</span>
+</button>
+<button class="px-space-md py-2.5 rounded-xl bg-error-container text-on-error-container hover:bg-error hover:text-on-error font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5" onclick="resolveCase('case-card-412', 'Quarantined &amp; Escalated to Director')">
+<span class="material-symbols-outlined text-[18px]">block</span>
+<span>Reject &amp; Quarantine</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>View Full 4-Chapter Manuscript</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Case 2: Language Sensitivity Check in Book Review (MODERATE) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden relative" id="case-card-413">
+<div class="h-2 w-full bg-tertiary-fixed-dim"></div>
+<div class="p-space-lg space-y-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm pb-space-sm border-b border-outline-variant/30">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">rate_review</span>
+<span>Case #MOD-2025-413</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed-dim text-on-tertiary font-label-sm text-[11px] font-bold">LANGUAGE SENSITIVITY CHECK</span>
+<span class="text-on-surface-variant text-label-sm font-label-sm">• Submitted 2h 11m ago</span>
+<span class="text-on-surface-variant text-label-sm font-label-sm">• SLA Remaining: 5h 49m</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Target:</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Community Book Review on "Tara and the Whispering Stars" (Age 4-6)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Reviewer Identity</span>
+<p class="font-title-md text-title-md text-primary">Meera R. (Verified Parent)</p>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Guardian of Anaya (Age 4) • Account active 14 mos</p>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Flagged Keywords</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-mono text-xs font-semibold">"scary demons"</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-mono text-xs font-semibold">"haunted"</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Trigger: Early Reader filter threshold</p>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Moderator Assessment</span>
+<p class="font-label-md text-label-md text-secondary font-bold">Constructive Parent Feedback</p>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">No vulgarity, abuse, or hostility. Valid age rating critique.</p>
+</div>
+</div>
+<!-- Review Content Inspection -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-xs">
+<div class="flex items-center gap-1 text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px] text-outline-variant">star</span>
+<span class="material-symbols-outlined text-[18px] text-outline-variant">star</span>
+<span class="text-xs text-on-surface-variant ml-2 font-medium">3 of 5 Stars Rating</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-primary font-body-ui-md text-body-ui-md shadow-sm">
+              "We loved the illustrations on chapters 1 through 4, but the ending where the shadow appears felt too <span class="bg-tertiary-fixed/60 font-semibold px-1 rounded">scary for my 4 year old daughter</span>. She had trouble sleeping because she imagined <span class="bg-tertiary-fixed/60 font-semibold px-1 rounded">scary demons</span> in the dark room. We would recommend bumping the age bracket to 7+ instead of 4+."
+            </div>
+</div>
+<!-- Action Resolution Strip -->
+<div class="pt-space-sm border-t border-outline-variant/30 flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2.5 rounded-xl bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-md text-label-md font-bold transition-all shadow-md flex items-center gap-1.5" onclick="resolveCase('case-card-413', 'Approved as Legitimate Parent Feedback')">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+<span>Approve Review (Legitimate Feedback)</span>
+</button>
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+<span>Notify Book Author (Nandita Roy)</span>
+</button>
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5" onclick="resolveCase('case-card-413', 'Hidden from Public Feed')">
+<span class="material-symbols-outlined text-[18px]">visibility_off</span>
+<span>Hide Review</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recommended: Approve without alterations</span>
+</div>
+</div>
+</div>
+<!-- Case 3: Copyright / Folklore Similarity Check (LOW) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden relative" id="case-card-414">
+<div class="h-2 w-full bg-secondary"></div>
+<div class="p-space-lg space-y-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm pb-space-sm border-b border-outline-variant/30">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>Case #MOD-2025-414</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] font-bold">FOLKLORE SIMILARITY CHECK</span>
+<span class="text-on-surface-variant text-label-sm font-label-sm">• Submitted 3h 40m ago</span>
+<span class="text-on-surface-variant text-label-sm font-label-sm">• SLA Remaining: 8h 20m</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Target:</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Story Competition Entry #STU-995 ("The Hare &amp; The Tortoise 2025")</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Young Storyteller</span>
+<p class="font-title-md text-title-md text-primary">Vihaan M. (Age 7)</p>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Chennai, TN • Guardian Verified (OTP + Token)</p>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Vector Similarity Score</span>
+<div class="flex items-baseline gap-2">
+<span class="font-title-lg text-title-lg text-primary font-bold">82% Similarity</span>
+<span class="text-xs text-on-surface-variant">to Public Domain Aesop</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Source: Panchatantra / Traditional Fables corpus</p>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Creative Adaptation Evaluation</span>
+<p class="font-label-md text-label-md text-secondary font-bold">Permitted Educational Derivative</p>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Added electric skateboards &amp; space rockets in modern twist.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<p class="font-body-reading-lg text-body-reading-lg text-primary leading-relaxed bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+              "Once upon a time in Bengaluru tech park, a speedy hare rode a solar scooter, laughing at the tortoise who wore heavy roller skates. 'You will never reach the coconut tree!' chuckled the hare. But the tortoise had a solar rechargeable battery pack..."
+            </p>
+</div>
+<!-- Action Resolution Strip -->
+<div class="pt-space-sm border-t border-outline-variant/30 flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2.5 rounded-xl bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-md text-label-md font-bold transition-all shadow-md flex items-center gap-1.5" onclick="resolveCase('case-card-414', 'Approved as Creative Folk Retelling')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Approve as Traditional Folk Adaptation</span>
+</button>
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Request Extra Original Elements</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">celebration</span>
+<span>Encourages young retelling of folklore traditions</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Guardian Consent & Audit Log Sub-Panel -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">admin_panel_settings</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">COPPA Guardian Consent Audit Log</h2>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Real-time ledger of cryptographic consent tokens generated via verified guardian SMS/Email OTP.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-semibold">
+            256-bit Token Vault Active
+          </span>
+</div>
+</div>
+<!-- Audit Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-outline-variant/30 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4">Pseudonymized Child</th>
+<th class="py-3 px-4">Age</th>
+<th class="py-3 px-4">Guardian Contact (Masked)</th>
+<th class="py-3 px-4">Authorized Consent Scope</th>
+<th class="py-3 px-4">Cryptographic Token</th>
+<th class="py-3 px-4">Timestamp (IST)</th>
+<th class="py-3 px-4 text-right">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20 font-body-ui-sm text-body-ui-sm text-primary">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 font-semibold flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-xs font-bold">AK</span>
+<span>Aarav K. (#441)</span>
+</td>
+<td class="py-3.5 px-4">9 yrs</td>
+<td class="py-3.5 px-4 font-mono text-xs">pr***arma@example.com</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-[11px] font-semibold">Story Contest Entry</span>
+</td>
+<td class="py-3.5 px-4 font-mono text-xs text-secondary font-semibold">#GT-8841-A</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-label-sm text-label-sm">Today, 09:14 AM</td>
+<td class="py-3.5 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-label-sm text-[11px] bg-secondary-container text-on-secondary-container font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active &amp; Verified
+                </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 font-semibold flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-xs font-bold">AR</span>
+<span>Ananya R. (#892)</span>
+</td>
+<td class="py-3.5 px-4">6 yrs</td>
+<td class="py-3.5 px-4 font-mono text-xs">me***ani@gmail.com</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-[11px] font-semibold">Google Meet Workshop</span>
+</td>
+<td class="py-3.5 px-4 font-mono text-xs text-secondary font-semibold">#GT-8839-D</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-label-sm text-label-sm">Today, 08:42 AM</td>
+<td class="py-3.5 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-label-sm text-[11px] bg-secondary-container text-on-secondary-container font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active &amp; Verified
+                </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 font-semibold flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-xs font-bold">VM</span>
+<span>Vihaan M. (#521)</span>
+</td>
+<td class="py-3.5 px-4">7 yrs</td>
+<td class="py-3.5 px-4 font-mono text-xs">su***esh@yahoo.co.in</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-[11px] font-semibold">Junior Pen Name Profile</span>
+</td>
+<td class="py-3.5 px-4 font-mono text-xs text-secondary font-semibold">#GT-8820-F</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-label-sm text-label-sm">Yesterday, 18:22 PM</td>
+<td class="py-3.5 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-label-sm text-[11px] bg-secondary-container text-on-secondary-container font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active &amp; Verified
+                </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 font-semibold flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-xs font-bold">DK</span>
+<span>Dev K. (#104)</span>
+</td>
+<td class="py-3.5 px-4">11 yrs</td>
+<td class="py-3.5 px-4 font-mono text-xs">ra***kapoor@outlook.com</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-[11px] font-semibold">Reader Book Quiz Cert</span>
+</td>
+<td class="py-3.5 px-4 font-mono text-xs text-secondary font-semibold">#GT-8812-B</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-label-sm text-label-sm">Yesterday, 14:05 PM</td>
+<td class="py-3.5 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-label-sm text-[11px] bg-secondary-container text-on-secondary-container font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active &amp; Verified
+                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="pt-space-sm border-t border-outline-variant/30 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Showing 4 of 142 guardian tokens generated this cycle</span>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-container-low text-primary disabled:opacity-40" disabled="">Previous</button>
+<button class="px-2.5 py-1 rounded bg-primary text-on-primary font-semibold">1</button>
+<button class="px-2 py-1 rounded bg-surface-container-low text-primary hover:bg-surface-container">2</button>
+<button class="px-2 py-1 rounded bg-surface-container-low text-primary hover:bg-surface-container">3</button>
+<button class="px-2 py-1 rounded bg-surface-container-low text-primary hover:bg-surface-container">Next</button>
+</div>
+</div>
+</div>
+<!-- Editorial Compliance Footer Notification -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-label-sm text-label-sm gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Audited in compliance with FTC Children's Online Privacy Protection Rule (16 C.F.R. Part 312) &amp; Digital Personal Data Protection Act 2023.</span>
+</div>
+<div class="flex items-center gap-3">
+<a class="text-primary underline hover:text-secondary" href="#">Export DPO Audit Ledger</a>
+<span>•</span>
+<a class="text-primary underline hover:text-secondary" href="#">Emergency Escalation Hotline</a>
+</div>
+</div>
+</div>
+<!-- Inline Script for Micro-Interactions -->
+<script>
+    function resolveCase(cardId, actionSummary) {
+      const card = document.getElementById(cardId);
+      if (!card) return;
+      
+      card.style.transition = 'all 0.4s ease-out';
+      card.style.opacity = '0.5';
+      card.style.transform = 'scale(0.99)';
+      
+      setTimeout(() => {
+        card.innerHTML = `
+          <div class="p-space-lg flex items-center justify-between bg-secondary-container/30 rounded-xl">
+            <div class="flex items-center gap-space-sm text-secondary">
+              <span class="material-symbols-outlined text-[24px]">task_alt</span>
+              <div>
+                <p class="font-title-md text-title-md font-bold">Case Resolved: ${actionSummary}</p>
+                <p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Logged to platform immutable compliance vault by Dr. Rajesh Varma.</p>
+              </div>
+            </div>
+            <button onclick="window.location.reload()" class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container text-label-sm font-semibold transition-all shadow-sm">
+              Undo Action
+            </button>
+          </div>
+        `;
+        card.style.opacity = '1';
+        card.style.transform = 'scale(1)';
+      }, 350);
+    }
+  </script>
+</div></main></body></html>

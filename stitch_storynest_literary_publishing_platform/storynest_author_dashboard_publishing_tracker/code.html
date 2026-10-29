@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#b1f0d6", "on-secondary-container": "#336f5b", "surface-container-high": "#ddeaf2", "on-tertiary": "#ffffff", "on-surface-variant": "#44474d", "inverse-on-surface": "#e6f3fb", "on-secondary-fixed-variant": "#0e503e", "surface-container": "#e3f0f8", "tertiary": "#261800", "on-primary-fixed": "#0b1c32", "surface-dim": "#cfdce4", "tertiary-container": "#402c00", "outline-variant": "#c5c6cd", "background": "#f4faff", "surface-tint": "#4f5f78", "inverse-surface": "#263238", "on-secondary": "#ffffff", "on-error-container": "#93000a", "primary-fixed-dim": "#b7c7e5", "surface-container-highest": "#d7e4ec", "on-tertiary-fixed": "#271900", "on-tertiary-fixed-variant": "#5e4200", "surface-variant": "#d7e4ec", "primary": "#091b31", "error-container": "#ffdad6", "on-primary-container": "#8898b3", "surface-bright": "#f4faff", "outline": "#75777e", "secondary-fixed": "#b1f0d6", "primary-fixed": "#d4e3ff", "primary-container": "#203047", "on-background": "#111d23", "tertiary-fixed-dim": "#f4be55", "on-secondary-fixed": "#002117", "tertiary-fixed": "#ffdea7", "secondary": "#2d6955", "inverse-primary": "#b7c7e5", "on-surface": "#111d23", "on-primary": "#ffffff", "error": "#ba1a1a", "surface-container-low": "#e9f6fd", "secondary-fixed-dim": "#96d3bb", "surface-container-lowest": "#ffffff", "surface": "#f4faff", "on-error": "#ffffff", "on-tertiary-container": "#c08f2a", "on-primary-fixed-variant": "#384760" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin": "2.5rem", "space-sm": "0.5rem", "gutter-sm": "1rem", "space-md": "1rem", "gutter": "1.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem" }, "fontFamily": { "label-md": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "headline-lg": [ "Merriweather" ], "body-reading-lg": [ "Merriweather" ], "title-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "body-ui-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Merriweather" ], "headline-md": [ "Merriweather" ], "display-hero-mobile": [ "Merriweather" ], "headline-lg-mobile": [ "Merriweather" ], "body-ui-sm": [ "Plus Jakarta Sans" ], "display-hero": [ "Merriweather" ] }, "fontSize": { "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "title-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "headline-lg": [ "36px", { "lineHeight": "46px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-reading-lg": [ "18px", { "lineHeight": "32px", "fontWeight": "400" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700" } ], "body-ui-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "700" } ], "headline-md": [ "26px", { "lineHeight": "34px", "fontWeight": "700" } ], "display-hero-mobile": [ "34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "body-ui-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-hero": [ "48px", { "lineHeight": "58px", "letterSpacing": "-0.02em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-ui-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm focus:outline-none" href="#"><span class="material-symbols-outlined text-secondary text-[28px]">menu_book</span><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">StoryNest</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Self-Publishing</span></div></a><div class="hidden xl:flex items-center bg-surface-container-low px-space-sm py-space-xs rounded-xl"><span class="font-label-sm text-label-sm text-secondary flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary inline-block"></span>Author Studio</span><span class="material-symbols-outlined text-on-surface-variant text-[16px] ml-space-xs">unfold_more</span></div></div><nav class="hidden lg:flex items-center gap-gutter" data-active-classes="text-primary font-title-md underline decoration-secondary decoration-2 underline-offset-8"><a class="font-body-ui-md text-body-ui-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="publishing-services" href="#">Publishing Services</a><a aria-current="page" class="transition-colors py-2 text-primary font-title-md underline decoration-secondary decoration-2 underline-offset-8" data-path="author-dashboard" href="#">Author Dashboard</a><a class="font-body-ui-md text-body-ui-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="my-books" href="#">My Books</a><a class="font-body-ui-md text-body-ui-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="submit-manuscript" href="#">Submit Manuscript</a><a class="font-body-ui-md text-body-ui-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="promotion" href="#">Promotion</a></nav><div class="flex items-center gap-space-md"><button aria-label="Notifications" class="relative p-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-sm border-l border-outline-variant/30"><div class="relative"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface" title="Published Author"></span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">E. B. Vance</span><span class="font-label-sm text-label-sm text-secondary font-medium">Pro Imprint</span></div></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Context & Subtle Warm Ambient Header Wrapper -->
+<div class="w-full px-margin py-space-lg flex flex-col gap-space-lg">
+<!-- Section 1: Author Profile Banner & Editorial Metrics -->
+<div class="w-full bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg md:p-space-xl flex flex-col gap-space-lg relative overflow-hidden">
+<!-- Ambient Decorative Watermark Accent -->
+<div class="absolute -right-12 -top-12 w-64 h-64 rounded-full bg-surface-container-low pointer-events-none opacity-60"></div>
+<!-- Top Bar: Avatar, Identity & Primary CTAs -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg relative z-10">
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-md">
+<div class="relative">
+<img class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover shadow-sm" data-alt="Warm portrait of Dr. Meera Sharma, a thoughtful South Asian children's book author with elegant spectacles, natural studio daylight, navy indigo linen attire, textured canvas paper backdrop in soft cream tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqeEPaxPCqXaA3LGroGq8vDGsLmvhkcJp7tA5YCEYmvpg9ffGC0oVC9oI2iYJ3ltB7ac6FGTBVRNjLHQlRiqAPUIUQ2MsS34dbsM66Xf2u3EmxTWLywB7GwbwYLYfS6Rwy1jKDKijNDCFejKvhp0owlQrsw1YEUEiQoKraO_RBEUe_ZNmjxrbu_ccX50LGX4COcbAZHThs8-iMys8K6dXBPOr9fxHOMVYQNvccOa4"/>
+<span class="absolute -bottom-1 -right-1 bg-secondary text-on-secondary w-7 h-7 rounded-full flex items-center justify-center shadow-sm" title="StoryNest Verified">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h1 class="font-headline-md text-headline-md text-primary">Dr. Meera Sharma</h1>
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span> StoryNest Verified Author
+              </span>
+</div>
+<p class="font-body-ui-md text-body-ui-md text-on-surface-variant mt-1">Children's Author &amp; Folklorist • Bilingual Picture Books • Member since Jan 2024</p>
+<div class="flex items-center gap-space-md mt-2 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">workspace_premium</span> Pro Imprint Fellow</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">stars</span> Tier-1 Global Distribution</span>
+</div>
+</div>
+</div>
+<!-- Quick Action CTAs -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="bg-primary text-on-primary font-title-md text-title-md px-5 py-3 rounded-xl hover:bg-primary-container transition-all shadow-sm flex items-center gap-2 active:translate-y-[1px]" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+            Submit New Manuscript
+          </button>
+<button class="bg-surface-container text-on-primary-fixed-variant font-title-md text-title-md px-4 py-3 rounded-xl hover:bg-surface-container-high transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">campaign</span>
+            Request Promotion
+          </button>
+<button class="bg-surface-container-lowest text-on-surface-variant font-title-md text-title-md px-4 py-3 rounded-xl hover:bg-surface-container transition-colors shadow-sm flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">folder_zip</span>
+            Author Kit
+          </button>
+</div>
+</div>
+<!-- Metrics High-Density Strip -->
+<div class="grid grid-cols-2 md:grid-cols-5 gap-space-md pt-space-lg relative z-10">
+<!-- Metric 1 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Total Submitted</span>
+<span class="material-symbols-outlined text-[18px]">collections_bookmark</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-headline-lg text-headline-lg text-primary">3</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant mt-0.5">Folklore &amp; STEM</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-md text-label-md text-on-surface-variant">Live in Library</span>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-headline-lg text-headline-lg text-secondary">2</span>
+<span class="block font-label-sm text-label-sm text-secondary font-medium mt-0.5">100% Peer Approved</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-tertiary-container">
+<span class="font-label-md text-label-md text-on-surface-variant">Under Review</span>
+<span class="material-symbols-outlined text-[18px]">pending_actions</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-primary">1</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold truncate max-w-[110px]" title="The Banyan's Secret Whisper">SN-2025-089</span>
+</div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant truncate mt-0.5">"Banyan's Secret"</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Total Readers</span>
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-headline-lg text-headline-lg text-primary">12,450</span>
+<span class="block font-label-sm text-label-sm text-secondary font-medium mt-0.5">+18% this month</span>
+</div>
+</div>
+<!-- Metric 5 -->
+<div class="bg-surface-container-low p-space-md rounded-xl col-span-2 md:col-span-1 flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-md text-label-md text-on-surface-variant">Stipend &amp; Royalties</span>
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-headline-lg text-headline-lg text-primary">₹42,800</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant mt-0.5">Payout: <strong class="text-on-surface">Nov 30, 2025</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Active Publishing Pipeline Tracker (High Emphasis) -->
+<div class="w-full bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<!-- Manuscript Header Summary -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full uppercase tracking-wider font-semibold">Stage 4 of 7 Active</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Submission ID: SN-2025-089</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mt-1">The Banyan's Secret Whisper <span class="font-normal text-on-surface-variant text-title-lg">/ बरगद का रहस्य</span></h2>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">Target: Ages 6–9 • Format: Illustrated Bilingual Hardcover • Assigned Lead: Senior Editor Sunita Rao</p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<span class="font-label-md text-label-md text-on-surface-variant">Revision SLA:</span>
+<span class="bg-surface-container text-on-primary font-label-md text-label-md px-3 py-1.5 rounded-lg font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">timer</span> 5 Days Remaining
+          </span>
+</div>
+</div>
+<!-- Seven Stage Visual Stepper -->
+<div class="w-full pt-space-sm overflow-x-auto pb-2">
+<div class="min-w-[820px] flex items-center justify-between relative">
+<!-- Continuous Track Line Behind Points -->
+<div class="absolute left-6 right-6 top-5 h-1 bg-surface-container -z-0"></div>
+<!-- Completed Line Progress to Active Stage 4 -->
+<div class="absolute left-6 w-[50%] top-5 h-1 bg-secondary -z-0"></div>
+<!-- Step 1: Draft -->
+<div class="flex flex-col items-center text-center z-10 w-28">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<span class="font-label-md text-label-md text-primary mt-2">1. Draft</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 12</span>
+</div>
+<!-- Step 2: Submitted -->
+<div class="flex flex-col items-center text-center z-10 w-28">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<span class="font-label-md text-label-md text-primary mt-2">2. Submitted</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 14</span>
+</div>
+<!-- Step 3: Editorial Review -->
+<div class="flex flex-col items-center text-center z-10 w-28">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<span class="font-label-md text-label-md text-primary mt-2">3. Edit Review</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 18</span>
+</div>
+<!-- Step 4: Changes Requested (Active / Attention) -->
+<div class="flex flex-col items-center text-center z-10 w-32">
+<div class="w-11 h-11 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shadow-md animate-pulse">
+<span class="material-symbols-outlined text-[24px]">edit_note</span>
+</div>
+<span class="font-label-md text-label-md text-tertiary font-bold mt-2">4. Changes Req.</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant font-semibold">Active • Oct 20</span>
+</div>
+<!-- Step 5: Layout & Typesetting -->
+<div class="flex flex-col items-center text-center z-10 w-28 opacity-60">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">format_paint</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-2">5. Layout</span>
+<span class="font-label-sm text-label-sm text-outline">Pending</span>
+</div>
+<!-- Step 6: Final Sign-off -->
+<div class="flex flex-col items-center text-center z-10 w-28 opacity-60">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">draw</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-2">6. Sign-off</span>
+<span class="font-label-sm text-label-sm text-outline">Pending</span>
+</div>
+<!-- Step 7: Published -->
+<div class="flex flex-col items-center text-center z-10 w-28 opacity-60">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">rocket_launch</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-2">7. Published</span>
+<span class="font-label-sm text-label-sm text-outline">Pending</span>
+</div>
+</div>
+</div>
+<!-- Action Required Callout Banner (Warm Amber Alert) -->
+<div class="bg-tertiary-fixed/40 rounded-xl p-space-md sm:p-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md max-w-3xl">
+<div class="p-2.5 bg-tertiary-fixed rounded-xl text-on-tertiary-fixed shrink-0">
+<span class="material-symbols-outlined text-[24px]">priority_high</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-tertiary font-bold">Changes Requested by Senior Editor Sunita Rao (Oct 20, 2025)</h3>
+<p class="font-body-ui-md text-body-ui-md text-on-surface-variant mt-1 leading-relaxed">
+              "3 developmental suggestions for Chapter 2 pacing and 1 Devanagari rhyme meter alignment in the folk song excerpt. No plot restructuring required—overall narrative is deeply poetic."
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 w-full md:w-auto">
+<a class="w-full md:w-auto text-center bg-primary text-on-primary font-label-md text-label-md px-4 py-3 rounded-xl hover:bg-primary-container transition-colors shadow-sm" href="#feedback-section">
+            Review Notes &amp; Manuscript
+          </a>
+</div>
+</div>
+</div>
+<!-- Section 3: Manuscript Review Feedback & Annotated Notes Panel -->
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-space-lg" id="feedback-section">
+<!-- Left Column: Editorial Notes & Annotated Feedback Drawer (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">rate_review</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Editorial Assessment &amp; Annotations</h3>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2.5 py-1 rounded-full text-on-surface-variant">Editorial Round 1 of 2</span>
+</div>
+<div class="space-y-space-md">
+<!-- Feedback Card 1: Positive Voice -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-1.5 transition-all">
+<div class="flex items-center justify-between">
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sentiment_satisfied</span> Praise &amp; Voice
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ch. 1 • Lines 12–48</span>
+</div>
+<p class="font-body-reading-lg text-body-ui-md text-on-surface mt-1">
+              "Rich evocative sensory details of Jaipur monsoons; character Tara's voice is authentic, resilient, and deeply curious. The introduction to the grandmother's brass chest sets a wonderful tactile foundation."
+            </p>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Approved for typesetting
+            </div>
+</div>
+<!-- Feedback Card 2: Action Required - Pacing -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">psychology_alt</span> Action Required: Pacing
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ch. 2 • Page 14</span>
+</div>
+<p class="font-body-reading-lg text-body-ui-md text-on-surface mt-1">
+              "Page 14: The transition between the grandmother's riddle and the courtyard scene happens abruptly. Suggest adding 1 bridging paragraph highlighting Tara's inner thought process as she steps into the rain."
+            </p>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg mt-1 text-on-surface font-body-ui-sm text-body-ui-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">lightbulb</span>
+<span><em>Editor Recommendation:</em> Focus on the sound of the courtyard peacock feather chime to create the acoustic segue.</span>
+</div>
+</div>
+<!-- Feedback Card 3: Devanagari Meter Alignment -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">translate</span> Action Required: Devanagari Meter
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ch. 3 • Stanza 4</span>
+</div>
+<p class="font-body-reading-lg text-body-ui-md text-on-surface mt-1">
+              "Verse 4 in Hindi uses an irregular syllable count (14 matras vs 16 matras) compared to the preceding rhyming couplet. This impacts read-aloud tempo for younger children. Editor suggestion provided in tracked DOCX."
+            </p>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg mt-1 font-body-ui-sm text-body-ui-sm text-on-surface">
+<p class="font-medium text-primary">'सांझ ढले जब बरगद बोले...' → <em>Suggested rewrite maintains rhythmic meter for dual-audio sync.</em></p>
+</div>
+</div>
+</div>
+<!-- Download Tracked File Link -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between mt-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<div class="truncate">
+<span class="font-title-md text-title-md text-primary block truncate">Annotated_Manuscript_with_Tracked_Changes_SN089.docx</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4.8 MB • Uploaded Oct 20 by Sunita Rao • Includes comments &amp; margins</span>
+</div>
+</div>
+<button class="bg-surface-container-lowest text-primary px-4 py-2 rounded-lg font-label-md text-label-md hover:bg-surface-container-high transition-colors shrink-0 shadow-sm flex items-center gap-1.5 ml-2" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span> Download
+          </button>
+</div>
+</div>
+<!-- Right Column: Interactive Direct Resubmission Dropzone & Editor Chat (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg flex flex-col justify-between gap-space-lg">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">cloud_upload</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Upload Revised File</h3>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed font-bold px-2 py-0.5 rounded">v4 Target</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Resubmit your manuscript with integrated editorial adjustments. We accept DOCX, PDF, or StoryNest Interactive Markdown.</p>
+<!-- Interactive Dropzone -->
+<div class="mt-space-md p-space-lg bg-surface-container-low rounded-xl flex flex-col items-center justify-center text-center cursor-pointer transition-all group" id="dropzone">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary group-hover:scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[28px]">file_upload</span>
+</div>
+<span class="font-title-md text-title-md text-primary mt-space-sm">Drag &amp; drop revised manuscript here</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">or <span class="text-secondary underline font-semibold">browse computer files</span></span>
+<span class="font-label-sm text-label-sm text-outline mt-space-xs">Max file size: 50MB (DOCX, PDF, Markdown)</span>
+</div>
+<!-- Notes to Editor Textarea -->
+<div class="mt-space-md flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="editor-notes">Notes for Senior Editor Sunita</label>
+<textarea class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-ui-sm text-body-ui-sm rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-primary/20" id="editor-notes" placeholder="e.g. Added bridging stanza to Page 14 and matched Hindi syllabic count in Verse 4 as recommended..." rows="3"></textarea>
+</div>
+</div>
+<!-- Action Button -->
+<div class="pt-space-md flex flex-col gap-2">
+<button class="w-full bg-secondary text-on-secondary font-title-md text-title-md py-3.5 px-4 rounded-xl hover:bg-secondary/90 transition-all shadow-sm flex items-center justify-center gap-2 active:translate-y-[1px]" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+            Submit Revised Manuscript v4
+          </button>
+<p class="font-label-sm text-label-sm text-center text-on-surface-variant">Once submitted, Editor Sunita will receive an immediate alert.</p>
+</div>
+</div>
+</div>
+<!-- Section 4: My Published Books & Active Listings (High Editorial Density) -->
+<div class="w-full bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Published Books &amp; Live Catalog</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Live in StoryNest Library, School Lending Portals, and Global Print-on-Demand.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm bg-surface-container text-primary font-semibold px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> 2 Active in Global Catalog
+          </span>
+</div>
+</div>
+<!-- Published Book Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Book 1: Tara and the Whispering Stars -->
+<div class="bg-surface-container-low rounded-2xl p-space-md sm:p-space-lg flex flex-col sm:flex-row gap-space-md transition-all hover:shadow-md">
+<div class="w-full sm:w-36 h-48 sm:h-52 rounded-xl overflow-hidden shrink-0 shadow-sm relative">
+<img class="w-full h-full object-cover" data-alt="Charming watercolor illustration book cover of Tara and the Whispering Stars, featuring an Indian girl looking up at glowing constellations with a brass telescope, rich navy night sky, amber glowing stars, editorial picture book styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFXvgQQTFtE-kh2pFLqw0VoyVcNWm-nglFgMjRdniA8kQ0sbuDgVQ7DeVY9Om29Z_s79GPIr-DwOq_MPmISq4j7YnJidK6s2ClgY4I88mhxPZpenlDG4lh6SK6j5alWvKG6jdlLlRvpOKXVlJECGPSTGLihfyqhLESZ2mkO9joqe75UJnQk8kvsZEod7_EKiqkTwrocJqoDitEQk4JuYjuOBm31M21aMoWGc4J-dM"/>
+<span class="absolute top-2 left-2 bg-secondary text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded shadow">Live</span>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">ISBN: 978-93-5593-102-1</span>
+<span class="flex items-center text-on-tertiary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] mr-0.5" style="font-variation-settings: 'FILL' 1;">star</span> 4.9 <span class="text-on-surface-variant font-normal text-xs ml-1">(210)</span>
+</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1">Tara and the Whispering Stars</h4>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1 line-clamp-2">A stargazing journey introducing constellations and indigenous desert navigation lore.</p>
+<!-- Metrics pill row -->
+<div class="flex items-center gap-space-xs flex-wrap mt-space-sm">
+<span class="bg-surface-container-lowest text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-md shadow-xs">
+<strong>12,400</strong> Reads
+                </span>
+<span class="bg-surface-container-lowest text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-md shadow-xs">
+                  Bilingual (EN / HI)
+                </span>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-md font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">school</span> 18 Partner Schools
+                </span>
+</div>
+</div>
+<!-- Action buttons -->
+<div class="flex items-center gap-space-xs flex-wrap pt-space-md mt-auto">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-3.5 py-2 rounded-lg hover:bg-primary-container transition-colors shadow-xs flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">query_stats</span> View Analytics
+              </button>
+<button class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-3 py-2 rounded-lg hover:bg-surface-container transition-colors shadow-xs flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">campaign</span> Campaign
+              </button>
+<button class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-3 py-2 rounded-lg hover:bg-surface-container transition-colors shadow-xs flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span> Author Proofs
+              </button>
+</div>
+</div>
+</div>
+<!-- Book 2: The Clockmaker's Origami Sparrow -->
+<div class="bg-surface-container-low rounded-2xl p-space-md sm:p-space-lg flex flex-col sm:flex-row gap-space-md transition-all hover:shadow-md">
+<div class="w-full sm:w-36 h-48 sm:h-52 rounded-xl overflow-hidden shrink-0 shadow-sm relative">
+<img class="w-full h-full object-cover" data-alt="Intricate picture book illustration cover for The Clockmakers Origami Sparrow, whimsical brass gears, delicate folded parchment sparrow taking flight, warm antique workshop lighting, editorial woodcut aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlVnkn1cC9NBe-TKpCURhiq20sKoOonS1LNw23hJuLHPs_IXxRzq6Pp4WsIlR5UnsZEulyigGebTf1k867jJhlbm30_0WV8Q2_n2I_PNOAL-L-4cfIVhlOVBIhqfYcgPV16PStarpRYsDDU0FLJbqAxJN0QEHICKHhgJr9TuOHE1kLFDw3kAW2sp4-ghBJTSDSUXXcUXXTn3o_4U9TY1YE3aOncohKrA6GIDuy8cY"/>
+<span class="absolute top-2 left-2 bg-secondary text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded shadow">Live</span>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">ISBN: 978-93-5593-088-8</span>
+<span class="flex items-center text-on-tertiary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] mr-0.5" style="font-variation-settings: 'FILL' 1;">star</span> 4.8 <span class="text-on-surface-variant font-normal text-xs ml-1">(94)</span>
+</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1">The Clockmaker's Origami Sparrow</h4>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1 line-clamp-2">An allegorical tale about patience, grandfather clocks, and the magic of folded paper wings.</p>
+<!-- Metrics pill row -->
+<div class="flex items-center gap-space-xs flex-wrap mt-space-sm">
+<span class="bg-surface-container-lowest text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-md shadow-xs">
+<strong>3,210</strong> Reads
+                </span>
+<span class="bg-surface-container-lowest text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-md shadow-xs">
+                  English Edition
+                </span>
+<span class="bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm px-2.5 py-1 rounded-md shadow-xs">
+                  Hardcover • eBook
+                </span>
+</div>
+</div>
+<!-- Action buttons -->
+<div class="flex items-center gap-space-xs flex-wrap pt-space-md mt-auto">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-3.5 py-2 rounded-lg hover:bg-primary-container transition-colors shadow-xs flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">query_stats</span> View Analytics
+              </button>
+<button class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-3 py-2 rounded-lg hover:bg-surface-container transition-colors shadow-xs flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span> Manage Formats
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 5: Recent Notifications & Active Author Service Requests -->
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Notifications Center (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">notifications_active</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Recent Author Updates</h3>
+</div>
+<button class="text-secondary font-label-md text-label-md hover:underline" type="button">Mark all read</button>
+</div>
+<div class="divide-y-0 space-y-space-sm mt-space-sm">
+<!-- Notice 1 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<div class="flex-grow">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary">Virtual Reading Workshop Reached Capacity</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2h ago</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">Your upcoming interactive session on Indian Forest Folk Stories has reached 25/25 confirmed young reader registrations.</p>
+</div>
+</div>
+<!-- Notice 2 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</div>
+<div class="flex-grow">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary">October Royalties Statement Generated</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1d ago</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">Summary for "Tara and the Whispering Stars" reads and school license disbursements ready for download in statements.</p>
+</div>
+</div>
+<!-- Notice 3 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</div>
+<div class="flex-grow">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary">Editorial Review Completed for #SN-2025-089</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2d ago</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">Senior Editor Sunita Rao completed the initial structural review. Check the pipeline above for details.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Service Tracker Mini-Card (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">hub</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Active Concierge Request</h3>
+</div>
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-medium">In Flight</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md mt-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Promotion Campaign #PR-992</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Confirmed</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary">Google Meet Book Launch Promotion</h4>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Coordinated virtual launch for "The Banyan's Secret Whisper" partnering with StoryNest Educator Network.</p>
+<div class="grid grid-cols-2 gap-2 mt-2">
+<div class="bg-surface-container-lowest p-space-xs px-space-sm rounded-lg">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Scheduled Date</span>
+<span class="font-title-md text-title-md text-primary">Nov 15, 2025</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs px-space-sm rounded-lg">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Audience Cohort</span>
+<span class="font-title-md text-title-md text-secondary">18 RSVPs / Confirmed</span>
+</div>
+</div>
+<!-- Mini Progress bar -->
+<div class="mt-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span>Campaign Prep Status</span>
+<span class="text-primary font-semibold">75% Complete</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-2 rounded-full w-3/4"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Concierge Lead: <strong>Priya S.</strong></span>
+<button class="bg-surface-container text-on-primary-fixed-variant font-label-md text-label-md px-4 py-2 rounded-lg hover:bg-surface-container-high transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span> Chat with Concierge
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive feedback dropzone micro-interaction
+  const dropzone = document.getElementById('dropzone');
+  if (dropzone) {
+    dropzone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropzone.classList.add('bg-surface-container-high');
+    });
+    dropzone.addEventListener('dragleave', () => {
+      dropzone.classList.remove('bg-surface-container-high');
+    });
+    dropzone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropzone.classList.remove('bg-surface-container-high');
+      alert('Manuscript file staged for validation. Please click "Submit Revised Manuscript v4".');
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_6px_rgba(0,0,0,0.02)] mt-space-xl"><div class="w-full px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="space-y-space-sm md:col-span-1"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[24px]">menu_book</span><span class="font-headline-sm text-headline-sm text-primary">StoryNest</span></div><p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant leading-relaxed">The premier ethical self-publishing ecosystem for independent children's book creators, illustrators, and educational storytellers.</p></div><div><h4 class="font-title-md text-title-md text-primary mb-space-md">Publishing Standards</h4><ul class="space-y-space-xs"><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Print &amp; Binding Guidelines</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Global ISBN Allocation</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Editorial Peer Review</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Illustrated Art Standards</a></li></ul></div><div><h4 class="font-title-md text-title-md text-primary mb-space-md">Author Support &amp; Rights</h4><ul class="space-y-space-xs"><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Copyright Protection</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Royalty &amp; Distribution Terms</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Manuscript Consultation</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Publisher Concierge</a></li></ul></div><div><h4 class="font-title-md text-title-md text-primary mb-space-md">Legal &amp; Compliance</h4><ul class="space-y-space-xs"><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Children's Content Safety Pledge</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Privacy Policy</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Author Service Agreement</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Digital Rights Management</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md border-t border-outline-variant/30"><p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">© 2024 StoryNest Publishing Cooperative Inc. All rights reserved.</p><div class="flex items-center gap-space-lg"><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">verified</span>ISO 2108 Certified Publishing Flow</span><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">lock</span>End-to-End Intellectual Rights Escrow</span></div></div></div></footer></body></html>

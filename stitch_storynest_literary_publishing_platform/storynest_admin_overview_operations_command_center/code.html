@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#b1f0d6", "on-secondary-container": "#336f5b", "surface-container-high": "#ddeaf2", "on-tertiary": "#ffffff", "on-surface-variant": "#44474d", "inverse-on-surface": "#e6f3fb", "on-secondary-fixed-variant": "#0e503e", "surface-container": "#e3f0f8", "tertiary": "#261800", "on-primary-fixed": "#0b1c32", "surface-dim": "#cfdce4", "tertiary-container": "#402c00", "outline-variant": "#c5c6cd", "background": "#f4faff", "surface-tint": "#4f5f78", "inverse-surface": "#263238", "on-secondary": "#ffffff", "on-error-container": "#93000a", "primary-fixed-dim": "#b7c7e5", "surface-container-highest": "#d7e4ec", "on-tertiary-fixed": "#271900", "on-tertiary-fixed-variant": "#5e4200", "surface-variant": "#d7e4ec", "primary": "#091b31", "error-container": "#ffdad6", "on-primary-container": "#8898b3", "surface-bright": "#f4faff", "outline": "#75777e", "secondary-fixed": "#b1f0d6", "primary-fixed": "#d4e3ff", "primary-container": "#203047", "on-background": "#111d23", "tertiary-fixed-dim": "#f4be55", "on-secondary-fixed": "#002117", "tertiary-fixed": "#ffdea7", "secondary": "#2d6955", "inverse-primary": "#b7c7e5", "on-surface": "#111d23", "on-primary": "#ffffff", "error": "#ba1a1a", "surface-container-low": "#e9f6fd", "secondary-fixed-dim": "#96d3bb", "surface-container-lowest": "#ffffff", "surface": "#f4faff", "on-error": "#ffffff", "on-tertiary-container": "#c08f2a", "on-primary-fixed-variant": "#384760" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin": "2.5rem", "space-sm": "0.5rem", "gutter-sm": "1rem", "space-md": "1rem", "gutter": "1.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem" }, "fontFamily": { "label-md": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "headline-lg": [ "Merriweather" ], "body-reading-lg": [ "Merriweather" ], "title-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "body-ui-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Merriweather" ], "headline-md": [ "Merriweather" ], "display-hero-mobile": [ "Merriweather" ], "headline-lg-mobile": [ "Merriweather" ], "body-ui-sm": [ "Plus Jakarta Sans" ], "display-hero": [ "Merriweather" ] }, "fontSize": { "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "title-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "headline-lg": [ "36px", { "lineHeight": "46px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-reading-lg": [ "18px", { "lineHeight": "32px", "fontWeight": "400" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700" } ], "body-ui-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "700" } ], "headline-md": [ "26px", { "lineHeight": "34px", "fontWeight": "700" } ], "display-hero-mobile": [ "34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "body-ui-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-hero": [ "48px", { "lineHeight": "58px", "letterSpacing": "-0.02em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-ui-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(32,48,71,0.06)] border-b border-outline-variant/30"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs focus:outline-none" href="#"><span class="material-symbols-outlined text-secondary text-[26px]">shield</span><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">StoryNest</span><span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Admin Console</span></div></a><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-full border border-outline-variant/40"><span class="w-2 h-2 rounded-full bg-secondary inline-block animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Production v2.4 • ISO 2108 / COPPA Certified</span></div></div><div class="hidden md:flex flex-1 max-w-xl mx-space-md"><div class="relative w-full"><span class="material-symbols-outlined text-on-surface-variant absolute left-3 top-1/2 -translate-y-1/2 text-[18px]">search</span><input class="w-full bg-surface-container-low border border-outline-variant/40 rounded-xl pl-9 pr-space-md py-1.5 font-body-ui-sm text-body-ui-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Search books, authors, submissions, users (Ctrl + K)..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-1 bg-secondary-container/40 rounded-lg"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-secondary-container font-semibold">System Operational (24ms)</span></div><div class="flex items-center bg-surface-container-low rounded-lg p-0.5 border border-outline-variant/30"><button class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary text-on-primary font-semibold" type="button">EN</button><button class="px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface font-semibold" type="button">HI</button></div><button aria-label="Notifications" class="relative p-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 bg-error text-on-error rounded-full font-label-sm text-[10px] flex items-center justify-center font-bold">5</span></button><div class="flex items-center gap-space-sm pl-space-sm border-l border-outline-variant/30"><div class="relative"><div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-title-md font-bold"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest" title="SuperAdmin"></span></div><div class="hidden sm:flex flex-col text-left"><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md text-on-surface leading-tight font-semibold">Dr. Rajesh Varma</span><span class="px-1.5 py-0.2 rounded font-label-sm text-[10px] bg-secondary-container text-on-secondary-container font-bold">SuperAdmin</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Platform Director &amp; Chief Editor</span></div></div></div></div></header><aside class="fixed top-16 left-0 bottom-0 w-72 bg-surface-container-lowest border-r border-outline-variant/30 z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-md space-y-space-md"><nav class="space-y-space-md" data-active-classes="bg-surface-container-high text-primary font-semibold border-l-4 border-secondary"><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Core Operations</div><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-overview" href="#"><span>Overview (Dashboard)</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-audit-security" href="#"><span>Audit Logs &amp; Security</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-content-moderation" href="#"><span>Content Moderation &amp; COPPA</span><span class="px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-error-container text-on-error-container font-bold">3 Urgent</span></a></div></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Editorial &amp; Publishing</div><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-manuscripts" href="#"><span>Manuscript Submissions</span><span class="px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-secondary-container text-on-secondary-container font-bold">7 Pending</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-books-catalog" href="#"><span>Published Books &amp; Catalog</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-authors" href="#"><span>Author Profiles &amp; Applications</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-services-promotion" href="#"><span>Publishing &amp; Promotion Requests</span></a></div></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Learning &amp; Community</div><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-workshops-meet" href="#"><span>Workshops &amp; Google Meet</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-competitions" href="#"><span>Competitions &amp; Submissions</span><span class="px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-tertiary-fixed text-on-tertiary-fixed-variant font-bold">12 New</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-activities-quiz" href="#"><span>Activities &amp; Quiz Bank</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-certificates" href="#"><span>Certificates of Achievement</span></a></div></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Platform Governance</div><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-users-roles" href="#"><span>Users, Roles &amp; Permissions</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-escrow-royalties" href="#"><span>Escrow Payments &amp; Royalties</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-cms" href="#"><span>Website CMS &amp; Home</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admin-settings" href="#"><span>System Settings &amp; Policies</span></a></div></div></nav></div><div class="p-space-md border-t border-outline-variant/30 bg-surface-container-low space-y-space-sm"><div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary">lock_clock</span>Session Timeout</span><span class="font-semibold text-primary">28m 42s</span></div><div class="flex items-center justify-between gap-space-xs pt-1"><a class="flex-1 text-center py-1.5 px-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-colors border border-outline-variant/30" href="#">Author Portal</a><a class="flex-1 text-center py-1.5 px-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-colors border border-outline-variant/30" href="#">Reader Hub</a></div><button class="w-full flex items-center justify-center gap-1.5 py-1.5 px-space-sm rounded-lg text-error hover:bg-error-container/40 font-label-md text-label-md font-semibold transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">logout</span><span>Sign Out of Console</span></button></div></aside><main class="w-full pt-16 pl-72 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Content Area with Ambient Lighting & Grid System -->
+<div class="px-space-md lg:px-margin py-space-lg space-y-space-xl">
+<!-- 1. Executive Header & Operational Telemetry -->
+<div class="flex flex-col gap-space-md">
+<!-- Breadcrumbs & Live Pulse Status -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">Admin Console</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Operations Command Center</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide">Live sync active • Last refresh 32s ago</span>
+<button class="ml-1 text-on-surface-variant hover:text-primary transition-transform duration-500 flex items-center" id="refreshBtn" onclick="this.classList.add('rotate-180'); setTimeout(()=&gt;this.classList.remove('rotate-180'), 500);" title="Force Refresh">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+</button>
+</div>
+</div>
+<!-- Main Headline & Global Quick Actions -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-3xl">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary text-on-primary uppercase tracking-wider">Operational Nexus</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Build 2025.10-PROD</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Platform Operations &amp; Editorial Command Center</h1>
+<p class="font-body-ui-md text-body-ui-md text-on-surface-variant">
+            Supervisory oversight for bilingual publishing lifecycles, COPPA student sandboxing, live virtual workshops, and cryptographic royalty escrows.
+          </p>
+</div>
+<!-- Date Range & Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Time Scope Segmented Control -->
+<div class="flex items-center bg-surface-container-high p-1 rounded-xl shadow-sm">
+<button class="px-space-sm py-1 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm font-semibold transition-all">Today</button>
+<button class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors">Last 7 Days</button>
+<button class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors">Month-to-date</button>
+<button class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors">Quarter</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-space-md py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-primary font-label-md text-label-md font-semibold transition-all shadow-sm active:translate-y-[1px]">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Audit Report</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all shadow-md active:translate-y-[1px]">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">health_and_safety</span>
+<span>Health Check</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. Critical Operational KPI Metric Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1: Pending Manuscripts -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">auto_stories</span>
+</div>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">trending_up</span> +2 today
+          </span>
+</div>
+<div class="mt-space-md space-y-1">
+<div class="font-headline-lg text-headline-lg text-primary leading-none">07</div>
+<div class="font-title-md text-title-md text-on-surface font-semibold">Manuscripts in Review</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">3 priority bilingual titles</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[14px]">timer</span> SLA: 48h remaining
+          </span>
+<a class="text-primary hover:underline font-bold flex items-center gap-0.5" href="#">Queue <span class="material-symbols-outlined text-[12px]">arrow_forward</span></a>
+</div>
+</div>
+<!-- KPI 2: COPPA Moderation -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-error"></div>
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-xl bg-error-container/40 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-bold">
+            1 Urgent SLA
+          </span>
+</div>
+<div class="mt-space-md space-y-1">
+<div class="font-headline-lg text-headline-lg text-primary leading-none">03</div>
+<div class="font-title-md text-title-md text-on-surface font-semibold">COPPA &amp; Safety Flags</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">1 guardian check, 2 keyword alerts</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2">
+<span class="flex items-center gap-1 text-error font-semibold">
+<span class="material-symbols-outlined text-[14px]">warning</span> SLA: 12h resolution
+          </span>
+<a class="text-error hover:underline font-bold flex items-center gap-0.5" href="#">Inspect <span class="material-symbols-outlined text-[12px]">arrow_forward</span></a>
+</div>
+</div>
+<!-- KPI 3: Virtual Workshops -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">video_camera_front</span>
+</div>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-bold">
+            This Week
+          </span>
+</div>
+<div class="mt-space-md space-y-1">
+<div class="font-headline-lg text-headline-lg text-primary leading-none">04</div>
+<div class="font-title-md text-title-md text-on-surface font-semibold">Live Google Meet Labs</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">86 confirmed young learners</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified_user</span> 100% sandboxed URLs
+          </span>
+<a class="text-primary hover:underline font-bold flex items-center gap-0.5" href="#">Roster <span class="material-symbols-outlined text-[12px]">arrow_forward</span></a>
+</div>
+</div>
+<!-- KPI 4: Escrow & Royalties -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-tertiary-fixed-dim"></div>
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed/30 flex items-center justify-center text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[22px]">account_balance_wallet</span>
+</div>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-bold">
+            Protected
+          </span>
+</div>
+<div class="mt-space-md space-y-1">
+<div class="font-headline-lg text-headline-lg text-primary leading-none">₹2,48,500</div>
+<div class="font-title-md text-title-md text-on-surface font-semibold">Author Escrow Vault</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">14 active publishing retainers</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2">
+<span class="flex items-center gap-1 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[14px] text-secondary">copyright</span> 100% IP cleared
+          </span>
+<a class="text-primary hover:underline font-bold flex items-center gap-0.5" href="#">Ledger <span class="material-symbols-outlined text-[12px]">arrow_forward</span></a>
+</div>
+</div>
+</div>
+<!-- 3. Urgent Action Center / Operational Attention Queue -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+<h2 class="font-title-lg text-title-lg text-primary font-bold">Operational Attention Queue</h2>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-bold">3 Interventions Needed</span>
+</div>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Auto-sorted by SLA severity threshold</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Urgent Item 1: Lead Editorial Sign-Off -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="space-y-space-sm pl-2">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded font-label-sm text-[10px] bg-primary text-on-primary font-bold tracking-wider uppercase">Editorial SLA (4h)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#SN-2025-089</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold">"The Banyan's Secret Whisper"</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">Dr. Meera Sharma • Dual Hindi/English</p>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface bg-surface-container-low p-2.5 rounded-lg leading-relaxed">
+              Revision submitted addressing stanza meter flow. Waiting for Chief Editor final publication approval signature.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs pl-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors text-center active:translate-y-[1px]">
+              Open Dossier
+            </button>
+<button class="py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors active:translate-y-[1px]">
+              Reassign
+            </button>
+</div>
+</div>
+<!-- Urgent Item 2: COPPA Child Safety Quarantined -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="space-y-space-sm pl-2">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded font-label-sm text-[10px] bg-error-container text-on-error-container font-bold tracking-wider uppercase">COPPA Quarantine</span>
+<span class="font-label-sm text-label-sm text-error font-bold flex items-center gap-0.5"><span class="material-symbols-outlined text-[13px]">lock</span> PII Detected</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold">Student Cup Entry: "The Paper Crane"</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">Author: Aarav S. (Age 9) • Mumbai Region</p>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface bg-error-container/30 text-on-error-container p-2.5 rounded-lg leading-relaxed">
+              Automated regex detected potential unmasked parental phone string within chapter 2 narrative body. Quarantined from public catalog.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs pl-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-error hover:bg-error/90 text-on-error font-label-md text-label-md font-semibold transition-colors text-center active:translate-y-[1px]">
+              Inspect &amp; Redact
+            </button>
+<button class="py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md font-semibold transition-colors active:translate-y-[1px]">
+              Dismiss Safe
+            </button>
+</div>
+</div>
+<!-- Urgent Item 3: Workshop Host Verification -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="space-y-space-sm pl-2">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded font-label-sm text-[10px] bg-secondary-container text-on-secondary-container font-bold tracking-wider uppercase">Meet Sandboxing</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Tomorrow 10:00 AM</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold">Bilingual Poetry Masterclass</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">Host: Dr. Ananya Sen • 24 Registered Students</p>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface bg-surface-container-low p-2.5 rounded-lg leading-relaxed">
+              Google Workspace OAuth refresh required for automated breakout supervisor bot before participant dispatch.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs pl-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-secondary hover:bg-secondary/90 text-on-secondary font-label-md text-label-md font-semibold transition-colors text-center active:translate-y-[1px]">
+              Verify &amp; Dispatch PIN
+            </button>
+<button class="py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors active:translate-y-[1px]">
+              Reschedule
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Primary Data Management Workbenches (60% / 40% Split) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Editorial & Manuscript Submissions Ledger (7 cols ~ 58%) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm space-y-space-md">
+<!-- Header & Search Controls -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-primary">Manuscript Submissions Ledger</h2>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-bold">24 Total</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Track editorial progress, linguistic meter, and publication sign-offs</p>
+</div>
+<div class="relative w-full sm:w-64">
+<span class="material-symbols-outlined text-on-surface-variant absolute left-3 top-1/2 -translate-y-1/2 text-[18px]">search</span>
+<input class="w-full bg-surface-container-low rounded-xl pl-9 pr-3 py-1.5 font-body-ui-sm text-body-ui-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Filter manuscripts..." type="text"/>
+</div>
+</div>
+<!-- Status Filter Tabs -->
+<div class="flex items-center gap-1 overflow-x-auto pb-1 scrollbar-none">
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md bg-primary text-on-primary font-semibold whitespace-nowrap shadow-sm">All [24]</button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-primary font-semibold whitespace-nowrap transition-colors">Under Review [7]</button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-primary font-semibold whitespace-nowrap transition-colors">Revision Submitted [4]</button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-primary font-semibold whitespace-nowrap transition-colors">Ready to Publish [5]</button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-primary font-semibold whitespace-nowrap transition-colors">Published [8]</button>
+</div>
+<!-- Ledger Table Container -->
+<div class="overflow-x-auto rounded-xl bg-surface-container-low">
+<table class="w-full text-left font-body-ui-sm text-body-ui-sm">
+<thead class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-3 px-space-md">Manuscript &amp; ID</th>
+<th class="py-3 px-space-md">Author / Genre</th>
+<th class="py-3 px-space-md">Assigned Reviewer</th>
+<th class="py-3 px-space-md">Status</th>
+<th class="py-3 px-space-md text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40">
+<!-- Row 1: The Banyan's Secret Whisper -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-xs">
+<img class="w-10 h-13 rounded object-cover shadow-sm flex-shrink-0" data-alt="Warm watercolor picture book cover featuring an ancient mystical banyan tree with glowing fireflies under a deep indigo starlit sky in traditional Indian narrative art style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZAt5hEYyWS_WGMW0nlmy38fwUsKoJTyFXiOgCSW14pZxVblpKMChIO0nHCttshZfBnCGVS5K_adQFHTmvyDD_DqZuPJKJlZhyspRaA9LpdAUemLzvE-lGRUAuNSq-Cm2wsYZz6osiyG3zwOVNnn-Ii8cMwurqzu-rNcYpGMVhnkP9-cxXFAqySWelZkpW4UJtTmYEfcJ-edRJPP70tXOYjjhp_JxiRntQMtm05xI"/>
+<div class="min-w-0">
+<div class="font-title-md text-title-md text-primary font-bold truncate">The Banyan's Secret Whisper</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">#SN-2025-089 • Oct 24</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Dr. Meera Sharma</div>
+<div class="font-label-sm text-label-sm text-secondary">Folk / Ages 6-9 (EN+HI)</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-[10px] font-bold">SR</div>
+<span class="text-on-surface">Sunita Rao</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant font-bold inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+                    Revision Submitted
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary hover:text-primary transition-colors" title="Open Dossier">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Audit History">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Tara and the Whispering Stars v2 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-xs">
+<img class="w-10 h-13 rounded object-cover shadow-sm flex-shrink-0" data-alt="Charming children's book illustration showing a cheerful girl named Tara with a brass telescope on a rooftop garden gazing at sparkling celestial constellations with soft pastel hues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABOjw9dbqvbH7PjBkA6wWXeISHA6pymtR9Pg11TQBc0MLNf9TIQ76hGYk2m19RZDHiZqM7MB-alF6eBxcfuJrCU01t6oYP5FB2gfdxgXKNKTtutLUORGAZMPApvjuBhjBda7hsP73QFkH331KFyRqFXL_5gkX0xaIfrPEEX08fCPMMVW58mI6s2wf5rHzldVKaqG32e0EI15jlTAD2nSnlDGxXGKpKMvdF8dhM4_k"/>
+<div class="min-w-0">
+<div class="font-title-md text-title-md text-primary font-bold truncate">Tara &amp; Whispering Stars v2</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">#SN-2025-072 • Oct 22</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Kavita Narayan</div>
+<div class="font-label-sm text-label-sm text-secondary">Sci-Fi / Ages 7-10</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-sm text-[10px] font-bold">AK</div>
+<span class="text-on-surface">Arjun Kapoor</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-bold inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Passed Verification
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary transition-colors" title="Open Dossier">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Audit History">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: The Clockmaker's Origami Sparrow -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-xs">
+<img class="w-10 h-13 rounded object-cover shadow-sm flex-shrink-0" data-alt="Tactile warm illustration of an antique horology clock workshop with delicate golden folded paper origami sparrows taking flight amidst brass gears and warm amber ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyJbgtnf1dbFtWA_7knk8Gyu2gDz5dbDBpezxMg66WtCjwFilV9VyrYBay_oNp6w_HiWHhCq3pcKmZQnoJQ31M7Aipsh07rTNVOpy4B9X1XQU4P7rrlxI1ml8nKcAiewwVIVVskqGmF7As3LD6y5b56t9r6TaAtI-alOpLvNhmtzZV8WYZyVEXZWuBQeOHDPZ0Pen6_58mdvJlB5yYYSw9g8FdEm5KBo8DetB8gNo"/>
+<div class="min-w-0">
+<div class="font-title-md text-title-md text-primary font-bold truncate">Clockmaker's Origami Sparrow</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">#SN-2025-094 • Oct 20</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Liam O'Connor</div>
+<div class="font-label-sm text-label-sm text-secondary">Fantasy / Ages 8-12</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-[10px] font-bold">RV</div>
+<span class="text-on-surface">Dr. Rajesh V.</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-bold inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    In Editorial Review
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary transition-colors" title="Open Dossier">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Audit History">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Panchatantra Modern Rhymes -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-13 rounded bg-surface-container flex items-center justify-center text-on-surface-variant shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</div>
+<div class="min-w-0">
+<div class="font-title-md text-title-md text-primary font-bold truncate">Panchatantra Modern Rhymes</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">#SN-2025-061 • Oct 18</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Aaditya Vats</div>
+<div class="font-label-sm text-label-sm text-secondary">Poetry / Ages 4-7</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-[10px] font-bold">SR</div>
+<span class="text-on-surface">Sunita Rao</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-bold inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                    Changes Requested
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary transition-colors" title="Open Dossier">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Audit History">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Ledger Footer & Pagination -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs font-body-ui-sm text-body-ui-sm text-on-surface-variant">
+<span>Showing <strong class="text-primary font-semibold">1-4</strong> of 24 records</span>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary disabled:opacity-50 transition-colors" disabled="">Previous</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-semibold">1</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container text-primary font-semibold transition-colors">2</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container text-primary font-semibold transition-colors">3</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors">Next</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Real-Time Audit Stream & Telemetry (5 cols ~ 42%) -->
+<div class="lg:col-span-5 space-y-space-md">
+<!-- Live Audit Log Stream Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">history_edu</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Live Operations Stream</h2>
+</div>
+<a class="font-label-sm text-label-sm text-secondary hover:underline font-bold flex items-center gap-0.5" href="#">
+              Full Audit Vault <span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</div>
+<!-- Chronological Stream List -->
+<div class="relative pl-6 space-y-space-md before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Event 1: Editorial Change -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-primary-container ring-4 ring-surface-container-lowest"></span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-bold text-primary">Sunita Rao (Lead Editor)</span>
+<span>14m ago</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface mt-0.5">
+                Requested meter adjustments on stanza 4 Devanagari rhythm for <span class="font-semibold text-primary">#SN-2025-089</span>.
+              </p>
+<div class="mt-1 flex items-center gap-1.5 font-label-sm text-[11px] text-secondary">
+<span class="material-symbols-outlined text-[12px]">rate_review</span> Editorial Review Loop
+              </div>
+</div>
+<!-- Event 2: System Hash Scan -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-secondary ring-4 ring-surface-container-lowest"></span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-bold text-secondary">System Security Bot</span>
+<span>42m ago</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface mt-0.5">
+                Automated SHA-256 integrity scan completed for EPUB package #EP-9024. 0 vulnerabilities or unverified scripts found.
+              </p>
+<div class="mt-1 flex items-center gap-1.5 font-label-sm text-[11px] text-on-surface-variant">
+<span class="material-symbols-outlined text-[12px]">format_image_left</span> ISO 2108 Compliant
+              </div>
+</div>
+<!-- Event 3: Admin Escrow Approval -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-tertiary-fixed-dim ring-4 ring-surface-container-lowest"></span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-bold text-primary">Dr. Rajesh Varma</span>
+<span>1h ago</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface mt-0.5">
+                Authorized milestone release for Escrow Batch #EB-884 (₹42,000 to 3 authors) following proofsign verification.
+              </p>
+<div class="mt-1 flex items-center gap-1.5 font-label-sm text-[11px] text-on-tertiary-fixed-variant font-medium">
+<span class="material-symbols-outlined text-[12px]">payments</span> Financial Clearance
+              </div>
+</div>
+<!-- Event 4: Workshop Meet Created -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-container-lowest"></span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-bold text-primary">Author Concierge</span>
+<span>2h ago</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface mt-0.5">
+                Configured secure sandboxed Google Meet channel for "Creative Mythology for 8-Year-Olds" launching Nov 15.
+              </p>
+<div class="mt-1 flex items-center gap-1.5 font-label-sm text-[11px] text-secondary">
+<span class="material-symbols-outlined text-[12px]">videocam</span> Google Workspace Integration
+              </div>
+</div>
+<!-- Event 5: Moderator Parental Token Verification -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-secondary-container ring-4 ring-surface-container-lowest"></span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-bold text-secondary">Priya S. (Moderator)</span>
+<span>3h ago</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface mt-0.5">
+                Authenticated dual-factor guardian OTP consent token for young storyteller Aarav S. (Age 9).
+              </p>
+<div class="mt-1 flex items-center gap-1.5 font-label-sm text-[11px] text-on-surface-variant">
+<span class="material-symbols-outlined text-[12px]">verified</span> COPPA Guardian Vault
+              </div>
+</div>
+</div>
+</div>
+<!-- Inline Visual Data Card: Submission Flow Heatmap -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-primary font-bold">Weekly Intake Velocity</h3>
+<span class="font-label-sm text-label-sm text-secondary font-bold">+18.4% vs last week</span>
+</div>
+<!-- Inline Sparkline / Velocity Graphic -->
+<div class="h-16 w-full flex items-end justify-between gap-1.5 pt-2">
+<div class="flex-1 bg-surface-container rounded-t h-[40%] group relative">
+<span class="opacity-0 group-hover:opacity-100 absolute -top-6 left-1/2 -translate-x-1/2 font-label-sm text-[10px] bg-primary text-on-primary px-1 rounded transition-opacity">Mon 4</span>
+</div>
+<div class="flex-1 bg-surface-container rounded-t h-[65%] group relative">
+<span class="opacity-0 group-hover:opacity-100 absolute -top-6 left-1/2 -translate-x-1/2 font-label-sm text-[10px] bg-primary text-on-primary px-1 rounded transition-opacity">Tue 7</span>
+</div>
+<div class="flex-1 bg-surface-container rounded-t h-[50%] group relative">
+<span class="opacity-0 group-hover:opacity-100 absolute -top-6 left-1/2 -translate-x-1/2 font-label-sm text-[10px] bg-primary text-on-primary px-1 rounded transition-opacity">Wed 5</span>
+</div>
+<div class="flex-1 bg-surface-container rounded-t h-[80%] group relative">
+<span class="opacity-0 group-hover:opacity-100 absolute -top-6 left-1/2 -translate-x-1/2 font-label-sm text-[10px] bg-primary text-on-primary px-1 rounded transition-opacity">Thu 9</span>
+</div>
+<div class="flex-1 bg-surface-container rounded-t h-[60%] group relative">
+<span class="opacity-0 group-hover:opacity-100 absolute -top-6 left-1/2 -translate-x-1/2 font-label-sm text-[10px] bg-primary text-on-primary px-1 rounded transition-opacity">Fri 6</span>
+</div>
+<div class="flex-1 bg-secondary rounded-t h-[95%] group relative">
+<span class="opacity-0 group-hover:opacity-100 absolute -top-6 left-1/2 -translate-x-1/2 font-label-sm text-[10px] bg-primary text-on-primary px-1 rounded transition-opacity">Sat 11</span>
+</div>
+<div class="flex-1 bg-primary rounded-t h-[75%] group relative">
+<span class="opacity-0 group-hover:opacity-100 absolute -top-6 left-1/2 -translate-x-1/2 font-label-sm text-[10px] bg-primary text-on-primary px-1 rounded transition-opacity">Sun 8</span>
+</div>
+</div>
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant pt-1">
+<span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Today</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Quick Platform Status & Service Health Footer Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md lg:p-space-lg shadow-sm space-y-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">dns</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-primary font-bold">Platform Microservices Health &amp; Distributed Nodes</div>
+<div class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Real-time status across sovereign Indian cloud cluster</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm bg-surface-container-lowest px-space-sm py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="text-on-surface-variant">Overall System Availability: <strong class="text-primary font-bold">99.98%</strong></span>
+</div>
+</div>
+<!-- Health Badges Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Node 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Database Sync (Atlas)</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Region: ap-south-1</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-bold">18ms</span>
+</div>
+<!-- Node 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Google Meet Sandboxing</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">OAuth &amp; Breakout Bot</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-bold">Online</span>
+</div>
+<!-- Node 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Devanagari OCR &amp; Meter</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Indic Linguistic Engine</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-bold">Online</span>
+</div>
+<!-- Node 4 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Encrypted Storage Vault</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">AES-256 Immutable</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-bold">Protected</span>
+</div>
+</div>
+<!-- Compliance Safeguard Note -->
+<div class="flex items-center gap-space-xs font-body-ui-sm text-body-ui-sm text-on-surface-variant bg-surface-container-high/60 p-space-sm rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<span>
+<strong class="text-primary font-semibold">Administrative Safeguards Active:</strong> All actions within this operations console are cryptographically signed and stored in tamper-evident audit logs conforming to ISO 2108, COPPA, and Indian Digital Personal Data Protection (DPDP) regulations.
+        </span>
+</div>
+</div>
+</div>
+</div></main></body></html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>StoryNest</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&amp;family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-primary-fixed-variant":"#384760","secondary-container":"#b1f0d6","on-primary":"#ffffff","error":"#ba1a1a","tertiary":"#261800","surface-container-lowest":"#ffffff","surface-container-high":"#ddeaf2","tertiary-fixed":"#ffdea7","surface-container":"#e3f0f8","primary-fixed":"#d4e3ff","secondary":"#2d6955","on-secondary-fixed":"#002117","on-secondary-fixed-variant":"#0e503e","inverse-primary":"#b7c7e5","inverse-on-surface":"#e6f3fb","surface-variant":"#d7e4ec","on-secondary-container":"#336f5b","on-error":"#ffffff","primary":"#091b31","on-surface":"#111d23","secondary-fixed-dim":"#96d3bb","on-surface-variant":"#44474d","error-container":"#ffdad6","surface":"#f4faff","surface-container-low":"#e9f6fd","outline-variant":"#c5c6cd","on-tertiary-container":"#c08f2a","background":"#f4faff","surface-dim":"#cfdce4","tertiary-fixed-dim":"#f4be55","outline":"#75777e","secondary-fixed":"#b1f0d6","on-error-container":"#93000a","on-background":"#111d23","primary-fixed-dim":"#b7c7e5","inverse-surface":"#263238","surface-bright":"#f4faff","tertiary-container":"#402c00","on-tertiary":"#ffffff","on-tertiary-fixed":"#271900","primary-container":"#203047","surface-tint":"#4f5f78","on-primary-fixed":"#0b1c32","surface-container-highest":"#d7e4ec","on-primary-container":"#8898b3","on-secondary":"#ffffff","on-tertiary-fixed-variant":"#5e4200"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","space-md":"1rem","gutter-sm":"1rem","margin-mobile":"1rem","gutter":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","margin":"2.5rem","space-sm":"0.5rem"},"fontFamily":{"headline-lg-mobile":["Merriweather"],"label-sm":["Plus Jakarta Sans"],"body-ui-md":["Plus Jakarta Sans"],"display-hero-mobile":["Merriweather"],"body-ui-sm":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"headline-md":["Merriweather"],"headline-sm":["Merriweather"],"title-md":["Plus Jakarta Sans"],"display-hero":["Merriweather"],"headline-lg":["Merriweather"],"body-reading-lg":["Merriweather"],"label-md":["Plus Jakarta Sans"]},"fontSize":{"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"700"}],"body-ui-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero-mobile":["34px",{"lineHeight":"42px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-ui-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"title-lg":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-md":["26px",{"lineHeight":"34px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"display-hero":["48px",{"lineHeight":"58px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"46px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-reading-lg":["18px",{"lineHeight":"32px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-ui-md text-body-ui-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-sm group text-decoration-none" data-path="home" href="#"><img alt="StoryNest Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASwRVa9YkuFA2_NakiEEtvYpvbLw_8ZQOZjWITwhJqtS3aFmMqBO0UWnBeGgO02L_eIoaicEfQhLgPMWiWrYSOgm107BRHYpK5BoTjS3tigAG3mKRLPYsHm4FvIs8ym2mn2L51EBQBaozpOS5hbq00gTjGz7TGsUA1TBXqd8kAU1jCSI2MX3YEgRdQX0a4GdcMOGhwRo-oQJEaVtO0csBx9akf71WwajHUa-olgh8"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors leading-none">StoryNest</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden lg:inline-block leading-tight mt-0.5">Where Young Minds Read, Create &amp; Grow</span></div></a><div class="hidden xl:flex items-center bg-surface-container-low rounded-xl px-space-sm py-1"><span class="font-label-sm text-label-sm text-on-surface-variant mr-2">Portal:</span><select class="bg-transparent font-label-md text-label-md text-primary font-semibold focus:outline-none cursor-pointer pr-1"><option>Young Reader</option><option>Author Studio</option><option>Educator Desk</option></select></div></div><nav class="hidden 2xl:flex items-center gap-1 shrink-0" data-active-classes="bg-primary-container text-on-primary font-title-md rounded-xl shadow-sm"><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="home" href="#">Home</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="digital-library" href="#">Library</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="workshops-and-sessions" href="#">Workshops</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="literary-activities" href="#">Activities</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="educational-hub" href="#">Education</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="books-and-authors" href="#">Books &amp; Authors</a><a class="px-3 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="publish-your-book" href="#">Publish</a></nav><div class="flex items-center gap-space-sm shrink-0"><button aria-label="Search Catalogue" class="flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><div class="hidden sm:flex items-center bg-surface-container-low rounded-xl p-1"><button class="px-2.5 py-1 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md" type="button">EN</button><button class="px-2.5 py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">हिंदी</button></div><a class="hidden md:inline-flex items-center px-4 py-2 rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" data-path="login" href="#">Sign In</a><a class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-primary-container text-on-primary font-title-md text-title-md hover:bg-primary transition-colors shadow-sm" data-path="digital-library" href="#">Explore</a><a class="flex items-center p-0.5 rounded-full hover:ring-2 hover:ring-primary-container transition-all" data-path="reader-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY1TEqs9gO00PTZzC4y0VohMXU1UDgEbPGeEQQpUG5hcV62pczupHCKCiWq8r3_QWJ7LeyBMHoUy17d6cp0zLzhoK5uei5_4e4naPaN4ReUktkQprbifRu44h1aj4O7DtwE49eZSSObu4vbKBjsxNyjCcwnp0Ln4pF7rzBBMSfuS7jwlT9NyPQN2gxLwuU6KeRh-3K2DdtMNHcqJK40NBWm2rvWS46Fdvj_61wACs"/></a><button aria-label="Open Menu" class="2xl:hidden flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface" type="button"><span class="material-symbols-outlined text-[22px]">menu</span></button></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-320px)]"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Canvas Backdrop -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 right-10 w-96 h-96 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-80 -left-20 w-80 h-80 rounded-full bg-tertiary-fixed/30 blur-3xl pointer-events-none -z-10"></div>
+<!-- Container Layout -->
+<div class="w-full px-margin py-space-md max-w-[1360px] mx-auto">
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 mb-space-lg text-body-ui-sm font-body-ui-sm text-on-surface-variant overflow-x-auto whitespace-nowrap py-1">
+<a class="hover:text-primary transition-colors flex items-center gap-1.5 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined text-[16px]">roofing</span>
+<span>StoryNest</span>
+</a>
+<span class="text-outline-variant font-medium">/</span>
+<a class="hover:text-primary transition-colors text-on-surface-variant" href="#">Digital Library</a>
+<span class="text-outline-variant font-medium">/</span>
+<a class="hover:text-primary transition-colors text-on-surface-variant" href="#">Bilingual Science</a>
+<span class="text-outline-variant font-medium">/</span>
+<span class="text-primary font-semibold truncate max-w-[240px] sm:max-w-none">Tara and the Whispering Stars</span>
+</nav>
+<!-- HERO BOOK SHOWCASE -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start pb-space-xl">
+<!-- Left Column: Book Artwork & Peek Experience (5 cols) -->
+<div class="lg:col-span-5 flex flex-col items-center sm:items-start w-full">
+<div class="relative w-full max-w-[380px] mx-auto lg:mx-0 group">
+<!-- Book Cover Wrapper with Physical Paper Elevation -->
+<div class="relative rounded-2xl overflow-hidden shadow-2xl bg-surface-container-low transition-transform duration-300 group-hover:scale-[1.015]">
+<img alt="Children's illustrated book cover titled 'Tara and the Whispering Stars', bilingual Hindi English sci-fi astronomy tale" class="w-full h-auto aspect-[3/4] object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlDiKmHXbb0fGXE7i2FKQmighTJdmDqYJ711xUjj_XMJOINVzWND_6jJ0p-zN8SKJUSyLkqO79odD-uFSXPiBL4kyqVGMdm-OjKl1MR_8Mc-qJZ5qYV1eugXRq_yaFeYhE_Rh3FIYske4BC2sPOXyRoGo0jD3qKv3WznSCkl1TNSC1ktyY5IBJHzOx37hUztUXG7LOmwE-8KDj8yjRVasZzZXvKWaREabBTSc3oMo"/>
+<!-- Floating Verification Ribbon -->
+<div class="absolute top-3.5 left-3.5 flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/85 backdrop-blur-md text-on-primary text-label-sm font-label-sm shadow-md">
+<span class="material-symbols-outlined text-secondary-fixed text-[15px]">verified_user</span>
+<span>StoryNest Safe &amp; Ad-Free</span>
+</div>
+<!-- Interactive Peek Banner -->
+<button class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-primary/95 via-primary/75 to-transparent pt-10 pb-4 px-4 flex items-center justify-between text-on-primary hover:text-secondary-fixed transition-colors" onclick="document.getElementById('sampleReaderModal').classList.remove('hidden')" type="button">
+<span class="flex items-center gap-2 font-title-md text-title-md">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+<span>Look Inside (Free 8-Page Sample)</span>
+</span>
+<span class="material-symbols-outlined text-[20px]">open_in_full</span>
+</button>
+</div>
+<!-- Tactile Shadow Base -->
+<div class="h-3 w-4/5 mx-auto bg-primary/10 rounded-full blur-md -mt-1"></div>
+<!-- Quick Metadata Bar below cover -->
+<div class="mt-space-md w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Format</span>
+<span class="font-title-md text-title-md text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-secondary">devices</span>
+                  Interactive Folio
+                </span>
+</div>
+<div class="h-8 w-px bg-surface-container-high"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Audience</span>
+<span class="font-title-md text-title-md text-primary font-bold">Grades 2 – 5</span>
+</div>
+<div class="h-8 w-px bg-surface-container-high"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Audio Run</span>
+<span class="font-title-md text-title-md text-secondary font-bold">24m 10s</span>
+</div>
+</div>
+<!-- Free Foundation Access Banner -->
+<div class="mt-space-sm w-full bg-secondary-container/40 rounded-xl p-space-md flex items-start gap-3 text-on-secondary-container">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">volunteer_activism</span>
+<div class="flex flex-col text-body-ui-sm font-body-ui-sm">
+<span class="font-bold text-secondary text-title-md font-title-md leading-snug">Literacy Access Grant</span>
+<span class="text-on-surface-variant mt-0.5">Provided unconditionally at zero cost by the <em>Young Minds Literacy Fund</em>. Ad-free, tracker-free environment for young minds.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Title, Attribution, Badges & CTAs (7 cols) -->
+<div class="lg:col-span-7 flex flex-col items-start w-full">
+<!-- Category & Series Tag -->
+<div class="flex flex-wrap items-center gap-2 mb-space-sm">
+<span class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-md text-label-md font-semibold tracking-wide">
+              Bilingual Sci-Fi &amp; Folklore
+            </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md">
+              Jaipur Night Sky Chronicles • Book 1
+            </span>
+</div>
+<!-- Main English Title -->
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight leading-[1.15] mt-1 mb-2">
+            Tara and the Whispering Stars
+          </h1>
+<!-- Bilingual Devanagari Title -->
+<h2 class="font-headline-md text-headline-md text-secondary font-medium tracking-normal mb-space-md">
+            तारा और टिमटिमाते तारे
+          </h2>
+<!-- Attribution Strip -->
+<div class="flex flex-wrap items-center gap-space-md py-space-sm mb-space-md w-full bg-surface-container-lowest/80 rounded-xl px-space-md shadow-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-title-md font-title-md shadow-inner">
+                MS
+              </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Written by</span>
+<a class="font-title-md text-title-md text-primary font-bold hover:text-secondary transition-colors underline decoration-outline-variant underline-offset-4" href="#authorBio">
+                  Meera Sharma
+                </a>
+</div>
+</div>
+<span class="text-outline-variant hidden sm:inline">•</span>
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-title-md font-title-md shadow-inner">
+                RS
+              </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Illustrations by</span>
+<span class="font-title-md text-title-md text-primary font-bold">Rohan Sen</span>
+</div>
+</div>
+<div class="ml-auto flex items-center gap-1.5 pl-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">StoryNest Certified Creator</span>
+</div>
+</div>
+<!-- Rating & Social Metric Row -->
+<div class="flex flex-wrap items-center gap-space-lg mb-space-lg text-body-ui-sm font-body-ui-sm">
+<div class="flex items-center gap-1.5 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm">
+<div class="flex text-on-tertiary-container">
+<span class="material-symbols-outlined text-[19px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[19px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[19px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[19px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[19px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-bold text-primary text-title-md font-title-md ml-1">4.9</span>
+<span class="text-on-surface-variant font-body-ui-sm">(412 Young Readers &amp; Parents)</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[20px] text-secondary">menu_book</span>
+<span><strong>12,400+</strong> Pages Read this Month</span>
+</div>
+</div>
+<!-- Educational Metadata Badges Mosaic -->
+<div class="flex flex-wrap gap-2 mb-space-xl">
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container font-label-md text-label-md text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">child_care</span>
+              Ages 7–10
+            </span>
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container font-label-md text-label-md text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px] text-secondary">translate</span>
+              Dual Lang: Hindi &amp; English
+            </span>
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container font-label-md text-label-md text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">qr_code_2</span>
+              Astronomy &amp; STEM
+            </span>
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container font-label-md text-label-md text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">speed</span>
+              Lexile: 520L
+            </span>
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container font-label-md text-label-md text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">schedule</span>
+              25 Mins Read
+            </span>
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-fixed/60 font-label-md text-label-md text-on-tertiary-fixed font-bold">
+<span class="material-symbols-outlined text-[16px]">headphones</span>
+              Human Voice Narration
+            </span>
+</div>
+<!-- Core Call to Action Bar -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full mb-space-md">
+<!-- Primary Read CTA -->
+<button class="flex-1 flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-secondary text-on-secondary font-title-lg text-title-lg shadow-md hover:bg-on-secondary-fixed-variant active:translate-y-0.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+<span>Start Reading Now</span>
+</button>
+<!-- Secondary Audio CTA -->
+<button class="flex-1 flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-surface-container-lowest text-primary font-title-lg text-title-lg shadow-sm hover:bg-surface-container active:translate-y-0.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[24px] text-on-tertiary-container">play_circle</span>
+<span>Listen to Audio (24m)</span>
+</button>
+</div>
+<!-- Secondary Toolbar: Nest, Download, Share -->
+<div class="flex flex-wrap items-center gap-space-sm w-full pt-1 pb-space-sm">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container text-primary hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold" id="bookmarkBtn" onclick="toggleBookmark()" type="button">
+<span class="material-symbols-outlined text-[18px]" id="bookmarkIcon">bookmark_border</span>
+<span id="bookmarkText">Add to Reading Nest</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container text-primary hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">download</span>
+<span>Teacher Worksheet (PDF)</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container text-primary hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Share with Class</span>
+</button>
+</div>
+<!-- Grant Verification Pill -->
+<div class="w-full mt-space-md p-3.5 rounded-xl bg-surface-container-low flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant m-0">
+<span class="font-bold text-primary">Full Digital Access Granted</span> • Child Safety Protected • Zero Advertisements • WCAG AAA Large-Print Ready
+            </p>
+</div>
+</div>
+</section>
+<!-- TABBED CONTENT ARCHITECTURE -->
+<section class="mt-space-lg w-full">
+<!-- Tab Navigation Bar -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 mb-space-lg bg-surface-container-low/70 p-1.5 rounded-2xl">
+<button class="tab-button px-5 py-3 rounded-xl font-title-md text-title-md bg-primary-container text-on-primary shadow-sm transition-all flex items-center gap-2 shrink-0" id="tabBtn-synopsis" onclick="switchTab('synopsis')" type="button">
+<span class="material-symbols-outlined text-[20px]">description</span>
+<span>Synopsis &amp; Highlights</span>
+</button>
+<button class="tab-button px-5 py-3 rounded-xl font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2 shrink-0" id="tabBtn-chapters" onclick="switchTab('chapters')" type="button">
+<span class="material-symbols-outlined text-[20px]">format_list_bulleted</span>
+<span>Chapter Index &amp; Audio</span>
+</button>
+<button class="tab-button px-5 py-3 rounded-xl font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2 shrink-0" id="tabBtn-author" onclick="switchTab('author')" type="button">
+<span class="material-symbols-outlined text-[20px]">person</span>
+<span>Author &amp; Illustrator Spotlight</span>
+</button>
+<button class="tab-button px-5 py-3 rounded-xl font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2 shrink-0" id="tabBtn-educator" onclick="switchTab('educator')" type="button">
+<span class="material-symbols-outlined text-[20px]">school</span>
+<span>Parent &amp; Educator Guide</span>
+</button>
+</div>
+<!-- TAB PANELS GRID: Main Content (8 cols) + Side State Widget (4 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Primary Tabbed Panels (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col">
+<!-- PANEL 1: Synopsis & Story Highlights (Default Active) -->
+<div class="tab-panel flex flex-col gap-space-lg" id="tabContent-synopsis">
+<!-- Narrative Synopsis Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<h3 class="font-headline-sm text-headline-sm text-primary">The Cosmic Adventure</h3>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold">
+                    Dual Narrative System
+                  </span>
+</div>
+<div class="font-body-reading-lg text-body-reading-lg text-on-surface space-y-4 leading-relaxed">
+<p>
+                    On a breezy autumn rooftop in Jaipur, eight-year-old Tara unboxes her grandfather’s weathered brass telescope. Expecting only the familiar silver dust of the Moon, she instead tunes into shimmering celestial ripples that hum softly in two interlaced tongues: lyrical Hindi verses and crisp English astronomy facts.
+                  </p>
+<p>
+                    When the Great Bear constellation—known across centuries as the <em>Saptarshi</em> (सप्तर्षि)—starts glowing an urgent sapphire shade, Tara realizes that modern light pollution in the city below is silencing the stars’ generational folktales. Guided by an animated astral owl named Nakshatra, Tara embarks on a whimsical nocturnal journey between scientific constellations and classical mythological folklore.
+                  </p>
+<p class="italic font-display-hero text-headline-sm text-secondary">
+                    "When science gives you eyes to see the universe, stories give you the heart to understand it."
+                  </p>
+</div>
+</div>
+<!-- Key Takeaways & Pedagogical Pillars Bento Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm">
+<h4 class="font-title-lg text-title-lg text-primary font-bold mb-space-md flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">psychology</span>
+<span>What Children Will Learn &amp; Discover</span>
+</h4>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Skill 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col">
+<div class="flex items-center gap-2 mb-1.5 text-primary">
+<span class="material-symbols-outlined text-secondary text-[20px]">explore</span>
+<span class="font-title-md text-title-md font-bold">Astronomy &amp; Constellations</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">
+                      Identifies Ursa Major, Orion, and the North Star (Dhruva Tara) with real-world night sky navigation techniques.
+                    </p>
+</div>
+<!-- Skill 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col">
+<div class="flex items-center gap-2 mb-1.5 text-primary">
+<span class="material-symbols-outlined text-on-tertiary-container text-[20px]">translate</span>
+<span class="font-title-md text-title-md font-bold">Bilingual Fluency</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">
+                      Builds 45+ dual-language celestial terms (e.g., <em>Taara</em>, <em>Kshitij</em>, <em>Nebula</em>) with phonetic pronunciation cues.
+                    </p>
+</div>
+<!-- Skill 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col">
+<div class="flex items-center gap-2 mb-1.5 text-primary">
+<span class="material-symbols-outlined text-secondary text-[20px]">lightbulb</span>
+<span class="font-title-md text-title-md font-bold">Scientific Inquiry</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">
+                      Encourages young girls in STEM through telescope mechanics, light refraction, and ecological consciousness regarding light pollution.
+                    </p>
+</div>
+<!-- Skill 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col">
+<div class="flex items-center gap-2 mb-1.5 text-primary">
+<span class="material-symbols-outlined text-on-tertiary-container text-[20px]">diversity_3</span>
+<span class="font-title-md text-title-md font-bold">Cultural Heritage &amp; Lore</span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">
+                      Connects contemporary astrophysical observations to timeless Indian Panchatantra &amp; Vedic storytelling heritage.
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<!-- PANEL 2: Sample Reading & Chapter Index -->
+<div class="tab-panel hidden flex flex-col gap-space-md" id="tabContent-chapters">
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Chapter Index &amp; Listening Track</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">3 Complete Chapters • Available in bilingual side-by-side view</p>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+                    Complete Edition
+                  </span>
+</div>
+<!-- Chapter List Items -->
+<div class="flex flex-col gap-3">
+<!-- Ch 1 (Sample available) -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-3 transition-colors hover:bg-surface-container">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-secondary text-on-secondary font-bold text-title-md flex items-center justify-center shrink-0">
+                        01
+                      </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-lg text-title-lg font-bold text-primary">The Rooftop Observatory</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-secondary-fixed text-on-secondary-fixed">Free Sample</span>
+</div>
+<span class="font-headline-sm text-body-ui-md text-secondary font-medium mt-0.5">छत की वेधशाला</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">6 min read • Dual text + Audio preview</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end sm:self-center">
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors" onclick="document.getElementById('sampleReaderModal').classList.remove('hidden')" type="button">
+                        Read Sample
+                      </button>
+<button aria-label="Play chapter 1 audio" class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Ch 2 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-container-low transition-colors">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-primary font-bold text-title-md flex items-center justify-center shrink-0">
+                        02
+                      </div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg font-bold text-primary">The Great Bear's Secret</span>
+<span class="font-headline-sm text-body-ui-md text-secondary font-medium mt-0.5">सप्तर्षि का रहस्य</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">8 min read • Interactive Star Chart</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end sm:self-center">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" type="button">
+                        Open Chapter
+                      </button>
+<button aria-label="Play chapter 2 audio" class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Ch 3 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-container-low transition-colors">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-primary font-bold text-title-md flex items-center justify-center shrink-0">
+                        03
+                      </div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg font-bold text-primary">Stars Across Two Languages</span>
+<span class="font-headline-sm text-body-ui-md text-secondary font-medium mt-0.5">तारों की दो बोलियाँ</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">11 min read • Vocabulary Quiz Included</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end sm:self-center">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" type="button">
+                        Open Chapter
+                      </button>
+<button aria-label="Play chapter 3 audio" class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- PANEL 3: Author & Illustrator Spotlight -->
+<div class="tab-panel hidden flex flex-col gap-space-lg" id="tabContent-author">
+<!-- Author Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm" id="authorBio">
+<div class="flex flex-col sm:flex-row items-start gap-space-lg">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center text-display-hero font-display-hero shrink-0 shadow-md">
+                    MS
+                  </div>
+<div class="flex flex-col flex-1">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+<h3 class="font-headline-md text-headline-md text-primary">Meera Sharma</h3>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                        Author &amp; STEM Educator
+                      </span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-secondary font-semibold mb-space-sm">Jaipur • 6 Published Children's Works on StoryNest</p>
+<p class="font-body-reading-lg text-body-ui-md text-on-surface leading-relaxed">
+                      Meera is a former science teacher at Rajasthan Vidyapeeth and an author passionate about making astronomy intuitive and culturally vibrant for early readers. Her work has been recognized by the National Council of Educational Research and Training (NCERT) for pioneering dual-script picture books.
+                    </p>
+<div class="flex flex-wrap items-center gap-3 mt-space-md">
+<a class="px-4 py-2 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors inline-flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>View Full Bibliography (6 Titles)</span>
+</a>
+<a class="px-4 py-2 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors inline-flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-[16px]">forum</span>
+<span>Request Author School Session</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Illustrator Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm">
+<div class="flex flex-col sm:flex-row items-start gap-space-lg">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center text-display-hero font-display-hero shrink-0 shadow-md">
+                    RS
+                  </div>
+<div class="flex flex-col flex-1">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+<h3 class="font-headline-md text-headline-md text-primary">Rohan Sen</h3>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold">
+                        Lead Visual Artist
+                      </span>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-secondary font-semibold mb-space-sm">Kolkata • Illustrator &amp; Visual Storyteller</p>
+<p class="font-body-reading-lg text-body-ui-md text-on-surface leading-relaxed">
+                      Rohan merges traditional gouache hand-painting with rich digital cosmic texturing. His spreads celebrate warm Indian architectural tones with luminous galactic nightscapes that spark wonder in curious minds.
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<!-- PANEL 4: Parent & Educator Guide -->
+<div class="tab-panel hidden flex flex-col gap-space-md" id="tabContent-educator">
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<h3 class="font-headline-sm text-headline-sm text-primary">Parent &amp; Classroom Discussion Kit</h3>
+<button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary text-label-sm font-label-sm font-bold flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Print 2-Page Guide</span>
+</button>
+</div>
+<!-- Discussion Prompts Accordion / List -->
+<div class="space-y-4">
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<h4 class="font-title-md text-title-md font-bold text-primary mb-1">
+                      1. Pre-Reading Spark: "What does the sky look like from your home?"
+                    </h4>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">
+                      Prompt children to observe the night sky before opening Chapter 1. Discuss why city skies have fewer visible stars than countryside hills, opening an easy dialogue on light pollution and environmental science.
+                    </p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<h4 class="font-title-md text-title-md font-bold text-primary mb-1">
+                      2. Bilingual Discovery: Matching Hindi and English Star Names
+                    </h4>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">
+                      Have learners connect: <em>Taara</em> (तारा) = Star, <em>Dhruva</em> (ध्रुव) = North Star / Constant, <em>Aakashganga</em> (आकाशगंगा) = Milky Way. Encourage speaking both pronunciations aloud.
+                    </p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<h4 class="font-title-md text-title-md font-bold text-primary mb-1">
+                      3. Hands-On Activity: DIY Cardboard Tube Telescope
+                    </h4>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">
+                      Follow Tara's method on Page 14 using recycled kitchen paper towel tubes and pinhole constellation cards to project Ursa Major on a darkened bedroom wall.
+                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Side Column: Access State, Formats & Classroom License (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg w-full">
+<!-- Accessible Formats Showcase Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<h4 class="font-title-lg text-title-lg text-primary font-bold mb-space-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">accessibility_new</span>
+<span>Supported Formats</span>
+</h4>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mb-space-md">
+                Engineered for inclusive, sensory-friendly early literacy.
+              </p>
+<div class="flex flex-col gap-2.5">
+<!-- Format Item -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">web</span>
+<span class="font-title-md text-title-md text-primary">Web Reader 2.0</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Ready</span>
+</div>
+<!-- Format Item -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-on-tertiary-container text-[20px]">record_voice_over</span>
+<span class="font-title-md text-title-md text-primary">Bilingual Read-Aloud</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Ready</span>
+</div>
+<!-- Format Item -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">format_size</span>
+<span class="font-title-md text-title-md text-primary">Dyslexia-Friendly Font</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Toggleable</span>
+</div>
+<!-- Format Item -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">rotate_auto</span>
+<span class="font-title-md text-title-md text-primary">BRF Braille Download</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Grades 2+</span>
+</div>
+</div>
+</div>
+<!-- State Demonstration: Institutional / School Unlock Card -->
+<div class="bg-surface-container-high rounded-2xl p-space-lg shadow-sm">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_library</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Classroom Group Sync</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary font-bold mb-1">
+                Reading with a Class?
+              </h4>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mb-space-md">
+                Teachers can synchronize page-turns simultaneously across 35 student tablets with one Educator PIN.
+              </p>
+<div class="p-3 bg-surface-container-lowest rounded-xl mb-space-md">
+<div class="flex items-center justify-between text-body-ui-sm font-body-ui-sm mb-1">
+<span class="text-on-surface-variant">Classroom Slot</span>
+<span class="font-bold text-secondary">Free Tier Active</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-2/5"></div>
+</div>
+<div class="flex justify-between items-center mt-1 text-[11px] text-on-surface-variant">
+<span>14 / 35 seats linked</span>
+<span>Instant Setup</span>
+</div>
+</div>
+<button class="w-full py-2.5 px-4 rounded-xl bg-primary text-on-primary font-title-md text-title-md hover:bg-primary-container transition-colors shadow-sm text-center" onclick="openClassroomModal()" type="button">
+                Launch Live Classroom Read
+              </button>
+</div>
+<!-- Trust Pledge Callout -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">shield</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-primary">COPPA &amp; Safe-Harbor Verified</span>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-0.5">
+                  No camera usage, no public chatrooms, zero external trackers. StoryNest guarantees an uncompromised literary haven.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RELATED BOOKS RECOMMENDATIONS SECTION -->
+<section class="mt-space-xl pt-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Expand the Discovery</span>
+<h3 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-0.5">
+              Readers Who Loved Tara Also Enjoyed
+            </h3>
+</div>
+<a class="font-title-md text-title-md text-secondary font-bold hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span>Explore All Astronomy &amp; Folklore</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- 2-Card Mosaic Grid with Preloaded Images -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Recommendation 1: The Moonlit Forest of Panchatantra (IMAGE_5) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row gap-space-md items-center sm:items-start group">
+<div class="w-36 sm:w-44 shrink-0 rounded-xl overflow-hidden shadow-sm aspect-[3/4]">
+<img alt="Whimsical illustrated children's book cover titled 'The Moonlit Forest of Panchatantra'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvudObU8bxAltNnV7c11dcoy12omjFpwS1fW0wNVEwFpFMAE8Ji5mVleIPpCp5ICPhxkrn5UXNVgupaNOM2XkOsfdmdB0ZkH4AUNh7j4WIizUpR4FZ1wvh_rbLfMrXYFXBXY9H3mhcBQKGynl4irJQDV9xbZoMiwDOIwWpRGfDh_GraMzklkW6iX7yGBaS9-iuVe9roEFcpjwy0wbna98HBWAQyiD7JBbaw7w6cXQ"/>
+</div>
+<div class="flex flex-col flex-1 justify-between h-full py-1">
+<div>
+<div class="flex items-center gap-1.5 mb-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-label-sm font-label-sm font-bold">Ages 6–9</span>
+<span class="text-on-surface-variant text-[12px]">• Folktales</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                  The Moonlit Forest of Panchatantra
+                </h4>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-2 line-clamp-3">
+                  Under the glowing banyan tree, wise animals share midnight fables taught through luminous fireflies and ancient nature wisdom.
+                </p>
+</div>
+<div class="flex items-center gap-2 mt-4 pt-3">
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors text-center" type="button">
+                  Read Story
+                </button>
+<button class="py-2 px-3 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+                  Peek
+                </button>
+</div>
+</div>
+</div>
+<!-- Recommendation 2: मिर्च का मज़ा (IMAGE_6) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row gap-space-md items-center sm:items-start group">
+<div class="w-36 sm:w-44 shrink-0 rounded-xl overflow-hidden shadow-sm aspect-[3/4]">
+<img alt="Vibrant illustrated book cover titled 'मिर्च का मज़ा और अन्य कविताएं' (Spicy Tales &amp; Rhymes)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHV52Z-OygIYv6LmURBOcUL2sIYoeTbSo7-yMM2V0SCivhMz_RT-Y47XMMFQqcZPSZsT8i4Six3vfePWpFePcF9vjweOnD86wAT8jED9eymMm87ZiAKWHR4me4Um6wuwRlTd_X3UGnHEEgAsgWph6DFY5sX6jZ4HPzrqJKG-sxy1U9YaUJ9f8JBsYYgERcy9ooop65KpHSPYpRre788obHQecZrCq1SWCfVckepwk"/>
+</div>
+<div class="flex flex-col flex-1 justify-between h-full py-1">
+<div>
+<div class="flex items-center gap-1.5 mb-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed/60 text-on-tertiary-fixed text-label-sm font-label-sm font-bold">Ages 5–8</span>
+<span class="text-on-surface-variant text-[12px]">• Rhymes &amp; Wit</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                  मिर्च का मज़ा और अन्य कविताएं
+                </h4>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-2 line-clamp-3">
+                  Classic humorous poetry featuring the curious Kabuliwala and his red pepper surprise, vibrantly illustrated in warm bazaar hues.
+                </p>
+</div>
+<div class="flex items-center gap-2 mt-4 pt-3">
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors text-center" type="button">
+                  Read Story
+                </button>
+<button class="py-2 px-3 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+                  Peek
+                </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- INTERACTIVE MODAL: SAMPLE READER POPUP (Hidden by default) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/70 backdrop-blur-sm" id="sampleReaderModal">
+<div class="relative w-full max-w-2xl bg-surface-container-lowest rounded-2xl shadow-2xl p-space-lg max-h-[90vh] overflow-y-auto">
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Live Reader Preview</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Chapter 1: The Rooftop Observatory</h3>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high" onclick="document.getElementById('sampleReaderModal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Sample Bilingual Reading Text -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md space-y-4 font-body-reading-lg text-body-reading-lg text-primary">
+<p class="font-medium text-secondary">
+          "तारा ने अपने दादाजी का पीतल वाला दूरबीन खोला। जयपुर की हवा में हल्की ठंडक थी और आसमान सितारों से भरा हुआ था।"
+        </p>
+<p class="text-on-surface">
+          Tara adjusted the knurled brass dial of her grandfather’s antique telescope. The Jaipur autumn air carried the scent of night jasmine, and above the terracotta parapet, the sky was an ink-black sheet stitched with diamond sparks.
+        </p>
+<div class="p-3 rounded-lg bg-tertiary-fixed/30 flex items-center gap-2 text-title-md font-title-md text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-secondary text-[20px]">mic</span>
+<span>Audio Pronunciation Active: Tap any word for spoken Hindi/English playback.</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Page 1 of 8 (Sample Mode)</span>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded-xl bg-surface-container text-primary font-label-md text-label-md" onclick="document.getElementById('sampleReaderModal').classList.add('hidden')" type="button">
+            Close Preview
+          </button>
+<button class="px-5 py-2 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-bold" type="button">
+            Continue in Full Reader
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE MODAL: CLASSROOM ACCESS PIN POPUP (Hidden by default) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/70 backdrop-blur-sm" id="classroomModal">
+<div class="relative w-full max-w-md bg-surface-container-lowest rounded-2xl shadow-2xl p-space-lg">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">school</span>
+<h3 class="font-title-lg text-title-lg text-primary font-bold">Start Classroom Session</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high" onclick="document.getElementById('classroomModal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mb-space-md">
+        Share this 6-digit sync key with your students or Google Classroom group to lock reading screens to Chapter 1.
+      </p>
+<div class="p-4 rounded-xl bg-surface-container flex items-center justify-center text-center mb-space-md">
+<span class="font-headline-lg text-headline-lg tracking-[0.25em] text-primary font-mono font-bold">
+          STAR-842
+        </span>
+</div>
+<div class="flex flex-col gap-2">
+<button class="w-full py-2.5 rounded-xl bg-secondary text-on-secondary font-title-md text-title-md font-bold" onclick="document.getElementById('classroomModal').classList.add('hidden')" type="button">
+          Begin Synchronized Reading
+        </button>
+<button class="w-full py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-md text-label-md" onclick="document.getElementById('classroomModal').classList.add('hidden')" type="button">
+          Cancel
+        </button>
+</div>
+</div>
+</div>
+<!-- Vanilla Interaction Logic -->
+<script>
+    function switchTab(tabKey) {
+      // Hide all panels
+      document.querySelectorAll('.tab-panel').forEach(function(el) {
+        el.classList.add('hidden');
+      });
+      // De-activate all buttons
+      document.querySelectorAll('.tab-button').forEach(function(btn) {
+        btn.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        btn.classList.add('text-on-surface-variant');
+      });
+
+      // Show targeted panel
+      const targetPanel = document.getElementById('tabContent-' + tabKey);
+      if (targetPanel) {
+        targetPanel.classList.remove('hidden');
+      }
+
+      // Activate targeted button
+      const targetBtn = document.getElementById('tabBtn-' + tabKey);
+      if (targetBtn) {
+        targetBtn.classList.remove('text-on-surface-variant');
+        targetBtn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      }
+    }
+
+    let isBookmarked = false;
+    function toggleBookmark() {
+      isBookmarked = !isBookmarked;
+      const icon = document.getElementById('bookmarkIcon');
+      const text = document.getElementById('bookmarkText');
+      if (isBookmarked) {
+        icon.innerText = 'bookmark';
+        icon.classList.add('text-on-tertiary-container');
+        text.innerText = 'Saved in Your Nest';
+      } else {
+        icon.innerText = 'bookmark_border';
+        icon.classList.remove('text-on-tertiary-container');
+        text.innerText = 'Add to Reading Nest';
+      }
+    }
+
+    function openClassroomModal() {
+      const modal = document.getElementById('classroomModal');
+      if (modal) modal.classList.remove('hidden');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl mt-space-xl"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg pb-space-xl"><div class="lg:col-span-1 flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary">StoryNest</span></div><p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Fostering a lifelong love for reading in young minds while empowering independent authors with dignified, transparent publishing tools.</p><div class="flex items-center gap-space-xs mt-space-sm"><span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span><span class="font-label-sm text-label-sm text-secondary font-semibold">Child Safe Certified</span></div></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-bold">Young Readers &amp; Parents</h3><ul class="flex flex-col gap-2"><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="digital-library" href="#">Digital Library</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="literary-activities" href="#">Story Challenges</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="reading-tracker" href="#">Reading Tracker</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="child-safety" href="#">Child Safety Pledge</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-bold">Workshops &amp; Education</h3><ul class="flex flex-col gap-2"><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="workshops-and-sessions" href="#">Creative Writing</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="educational-hub" href="#">Interactive Quizzes</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="educational-hub" href="#">Educator Worksheets</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="workshops-and-sessions" href="#">Google Meet Sessions</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-bold">Authors &amp; Creators</h3><ul class="flex flex-col gap-2"><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="publish-your-book" href="#">Publish Your Book</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="publish-your-book" href="#">Manuscript Submission</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="author-workspace" href="#">Author Workspace</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="books-and-authors" href="#">Creator Directory</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-primary font-bold">Community &amp; Trust</h3><ul class="flex flex-col gap-2"><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">About StoryNest</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="child-safety" href="#">Child Safety &amp; Privacy</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">WCAG 2.2 Accessibility</a></li><li class="list-none"><a class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Contact &amp; Support</a></li></ul></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant"><span class="font-body-ui-sm text-body-ui-sm">© 2025 StoryNest Platform Inc. All rights reserved. Compliant with COPPA, GDPR-K and student ethical safety mandates.</span><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm">Bilingual Edition (EN / HI)</span></div></div></div></footer></body></html>

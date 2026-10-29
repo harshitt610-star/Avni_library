@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#b1f0d6", "on-secondary-container": "#336f5b", "surface-container-high": "#ddeaf2", "on-tertiary": "#ffffff", "on-surface-variant": "#44474d", "inverse-on-surface": "#e6f3fb", "on-secondary-fixed-variant": "#0e503e", "surface-container": "#e3f0f8", "tertiary": "#261800", "on-primary-fixed": "#0b1c32", "surface-dim": "#cfdce4", "tertiary-container": "#402c00", "outline-variant": "#c5c6cd", "background": "#f4faff", "surface-tint": "#4f5f78", "inverse-surface": "#263238", "on-secondary": "#ffffff", "on-error-container": "#93000a", "primary-fixed-dim": "#b7c7e5", "surface-container-highest": "#d7e4ec", "on-tertiary-fixed": "#271900", "on-tertiary-fixed-variant": "#5e4200", "surface-variant": "#d7e4ec", "primary": "#091b31", "error-container": "#ffdad6", "on-primary-container": "#8898b3", "surface-bright": "#f4faff", "outline": "#75777e", "secondary-fixed": "#b1f0d6", "primary-fixed": "#d4e3ff", "primary-container": "#203047", "on-background": "#111d23", "tertiary-fixed-dim": "#f4be55", "on-secondary-fixed": "#002117", "tertiary-fixed": "#ffdea7", "secondary": "#2d6955", "inverse-primary": "#b7c7e5", "on-surface": "#111d23", "on-primary": "#ffffff", "error": "#ba1a1a", "surface-container-low": "#e9f6fd", "secondary-fixed-dim": "#96d3bb", "surface-container-lowest": "#ffffff", "surface": "#f4faff", "on-error": "#ffffff", "on-tertiary-container": "#c08f2a", "on-primary-fixed-variant": "#384760" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin": "2.5rem", "space-sm": "0.5rem", "gutter-sm": "1rem", "space-md": "1rem", "gutter": "1.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem" }, "fontFamily": { "label-md": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "headline-lg": [ "Merriweather" ], "body-reading-lg": [ "Merriweather" ], "title-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "body-ui-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Merriweather" ], "headline-md": [ "Merriweather" ], "display-hero-mobile": [ "Merriweather" ], "headline-lg-mobile": [ "Merriweather" ], "body-ui-sm": [ "Plus Jakarta Sans" ], "display-hero": [ "Merriweather" ] }, "fontSize": { "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "title-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "headline-lg": [ "36px", { "lineHeight": "46px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-reading-lg": [ "18px", { "lineHeight": "32px", "fontWeight": "400" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700" } ], "body-ui-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "700" } ], "headline-md": [ "26px", { "lineHeight": "34px", "fontWeight": "700" } ], "display-hero-mobile": [ "34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "body-ui-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-hero": [ "48px", { "lineHeight": "58px", "letterSpacing": "-0.02em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-ui-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm focus:outline-none" href="#"><span class="material-symbols-outlined text-secondary text-[28px]">menu_book</span><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">StoryNest</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Self-Publishing</span></div></a><div class="hidden xl:flex items-center bg-surface-container-low px-space-sm py-space-xs rounded-xl"><span class="font-label-sm text-label-sm text-secondary flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary inline-block"></span>Author Studio</span><span class="material-symbols-outlined text-on-surface-variant text-[16px] ml-space-xs">unfold_more</span></div></div><nav class="hidden lg:flex items-center gap-gutter" data-active-classes="text-primary font-title-md underline decoration-secondary decoration-2 underline-offset-8"><a aria-current="page" class="transition-colors py-2 text-primary font-title-md underline decoration-secondary decoration-2 underline-offset-8" data-path="publishing-services" href="#">Publishing Services</a><a class="font-body-ui-md text-body-ui-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="author-dashboard" href="#">Author Dashboard</a><a class="font-body-ui-md text-body-ui-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="my-books" href="#">My Books</a><a class="font-body-ui-md text-body-ui-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="submit-manuscript" href="#">Submit Manuscript</a><a class="font-body-ui-md text-body-ui-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="promotion" href="#">Promotion</a></nav><div class="flex items-center gap-space-md"><button aria-label="Notifications" class="relative p-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-sm border-l border-outline-variant/30"><div class="relative"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface" title="Published Author"></span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">E. B. Vance</span><span class="font-label-sm text-label-sm text-secondary font-medium">Pro Imprint</span></div></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface-container-low px-margin py-space-xl">
+<div class="relative max-w-[1320px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Column: Copy & Value Proposition -->
+<div class="lg:col-span-7 flex flex-col space-y-space-md z-10">
+<div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-secondary/10 w-fit text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+<span>StoryNest Author-First Publishing Sanctuary</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight">
+          Your Story Deserves to Be Read.
+        </h1>
+<p class="font-body-reading-lg text-body-reading-lg text-on-surface-variant max-w-[640px]">
+          Bring your manuscript one step closer to readers with book promotion, publishing guidance, and author-focused services.
+        </p>
+<!-- CTA Cluster -->
+<div class="pt-space-xs flex flex-wrap items-center gap-space-md">
+<a class="inline-flex items-center justify-center gap-space-xs px-7 py-3.5 rounded-xl bg-primary text-on-primary font-title-md text-title-md shadow-md hover:bg-primary-container transition-all active:translate-y-px" href="#calculator">
+<span>Submit Your Book</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-6 py-3.5 rounded-xl bg-surface-container-highest text-primary font-title-md text-title-md hover:bg-surface-variant transition-all" href="#services-catalogue">
+<span>Explore Publishing Services</span>
+</a>
+</div>
+<!-- Trust Badges Bar -->
+<div class="pt-space-md grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<span>100% Author Copyright Retention</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">handshake</span>
+<span>Zero Upfront Obligation</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">rate_review</span>
+<span>Transparent Editorial Feedback</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">shield</span>
+<span>COPPA &amp; Child-Safe Compliant</span>
+</div>
+</div>
+<!-- Metric Indicators -->
+<div class="pt-space-md flex flex-wrap items-center gap-gutter text-on-surface">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary">420+</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Independent Authors Published</span>
+</div>
+<div class="w-px h-10 bg-outline-variant/30 hidden sm:block"></div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-secondary">18,000+</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Young Readers Reached</span>
+</div>
+<div class="w-px h-10 bg-outline-variant/30 hidden sm:block"></div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-tertiary-container flex items-center gap-1">
+              4.9/5
+              <span class="material-symbols-outlined text-[20px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Author Satisfaction Score</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Visual Tactile Artifact (Book Mockup & Editorial Slip) -->
+<div class="lg:col-span-5 relative mt-space-lg lg:mt-0 flex justify-center">
+<!-- Background Ambient Glow -->
+<div class="absolute -top-12 -right-12 w-96 h-96 rounded-full bg-secondary-container/40 blur-3xl pointer-events-none"></div>
+<!-- Layered Physical Book Assembly Card -->
+<div class="relative w-full max-w-[440px] bg-surface-container-lowest rounded-2xl p-space-lg shadow-xl">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high aspect-[3/4]">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Warm textured children's picture book cover laying on cream linen with a joyful golden fox and starry night sky, high editorial quality, rich gouache brushwork with subtle Hindi and English bilingual typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAen4c7fLmdm9ZWe7xMYETt44BIG9NDSAEps36rXQN6gPIAlLtShEmp8e8sQBbkNQgwxLClVsrSyDaCXTlH0KOniadAaLjPUyiCkI-gcDrpU8fSW_3--f8OJDByMAti5BePxhDvhn_jtGuaCzmxId692nlgv7FGUw5VPBWs2OEgFA8KsddBzgqFpm0J_QdzB3oil_sIx1lXWG2AoA3UK3eCJ3X1jP1lUrujK--8G2g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-on-primary">
+<span class="inline-block px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm mb-1.5">Bilingual Edition</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary">The Moon Lantern / चाँदनी की लालटेन</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-primary-fixed">By Aarav Mehta • Illustrated by S. Kapoor</p>
+</div>
+</div>
+<!-- Overlapping Editorial Docket Slip -->
+<div class="mt-space-md bg-surface-container-low rounded-xl p-space-md shadow-sm space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Editorial Progress Status</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container">Ready for Digital Proof</span>
+</div>
+<!-- Progress Line Indicator -->
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-2 rounded-full w-[85%]"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span>Bilingual Typesetting: Pass Complete</span>
+<span class="font-semibold text-primary">85% Processed</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CLARITY & SCOPE CLASSIFICATION BANNER -->
+<section class="w-full bg-surface-container px-margin py-space-md">
+<div class="max-w-[1320px] mx-auto bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</div>
+<div>
+<span class="font-title-md text-title-md text-primary block">StoryNest Publishing Scope Clarity Pledge</span>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">
+              We empower authors through clear service boundaries. Review our precise service demarcations below:
+            </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs font-label-sm text-label-sm">
+<span class="px-3 py-1 rounded-md bg-surface-container text-primary font-medium">Digital Reader Listing</span>
+<span class="text-outline-variant">•</span>
+<span class="px-3 py-1 rounded-md bg-surface-container text-primary font-medium">Print Proof Mentorship</span>
+<span class="text-outline-variant">•</span>
+<span class="px-3 py-1 rounded-md bg-surface-container text-primary font-medium">Educator Promotion</span>
+<span class="text-outline-variant">•</span>
+<span class="px-3 py-1 rounded-md bg-surface-container text-primary font-medium">No Vanity Royalties Retained</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4-PHASE PUBLISHING ROADMAP -->
+<section class="w-full px-margin py-space-xl bg-background">
+<div class="max-w-[1320px] mx-auto space-y-space-lg">
+<!-- Section Header -->
+<div class="max-w-[720px] space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Predictable &amp; Transparent Pathway</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">How Publishing Assistance Works</h2>
+<p class="font-body-reading-lg text-body-reading-lg text-on-surface-variant">
+          Four deliberate phases designed to honor your creative agency, guarantee editorial rigor, and position your children's book for curious minds.
+        </p>
+</div>
+<!-- Roadmap Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter pt-space-sm">
+<!-- Phase 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="w-9 h-9 rounded-full bg-secondary/10 text-secondary font-title-md text-title-md flex items-center justify-center font-bold">01</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Free Intake</span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary">Manuscript Review &amp; Eligibility</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant leading-relaxed">
+                Free, constructive review by children's literature editors. Receive line guidance, reading level assessment, and child-safe certification checks.
+              </p>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/60 p-space-sm rounded-xl">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Turnaround: Within 5 business days</span>
+</div>
+</div>
+</div>
+<!-- Phase 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="w-9 h-9 rounded-full bg-secondary/10 text-secondary font-title-md text-title-md flex items-center justify-center font-bold">02</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Craft &amp; Layout</span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary">Editorial &amp; Book Craft</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant leading-relaxed">
+                Pair with verified illustrators or provide existing art. We handle dual Hindi-English typesetting, Devanagari font alignments, and bleed margins.
+              </p>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/60 p-space-sm rounded-xl">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">draw</span>
+<span>Iterative Proof Cycles: Up to 3 reviews</span>
+</div>
+</div>
+</div>
+<!-- Phase 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="w-9 h-9 rounded-full bg-secondary/10 text-secondary font-title-md text-title-md flex items-center justify-center font-bold">03</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Integration</span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary">Global Digital &amp; Reader Listing</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant leading-relaxed">
+                Your book arrives on the StoryNest Interactive Reader with audio read-aloud options, dictionary tooltips, and school curriculum taggings.
+              </p>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/60 p-space-sm rounded-xl">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">devices</span>
+<span>Available on Web, iOS &amp; Classroom</span>
+</div>
+</div>
+</div>
+<!-- Phase 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="w-9 h-9 rounded-full bg-secondary/10 text-secondary font-title-md text-title-md flex items-center justify-center font-bold">04</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Visibility</span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary">Author Launch &amp; Promotion</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant leading-relaxed">
+                Connect directly with readers via hosted Google Meet live read-alongs, author spotlight newsletters, and curriculum discovery packs for teachers.
+              </p>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/60 p-space-sm rounded-xl">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">campaign</span>
+<span>Direct outreach to 120+ partner schools</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PUBLISHING SERVICES CATALOGUE -->
+<section class="w-full px-margin py-space-xl bg-surface-container-low" id="services-catalogue">
+<div class="max-w-[1320px] mx-auto space-y-space-lg">
+<!-- Section Title & Category Filter Simulation -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="max-w-[720px] space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">A La Carte &amp; Bundle Solutions</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Publishing Services Catalogue</h2>
+<p class="font-body-reading-lg text-body-reading-lg text-on-surface-variant">
+            Modular, high-fidelity services for independent writers. Choose strictly what you need—retain complete intellectual ownership.
+          </p>
+</div>
+<div class="inline-flex p-1 rounded-xl bg-surface-container-highest">
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest font-label-md text-label-md text-primary shadow-xs" type="button">All Services</button>
+<button class="px-4 py-2 rounded-lg text-on-surface-variant hover:text-primary font-label-md text-label-md" type="button">Editorial &amp; Art</button>
+<button class="px-4 py-2 rounded-lg text-on-surface-variant hover:text-primary font-label-md text-label-md" type="button">Formatting &amp; Distribution</button>
+</div>
+</div>
+<!-- Services 6-Card Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1: Manuscript Editorial Review -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">spellcheck</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Standard in All Submissions</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Manuscript Editorial Review</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">
+                Developmental assessment to prepare children's story manuscripts for professional publication standards.
+              </p>
+</div>
+<!-- Deliverables -->
+<ul class="space-y-space-xs font-body-ui-sm text-body-ui-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Line-by-line grammar &amp; tone audit</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Lexile / age-band reading difficulty grading</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Bilingual cultural sensitivity review</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Turnaround: 5–7 Days</span>
+<span class="font-title-md text-title-md text-primary font-bold">Complimentary</span>
+</div>
+</div>
+<!-- Card 2: Illustrated Cover & Art Direction -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-secondary/15 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">palette</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Art Direction</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Illustrated Cover &amp; Art Direction</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">
+                Visual identity development pairing your narrative with seasoned children's book illustrators.
+              </p>
+</div>
+<ul class="space-y-space-xs font-body-ui-sm text-body-ui-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Curated illustrator artist shortlist</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Front, back &amp; spine wrap typography</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>CMYK print-ready 300DPI vector assets</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Turnaround: 14 Days</span>
+<span class="font-title-md text-title-md text-primary font-bold">$220 USD</span>
+</div>
+</div>
+<!-- Card 3: Bilingual Formatting & Typesetting -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">translate</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Typesetting</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Bilingual Formatting &amp; Typesetting</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">
+                Precision dual-script layout harmonizing Devanagari and Latin typography without page overcrowding.
+              </p>
+</div>
+<ul class="space-y-space-xs font-body-ui-sm text-body-ui-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Devanagari + English dual-text lockup</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Dyslexia-friendly reading mode export</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>EPUB3 reflowable + Fixed-layout PDF</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Turnaround: 7–10 Days</span>
+<span class="font-title-md text-title-md text-primary font-bold">$140 USD</span>
+</div>
+</div>
+<!-- Card 4: StoryNest Reader Digital Release -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-secondary/15 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Flagship Platform</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">StoryNest Reader Digital Release</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">
+                Immediate insertion into the official StoryNest digital reading ecosystem for young readers and classrooms.
+              </p>
+</div>
+<ul class="space-y-space-xs font-body-ui-sm text-body-ui-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Interactive page-flip &amp; word-by-word highlight</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Audio narration sync integration</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Teacher comprehension printables bundle</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live within 48 Hours</span>
+<span class="font-title-md text-title-md text-primary font-bold">$95 USD</span>
+</div>
+</div>
+<!-- Card 5: Author Launch & Virtual Spotlight -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/30 text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">video_camera_front</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Outreach</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Author Launch &amp; Virtual Spotlight</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">
+                Live interactive book launch and reader activation hosted and moderated by StoryNest education leads.
+              </p>
+</div>
+<ul class="space-y-space-xs font-body-ui-sm text-body-ui-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Hosted 45-min Google Meet author reading</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Homepage carousel feature for 14 continuous days</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Dedicated feature in Educator Newsletter (4.2k list)</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Scheduled Booking</span>
+<span class="font-title-md text-title-md text-primary font-bold">$180 USD</span>
+</div>
+</div>
+<!-- Card 6: Print-on-Demand & Distribution Guidance -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">print</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Consultative</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Print &amp; Global ISBN Guidance</h3>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant mt-1">
+                Expert navigation of physical book printing, barcoding, and school catalog numbers without vanity markups.
+              </p>
+</div>
+<ul class="space-y-space-xs font-body-ui-sm text-body-ui-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Direct print proof quality inspection</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Official ISBN &amp; Barcode configuration assistance</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Wholesale educator purchase order sheet</span>
+</li>
+</ul>
+</div>
+<!-- Disclaimer box on card -->
+<div class="pt-space-sm mt-space-sm bg-surface-container-highest/60 rounded-xl p-space-sm space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mentorship Session</span>
+<span class="font-title-md text-title-md text-primary font-bold">$110 USD</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant italic">
+              Note: We provide prep &amp; setup guidance; printing unit costs are paid directly to printer at true zero markup.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TRANSPARENT AUTHOR COMPARISON TABLE -->
+<section class="w-full px-margin py-space-xl bg-background">
+<div class="max-w-[1320px] mx-auto space-y-space-lg">
+<div class="text-center max-w-[760px] mx-auto space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Radical Transparency</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">How StoryNest Compares</h2>
+<p class="font-body-reading-lg text-body-reading-lg text-on-surface-variant">
+          Independent authors face predatory fees or total creative alienation. Here is how our collaborative model safeguards your work.
+        </p>
+</div>
+<!-- Comparison Matrix Card -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-x-auto">
+<table class="w-full text-left min-w-[640px]">
+<thead>
+<tr class="bg-surface-container-low text-primary font-title-md text-title-md">
+<th class="py-4 px-6">Publishing Feature</th>
+<th class="py-4 px-6 bg-secondary/10 text-secondary font-bold">StoryNest Author Cooperative</th>
+<th class="py-4 px-6 text-on-surface-variant">Traditional Publishing</th>
+<th class="py-4 px-6 text-on-surface-variant">Vanity / Hybrid Presses</th>
+</tr>
+</thead>
+<tbody class="font-body-ui-md text-body-ui-md divide-y-0">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="py-4 px-6 font-semibold text-primary">Intellectual Property &amp; Rights</td>
+<td class="py-4 px-6 bg-secondary/5 font-semibold text-secondary">
+                100% Retained by Author. Zero transfer.
+              </td>
+<td class="py-4 px-6 text-on-surface-variant">Rights signed away for 5-10+ years</td>
+<td class="py-4 px-6 text-on-surface-variant">Ambiguous shared copyright clauses</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/30 transition-colors bg-surface-container-low/10">
+<td class="py-4 px-6 font-semibold text-primary">Service Cost Transparency</td>
+<td class="py-4 px-6 bg-secondary/5 font-semibold text-secondary">
+                Fixed transparent fees or modular free intake
+              </td>
+<td class="py-4 px-6 text-on-surface-variant">No fee, but tiny 7-10% royalty split</td>
+<td class="py-4 px-6 text-error">High upfront bundles ($3,000 – $10,000)</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="py-4 px-6 font-semibold text-primary">Time to Reader Marketplace</td>
+<td class="py-4 px-6 bg-secondary/5 font-semibold text-secondary">
+                4 to 6 Weeks typical cycle
+              </td>
+<td class="py-4 px-6 text-on-surface-variant">18 to 24 Months lead time</td>
+<td class="py-4 px-6 text-on-surface-variant">3 to 6 Months</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/30 transition-colors bg-surface-container-low/10">
+<td class="py-4 px-6 font-semibold text-primary">Child-Safe &amp; Educational Alignment</td>
+<td class="py-4 px-6 bg-secondary/5 font-semibold text-secondary">
+                Verified COPPA safe-harbor &amp; teacher vetting
+              </td>
+<td class="py-4 px-6 text-on-surface-variant">High editorial vetting, low speed</td>
+<td class="py-4 px-6 text-on-surface-variant">Zero child moderation / Open print dump</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="py-4 px-6 font-semibold text-primary">Direct Reader Interaction</td>
+<td class="py-4 px-6 bg-secondary/5 font-semibold text-secondary">
+                Hosted virtual launches &amp; school Q&amp;As
+              </td>
+<td class="py-4 px-6 text-on-surface-variant">Limited to top-selling celebrity authors</td>
+<td class="py-4 px-6 text-on-surface-variant">No community infrastructure</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE PUBLISHING COST & SERVICE ESTIMATOR -->
+<section class="w-full px-margin py-space-xl bg-surface-container-low" id="calculator">
+<div class="max-w-[1320px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Calculator Interactive Controls (Left 7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm space-y-space-lg">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Immediate Transparent Budgeting</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Publishing Cost Estimator</h2>
+<p class="font-body-ui-md text-body-ui-md text-on-surface-variant">
+              Select your current manuscript stage and choose customized assistance components. Fees calculate in real time.
+            </p>
+</div>
+<!-- Stage Selection Buttons -->
+<div class="space-y-space-xs">
+<label class="font-title-md text-title-md text-primary block">1. Select Your Current Manuscript Stage</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm" id="stage-selector">
+<button class="stage-btn text-left p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-highest transition-all" data-stage="raw" onclick="updateStage('raw', 0)" type="button">
+<span class="font-title-md text-title-md block text-primary">Raw Draft</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Written story text only</span>
+</button>
+<button class="stage-btn text-left p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-highest transition-all" data-stage="polished" onclick="updateStage('polished', 0)" type="button">
+<span class="font-title-md text-title-md block text-primary">Edited Text</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Reviewed &amp; copyedited</span>
+</button>
+<button class="stage-btn text-left p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-highest transition-all" data-stage="illustrated" onclick="updateStage('illustrated', 0)" type="button">
+<span class="font-title-md text-title-md block text-primary">Illustrated Book</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Art completed &amp; placed</span>
+</button>
+</div>
+</div>
+<!-- Service Checkbox Selections -->
+<div class="space-y-space-sm">
+<label class="font-title-md text-title-md text-primary block">2. Select Desired Publishing Assistance</label>
+<div class="space-y-space-xs">
+<!-- Item 1 -->
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-5 h-5 accent-secondary cursor-not-allowed" disabled="" id="svc-editorial" type="checkbox"/>
+<div>
+<span class="font-title-md text-title-md text-primary block">Editorial Review &amp; Feedback</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Essential editorial assessment</span>
+</div>
+</div>
+<span class="font-title-md text-title-md text-secondary font-bold">Included Free</span>
+</label>
+<!-- Item 2 -->
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-space-sm">
+<input class="w-5 h-5 accent-primary cursor-pointer" id="svc-cover" onchange="recalculateTotal()" type="checkbox"/>
+<div>
+<span class="font-title-md text-title-md text-primary block">Cover Art Direction &amp; Pairing</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Artist curation &amp; typography wrap</span>
+</div>
+</div>
+<span class="font-title-md text-title-md text-primary font-semibold">+$220</span>
+</label>
+<!-- Item 3 -->
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-5 h-5 accent-primary cursor-pointer" id="svc-typeset" onchange="recalculateTotal()" type="checkbox"/>
+<div>
+<span class="font-title-md text-title-md text-primary block">Bilingual Formatting (Hindi + English)</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Devanagari layout, ePub &amp; fixed PDF</span>
+</div>
+</div>
+<span class="font-title-md text-title-md text-primary font-semibold">+$140</span>
+</label>
+<!-- Item 4 -->
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-5 h-5 accent-primary cursor-pointer" id="svc-digital" onchange="recalculateTotal()" type="checkbox"/>
+<div>
+<span class="font-title-md text-title-md text-primary block">StoryNest Digital Reader Release</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">School accessibility &amp; read-aloud tag</span>
+</div>
+</div>
+<span class="font-title-md text-title-md text-primary font-semibold">+$95</span>
+</label>
+<!-- Item 5 -->
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-space-sm">
+<input class="w-5 h-5 accent-primary cursor-pointer" id="svc-launch" onchange="recalculateTotal()" type="checkbox"/>
+<div>
+<span class="font-title-md text-title-md text-primary block">Virtual Author Launch &amp; Spotlight</span>
+<span class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">Google Meet session + 14-day banner</span>
+</div>
+</div>
+<span class="font-title-md text-title-md text-primary font-semibold">+$180</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Sticky Estimate Output Breakdown (Right 5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm space-y-space-md lg:sticky lg:top-24">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Instant Quote Summary</span>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg text-primary font-bold" id="total-price-display">$235 USD</span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container">No Monthly Retainers</span>
+</div>
+</div>
+<!-- Dynamic Itemized breakdown -->
+<div class="space-y-space-xs font-body-ui-sm text-body-ui-sm text-on-surface-variant bg-surface-container-low p-space-md rounded-xl">
+<div class="flex justify-between">
+<span>Manuscript Editorial Intake:</span>
+<span class="font-semibold text-secondary">Free ($0)</span>
+</div>
+<div class="flex justify-between" id="row-cover" style="display: none;">
+<span>Cover Art Direction:</span>
+<span class="font-semibold text-primary">$220</span>
+</div>
+<div class="flex justify-between" id="row-typeset">
+<span>Bilingual Typesetting:</span>
+<span class="font-semibold text-primary">$140</span>
+</div>
+<div class="flex justify-between" id="row-digital">
+<span>Digital Reader Integration:</span>
+<span class="font-semibold text-primary">$95</span>
+</div>
+<div class="flex justify-between" id="row-launch" style="display: none;">
+<span>Virtual Launch &amp; Spotlight:</span>
+<span class="font-semibold text-primary">$180</span>
+</div>
+</div>
+<!-- Guarantee statement -->
+<div class="space-y-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">lock_clock</span>
+<span>Price lock guaranteed for 30 days upon submission</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">assignment_turned_in</span>
+<span>Full copyright remains 100% with the author</span>
+</div>
+</div>
+<!-- Action buttons inside quote -->
+<div class="pt-space-xs space-y-space-xs">
+<button class="w-full py-3.5 px-4 rounded-xl bg-primary text-on-primary font-title-md text-title-md shadow-md hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs" onclick="openConsultationModal()" type="button">
+<span>Request Consultation with this Plan</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant">
+              No credit card required. Free 20-min editorial briefing included.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EDITORIAL CONSULTATION MODAL (HIDDEN BY DEFAULT) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-primary/40 backdrop-blur-sm p-4 hidden" id="consultation-modal">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl p-space-lg shadow-2xl space-y-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Request Author Consultation</h3>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="closeConsultationModal()" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">
+        Our children's literary editor will review your estimated plan and connect within 1 business day.
+      </p>
+<form class="space-y-space-sm" onsubmit="handleConsultationSubmit(event)">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Author Full Name</label>
+<input class="w-full px-4 py-2.5 rounded-xl bg-surface-container-low text-primary focus:outline-none" placeholder="e.g. Elena Vance" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Email Address</label>
+<input class="w-full px-4 py-2.5 rounded-xl bg-surface-container-low text-primary focus:outline-none" placeholder="elena@example.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Book Working Title &amp; Target Age</label>
+<input class="w-full px-4 py-2.5 rounded-xl bg-surface-container-low text-primary focus:outline-none" placeholder="e.g. The Brave Little Sparrow (Ages 4-7)" type="text"/>
+</div>
+<button class="w-full py-3 rounded-xl bg-primary text-on-primary font-title-md text-title-md hover:bg-primary-container transition-all" type="submit">
+          Submit for Editorial Review
+        </button>
+</form>
+</div>
+</div>
+<!-- FAQ SECTION (ACCORDION) -->
+<section class="w-full px-margin py-space-xl bg-background">
+<div class="max-w-[860px] mx-auto space-y-space-lg">
+<div class="text-center space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Author Inquiries</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Frequently Asked Questions</h2>
+<p class="font-body-reading-lg text-body-reading-lg text-on-surface-variant">
+          Clear answers about copyright, bilingual production, and children's content compliance.
+        </p>
+</div>
+<!-- Accordion Stack -->
+<div class="space-y-space-sm">
+<!-- FAQ Item 1 -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden">
+<button class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors" onclick="toggleAccordion('faq-1')" type="button">
+<span class="font-title-lg text-title-lg text-primary font-semibold">Do I retain the copyright to my book?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transition-transform" id="faq-1-icon">expand_more</span>
+</button>
+<div class="hidden p-space-md pt-0 text-on-surface-variant font-body-ui-md text-body-ui-md space-y-space-xs" id="faq-1">
+<p>
+              Yes, unconditionally. You retain 100% of your copyright, trademark, and intellectual property. StoryNest acts strictly as your author assistance platform and digital reading showcase. You are free to unpublish, adapt, or contract with outside parties at any time without penalty.
+            </p>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden">
+<button class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors" onclick="toggleAccordion('faq-2')" type="button">
+<span class="font-title-lg text-title-lg text-primary font-semibold">How do bilingual Hindi-English editions work?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transition-transform" id="faq-2-icon">expand_more</span>
+</button>
+<div class="hidden p-space-md pt-0 text-on-surface-variant font-body-ui-md text-body-ui-md space-y-space-xs" id="faq-2">
+<p>
+              Our editorial layout team typesets both Latin and Devanagari scripts in balanced harmony. If you have a manuscript in English or Hindi, our certified native literary translators can generate an authentic translation that preserves poetic meter, idiom, and cadence suitable for young multilingual learners.
+            </p>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden">
+<button class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors" onclick="toggleAccordion('faq-3')" type="button">
+<span class="font-title-lg text-title-lg text-primary font-semibold">Is my book guaranteed to be published on StoryNest?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transition-transform" id="faq-3-icon">expand_more</span>
+</button>
+<div class="hidden p-space-md pt-0 text-on-surface-variant font-body-ui-md text-body-ui-md space-y-space-xs" id="faq-3">
+<p>
+              StoryNest enforces strict child-safe and developmental content standards. While 94% of submitted manuscripts pass review or are accepted following our free constructive editorial suggestions, we strictly decline hate speech, inappropriate graphic themes, and unmoderated AI low-content scrapers.
+            </p>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden">
+<button class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors" onclick="toggleAccordion('faq-4')" type="button">
+<span class="font-title-lg text-title-lg text-primary font-semibold">How does StoryNest protect children's content?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transition-transform" id="faq-4-icon">expand_more</span>
+</button>
+<div class="hidden p-space-md pt-0 text-on-surface-variant font-body-ui-md text-body-ui-md space-y-space-xs" id="faq-4">
+<p>
+              All published releases undergo COPPA compliance scans, reading age verification, and teacher panel reviews. Our digital reader operates entirely ad-free, with zero tracking cookies or external commercial distractions, making StoryNest an officially certified safe-harbor platform for elementary school library catalogs.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SUBMISSION ONBOARDING CONCIERGE FOOTER BAR -->
+<section class="w-full px-margin py-space-xl bg-surface-container">
+<div class="max-w-[1320px] mx-auto bg-primary text-on-primary rounded-3xl p-space-xl shadow-xl flex flex-col lg:flex-row items-center justify-between gap-space-lg relative overflow-hidden">
+<!-- Decorative radial pattern -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<div class="space-y-space-xs max-w-[680px] z-10">
+<span class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm inline-block">Free 5-Day Manuscript Appraisal</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary">Ready to Share Your Children's Story with the World?</h2>
+<p class="font-body-reading-lg text-body-reading-lg text-primary-fixed">
+          Take the first step today. Submit your draft for honest editorial feedback with zero upfront payments or long-term obligations.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm z-10 w-full lg:w-auto">
+<button class="w-full sm:w-auto px-8 py-4 rounded-xl bg-secondary text-on-secondary font-title-md text-title-md hover:bg-secondary/90 transition-all shadow-md text-center" onclick="openConsultationModal()" type="button">
+          Start Free Submission
+        </button>
+<button class="w-full sm:w-auto px-6 py-4 rounded-xl bg-primary-container text-on-primary font-title-md text-title-md hover:bg-surface-tint/20 transition-all text-center" type="button">
+          Author Account Sign In
+        </button>
+</div>
+</div>
+</section>
+<!-- CLIENT-SIDE INTERACTION LOGIC -->
+<script>
+    let activeStage = 'raw';
+
+    function updateStage(stageName, addCost) {
+      activeStage = stageName;
+      document.querySelectorAll('.stage-btn').forEach(btn => {
+        if(btn.dataset.stage === stageName) {
+          btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+          btn.classList.remove('bg-surface-container');
+        } else {
+          btn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+          btn.classList.add('bg-surface-container');
+        }
+      });
+      recalculateTotal();
+    }
+
+    function recalculateTotal() {
+      let total = 0;
+      const cover = document.getElementById('svc-cover').checked;
+      const typeset = document.getElementById('svc-typeset').checked;
+      const digital = document.getElementById('svc-digital').checked;
+      const launch = document.getElementById('svc-launch').checked;
+
+      if(cover) { total += 220; document.getElementById('row-cover').style.display = 'flex'; }
+      else { document.getElementById('row-cover').style.display = 'none'; }
+
+      if(typeset) { total += 140; document.getElementById('row-typeset').style.display = 'flex'; }
+      else { document.getElementById('row-typeset').style.display = 'none'; }
+
+      if(digital) { total += 95; document.getElementById('row-digital').style.display = 'flex'; }
+      else { document.getElementById('row-digital').style.display = 'none'; }
+
+      if(launch) { total += 180; document.getElementById('row-launch').style.display = 'flex'; }
+      else { document.getElementById('row-launch').style.display = 'none'; }
+
+      document.getElementById('total-price-display').innerText = '$' + total + ' USD';
+    }
+
+    function toggleAccordion(id) {
+      const panel = document.getElementById(id);
+      const icon = document.getElementById(id + '-icon');
+      if (panel.classList.contains('hidden')) {
+        panel.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        panel.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+
+    function openConsultationModal() {
+      document.getElementById('consultation-modal').classList.remove('hidden');
+    }
+
+    function closeConsultationModal() {
+      document.getElementById('consultation-modal').classList.add('hidden');
+    }
+
+    function handleConsultationSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Your manuscript consultation request has been received. Our editorial desk will contact you within 24 hours.');
+      closeConsultationModal();
+    }
+
+    // Set initial active stage on load
+    updateStage('raw', 0);
+    recalculateTotal();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_6px_rgba(0,0,0,0.02)] mt-space-xl"><div class="w-full px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="space-y-space-sm md:col-span-1"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[24px]">menu_book</span><span class="font-headline-sm text-headline-sm text-primary">StoryNest</span></div><p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant leading-relaxed">The premier ethical self-publishing ecosystem for independent children's book creators, illustrators, and educational storytellers.</p></div><div><h4 class="font-title-md text-title-md text-primary mb-space-md">Publishing Standards</h4><ul class="space-y-space-xs"><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Print &amp; Binding Guidelines</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Global ISBN Allocation</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Editorial Peer Review</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Illustrated Art Standards</a></li></ul></div><div><h4 class="font-title-md text-title-md text-primary mb-space-md">Author Support &amp; Rights</h4><ul class="space-y-space-xs"><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Copyright Protection</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Royalty &amp; Distribution Terms</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Manuscript Consultation</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Publisher Concierge</a></li></ul></div><div><h4 class="font-title-md text-title-md text-primary mb-space-md">Legal &amp; Compliance</h4><ul class="space-y-space-xs"><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Children's Content Safety Pledge</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Privacy Policy</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Author Service Agreement</a></li><li class="font-body-ui-sm text-body-ui-sm text-on-surface-variant hover:text-on-surface transition-colors"><a href="#">Digital Rights Management</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md border-t border-outline-variant/30"><p class="font-body-ui-sm text-body-ui-sm text-on-surface-variant">© 2024 StoryNest Publishing Cooperative Inc. All rights reserved.</p><div class="flex items-center gap-space-lg"><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">verified</span>ISO 2108 Certified Publishing Flow</span><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">lock</span>End-to-End Intellectual Rights Escrow</span></div></div></div></footer></body></html>
