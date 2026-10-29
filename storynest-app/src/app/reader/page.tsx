@@ -39,35 +39,51 @@ interface NotificationItem {
   message: string;
 }
 
-export default async function ReaderDashboardPage() {
-  await connectToDatabase();
-  const currentUser = await getCurrentUser();
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
-  const filter = currentUser ? { userId: currentUser._id } : {};
-  const [books, recentProgress, quizAttempts, notifications, childProfile, childStories, workshops] = await Promise.all([
-    Book.find({ isPublished: true, isArchived: { $ne: true } }).limit(4).lean(),
-    ReadingProgress.find(filter).populate('bookId').sort({ lastReadAt: -1 }).limit(3).lean(),
-    QuizAttempt.find(filter).sort({ createdAt: -1 }).limit(3).lean(),
-    Notification.find({
-      $or: [{ targetRole: 'reader' }, ...(currentUser ? [{ userId: currentUser._id }] : [])],
-    })
-      .sort({ createdAt: -1 })
-      .limit(3)
-      .lean(),
-    currentUser
-      ? ChildProfile.findOne({
-          $or: [
-            { displayName: currentUser.name },
-            ...(currentUser.name ? [{ displayName: new RegExp(`^${currentUser.name.split(' ')[0]}`, 'i') }] : []),
-            { parentId: currentUser._id },
-          ],
-        }).lean()
-      : null,
-    currentUser
-      ? ChildStory.find({ authorId: currentUser._id }).sort({ updatedAt: -1 }).limit(3).lean()
-      : Promise.resolve([]),
-    Workshop.find({ isPublished: true }).limit(2).lean(),
-  ]);
+export default async function ReaderDashboardPage() {
+  let currentUser: any = null;
+  let books: any[] = [];
+  let recentProgress: any[] = [];
+  let quizAttempts: any[] = [];
+  let notifications: any[] = [];
+  let childProfile: any = null;
+  let childStories: any[] = [];
+  let workshops: any[] = [];
+
+  try {
+    await connectToDatabase();
+    currentUser = await getCurrentUser();
+
+    const filter = currentUser ? { userId: currentUser._id } : {};
+    [books, recentProgress, quizAttempts, notifications, childProfile, childStories, workshops] = await Promise.all([
+      Book.find({ isPublished: true, isArchived: { $ne: true } }).limit(4).lean(),
+      ReadingProgress.find(filter).populate('bookId').sort({ lastReadAt: -1 }).limit(3).lean(),
+      QuizAttempt.find(filter).sort({ createdAt: -1 }).limit(3).lean(),
+      Notification.find({
+        $or: [{ targetRole: 'reader' }, ...(currentUser ? [{ userId: currentUser._id }] : [])],
+      })
+        .sort({ createdAt: -1 })
+        .limit(3)
+        .lean(),
+      currentUser
+        ? ChildProfile.findOne({
+            $or: [
+              { displayName: currentUser.name },
+              ...(currentUser.name ? [{ displayName: new RegExp(`^${currentUser.name.split(' ')[0]}`, 'i') }] : []),
+              { parentId: currentUser._id },
+            ],
+          }).lean()
+        : null,
+      currentUser
+        ? ChildStory.find({ authorId: currentUser._id }).sort({ updatedAt: -1 }).limit(3).lean()
+        : Promise.resolve([]),
+      Workshop.find({ isPublished: true }).limit(2).lean(),
+    ]);
+  } catch (err) {
+    console.warn('Database error in ReaderDashboardPage:', err);
+  }
 
   const activeProgress = (recentProgress[0] as unknown as ProgressItem) || null;
   const continueBook = (typeof activeProgress?.bookId === 'object' ? activeProgress.bookId : books[0]) as ProgressBook | null;

@@ -9,12 +9,38 @@ import { getCurrentUser } from '@/lib/auth';
 import BookDetailsInteractive, { BookCtaActions } from './BookDetailsInteractive';
 
 export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export default async function BookDetailsPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  await connectToDatabase();
-  const currentUser = await getCurrentUser();
-  const book = await Book.findOne({ slug }).lean();
+  let book: any = null;
+  let companionQuiz: any = null;
+  let relatedBooks: any[] = [];
+  let currentUser: any = null;
+
+  try {
+    await connectToDatabase();
+    currentUser = await getCurrentUser();
+    book = await Book.findOne({ slug }).lean();
+
+    if (book) {
+      companionQuiz = await Quiz.findOne({
+        $or: [{ bookId: book._id }, { bookSlug: book.slug }],
+        isPublished: true,
+      }).lean();
+
+      relatedBooks = await Book.find({
+        _id: { $ne: book._id },
+        ageBracket: book.ageBracket,
+        isPublished: true,
+        isArchived: { $ne: true },
+      })
+        .limit(3)
+        .lean();
+    }
+  } catch (err) {
+    console.warn('Database error in BookDetailsPage:', err);
+  }
 
   if (!book) {
     notFound();
@@ -24,21 +50,6 @@ export default async function BookDetailsPage({ params }: { params: Promise<{ sl
   if ((!book.isPublished || book.isArchived) && currentUser?.role !== 'admin') {
     notFound();
   }
-
-  // Fetch companion quiz for this book
-  const companionQuiz = await Quiz.findOne({
-    $or: [{ bookId: book._id }, { bookSlug: book.slug }],
-    isPublished: true,
-  }).lean();
-
-  const relatedBooks = await Book.find({
-    _id: { $ne: book._id },
-    ageBracket: book.ageBracket,
-    isPublished: true,
-    isArchived: { $ne: true },
-  })
-    .limit(3)
-    .lean();
 
   const serializedBook = JSON.parse(JSON.stringify(book));
   const serializedQuiz = companionQuiz ? JSON.parse(JSON.stringify(companionQuiz)) : null;

@@ -6,10 +6,16 @@ import { connectToDatabase } from '@/lib/mongodb';
 import { CmsPage } from '@/models';
 
 export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export default async function AboutPage() {
-  await connectToDatabase();
-  const cms = await CmsPage.findOne({ slug: 'about' }).lean();
+  let cms: any = null;
+  try {
+    await connectToDatabase();
+    cms = await CmsPage.findOne({ slug: 'about' }).lean();
+  } catch (err) {
+    console.warn('Prerender / database connection fallback for AboutPage:', err);
+  }
 
   return (
     <div className="flex flex-col min-h-screen">

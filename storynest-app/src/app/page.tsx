@@ -33,15 +33,28 @@ interface WorkshopCardItem {
   scheduledAt?: string | Date;
 }
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export default async function HomePage() {
-  await connectToDatabase();
-  const [books, workshops, homeCms, settings, currentUser] = await Promise.all([
-    Book.find({ isPublished: true, isArchived: { $ne: true } }).sort({ featured: -1, createdAt: -1 }).limit(4).lean(),
-    Workshop.find({}).sort({ scheduledAt: 1 }).limit(2).lean(),
-    CmsPage.findOne({ slug: 'home' }).lean(),
-    WebsiteSetting.findOne({ key: 'global' }).lean(),
-    getCurrentUser(),
-  ]);
+  let books: any[] = [];
+  let workshops: any[] = [];
+  let homeCms: any = null;
+  let settings: any = null;
+  let currentUser: any = null;
+
+  try {
+    await connectToDatabase();
+    [books, workshops, homeCms, settings, currentUser] = await Promise.all([
+      Book.find({ isPublished: true, isArchived: { $ne: true } }).sort({ featured: -1, createdAt: -1 }).limit(4).lean(),
+      Workshop.find({}).sort({ scheduledAt: 1 }).limit(2).lean(),
+      CmsPage.findOne({ slug: 'home' }).lean(),
+      WebsiteSetting.findOne({ key: 'global' }).lean(),
+      getCurrentUser(),
+    ]);
+  } catch (err) {
+    console.warn('Prerender / database connection fallback for HomePage:', err);
+  }
 
   // Handle Maintenance Mode
   if (settings?.maintenanceMode && currentUser?.role !== 'admin') {
